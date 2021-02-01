@@ -71,7 +71,8 @@ $body = '{
   }
 }'
 
-$defaultProfileId = ((Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body).data.deliveryProfiles.edges | Where-Object { $_.node.default }).node.id
+$deliveryProfiles = Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body
+$defaultProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.default }).node.id
 
 $jsonHeaders = @{ 
   'Content-Type' = 'application/json';
@@ -144,8 +145,8 @@ $getDeliveryProfileData = @{
   }
 }
 
-$r1 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
-$r1 | ConvertTo-Json -Depth 15
+$defaultProfileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+$defaultProfileDetails | ConvertTo-Json -Depth 15
 
 ```
 
@@ -158,5 +159,122 @@ $r1 | ConvertTo-Json -Depth 15
 
 ## Assigning products to profiles
 
+Get a list of all products you want to assign, e.g. from one vendor.
 
+```
+$getProductsQuery = 'query($first: Int, $filter: String)
+  {
+    products(first: $first, query: $filter) {
+      edges {
+        node {
+          id
+          handle
+          vendor
+          status
+          variants (first: 2) {
+            edges {
+              node {
+                id
+                title
+              }
+            }
+          }
+        }
+      }
+      pageInfo {
+        hasNextPage
+      }
+    }
+  }
+  '
 
+$getProductsData = @{
+  query = $getProductsQuery;
+  variables = @{
+    first = 150;
+    filter = 'vendor:"Wholesale (AU)"'
+  }
+}
+
+$wholesaleProducts = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getProductsData)
+$wholesaleProducts.data.products.edges.node | Measure-Object
+```
+
+You can further filter the objects based on properties.
+
+Then use an update query to add them to a delivery profile.
+
+```
+$inactiveProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -ne 'ACTIVE' }
+$inactiveProducts | Measure-Object
+
+$inactiveDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping 2' }).node.id
+
+$updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
+  deliveryProfileUpdate (id: $id, profile: $profile)
+  {
+    profile {
+      id
+      name
+      profileItems (first: 150) {
+        edges {
+          node {
+            product {
+              id
+              handle
+              vendor
+            }
+            variants (first: 2) {
+              edges {
+                node {
+                  id
+                  title
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}'
+
+$addInactiveProducts = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $inactiveDeliveryProfileId;
+    profile = @{
+      variantsToAssociate = $inactiveProducts.variants.edges.node.id
+    }
+  }
+}
+
+$addResult1 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addInactiveProducts)
+$addResult1
+```
+
+You can reuse the same query with different variables:
+
+```
+$activeProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -eq 'ACTIVE' }
+$activeProducts | Measure-Object
+
+$activeDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }).node.id
+
+$addActiveProducts = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $activeDeliveryProfileId;
+    profile = @{
+      variantsToAssociate = $activeProducts.variants.edges.node.id
+    }
+  }
+}
+
+$addResult2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addActiveProducts)
+$addResult2.data.deliveryProfileUpdate.profile
+```
