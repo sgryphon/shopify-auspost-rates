@@ -180,7 +180,7 @@ $zoneData = $defaultProfileDetails.data.deliveryProfile.profileLocationGroups[0]
 $zoneData | Format-Table
 ```
 
-This can then be saved to a comma separated value file, e.g. for manipulation on a spreadsheet program.
+This can then be saved to a comma separated value (CSV) file, e.g. for manipulation on a spreadsheet program.
 
 ```
 $zoneData | Export-Csv 'data/zone-country-province.csv'
@@ -191,32 +191,55 @@ $zoneData | Export-Csv 'data/zone-country-province.csv'
 
 ## Creating input structure from data
 
+A zone-country CSV data file can be used to create zone information for input.
+
+```
+$zoneCountryData = Import-Csv 'data/auspost-zone-country-province.csv'
+$zonesToCreate = [System.Collections.ArrayList]@()
+$zoneCountryData | ForEach-Object {
+  $line = $_
+  if ($line.zone -ne $zoneInput.name) {
+    $zoneInput = @{ name = $line.zone; countries = [System.Collections.ArrayList]@() }
+    $countryInput = $empty
+    $i = $zonesToCreate.Add($zoneInput)
+  }
+  if (-not $line.country) {
+    $zoneInput.countries.Add(@{ restOfWorld = $true })
+  } else {
+    if ($line.country -ne $countryInput.code) {
+      if ($line.province) {
+        $countryInput = @{ code = $line.country; provinces = [System.Collections.ArrayList]@() }
+      } else {
+        $countryInput = @{ code = $line.country; includeAllProvinces = $true }
+      }
+      $zoneInput.countries.Add($countryInput)
+    }
+    if ($line.province) {
+      $countryInput.provinces.Add(@{ code = $line.province })
+    }
+  }
+}
+$zonesToCreate | ConvertTo-Json -Depth 5
+```
+
+
+## Uploading zones
+
 Within a profile, each location group that you ship from has different rates. In the example below there is only one
 location group to update.
 
-```
-$deliveryProfileId = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
-$deliveryProfileId.node.profileLocationGroups | Measure-Object
-$locationGroupId = $deliveryProfileId.node.profileLocationGroups[0].locationGroup.id
-```
+Get to profile to be updated, and add the zones to create to the profile location group ID.
 
 ```
-$zonesToCreate = @()
-
-
-$profileLocationGroup = @{ id = $locationGroupId }
-
-$zone =
-
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
+$deliveryProfile.node.profileLocationGroups | Measure-Object
+$locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
+$profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
 ```
 
-## Uploading rates
-
-
+Send this as an update.
 
 ```
-$activeDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }).node.id
-
 $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   deliveryProfileUpdate (id: $id, profile: $profile)
   {
@@ -250,19 +273,21 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   }
 }'
 
-$addRates = @{
+$addZones = @{
   query = $updateProfileQuery;
   variables = @{
-    id = $activeDeliveryProfileId;
+    id = $deliveryProfile.node.id;
     profile = @{
-      locationGroupsToUpdate = $profileLocationGroups
+      locationGroupsToUpdate = @( $profileLocationGroupInput )
     }
   }
 }
 
-$addResult1 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addInactiveProducts)
-$addResult1
+$addZonesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 10 $addZones)
+$addZonesResult
 ```
+
+## Uploading rates
 
 
 ## Assigning products to profiles
