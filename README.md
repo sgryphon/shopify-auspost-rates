@@ -180,6 +180,11 @@ $zoneData = $defaultProfileDetails.data.deliveryProfile.profileLocationGroups[0]
 $zoneData | Format-Table
 ```
 
+This can then be saved to a comma separated value file, e.g. for manipulation on a spreadsheet program.
+
+```
+$zoneData | Export-Csv 'data/zone-country-province.csv'
+```
 
 ## Generating rate data files
 
