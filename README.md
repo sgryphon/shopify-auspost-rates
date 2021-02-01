@@ -56,7 +56,7 @@ You can also interactively test out queries in the Shopify API developer documen
 https://shopify.dev/docs/admin-api/graphql/reference/shipping-and-fulfillment/deliveryprofile#samples
 
 
-## Get existing shipping rates
+## Get existing shipping profile information
 
 ```pwsh
 $body = '{
@@ -66,6 +66,11 @@ $body = '{
         id
         name
         default
+        profileLocationGroups {
+          locationGroup {
+            id
+          }
+        }
       }
     }
   }
@@ -147,14 +152,112 @@ $getDeliveryProfileData = @{
 
 $defaultProfileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
 $defaultProfileDetails | ConvertTo-Json -Depth 15
+```
 
+### Generate a table of existing zone definitions
+
+This outputs a summary of the zone name, and countries and provinces allocated to that zone.
+
+```
+$zoneData = $defaultProfileDetails.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges | ForEach-Object {
+  $zone = $_.node.zone
+  $zone.countries | ForEach-Object {
+    $country = $_
+    if ($country.code.restOfWorld) {
+      [PSCustomObject]@{ zone = $zone.name; country = $empty; countryName = $empty; province = $empty; provinceName = $empty }
+    } else {
+      if (-not $country.provinces) {
+        [PSCustomObject]@{ zone = $zone.name; country = $country.code.countryCode; countryName = $country.name; province = $empty; provinceName = $empty }
+      } else {;
+        $country.provinces | ForEach-Object {
+          $province = $_
+          [PSCustomObject]@{ zone = $zone.name; country = $country.code.countryCode; countryName = $country.name; province = $province.code; provinceName = $province.name }
+        }
+      }
+    }
+  }
+}
+$zoneData | Format-Table
 ```
 
 
 ## Generating rate data files
 
 
+## Creating input structure from data
+
+Within a profile, each location group that you ship from has different rates. In the example below there is only one
+location group to update.
+
+```
+$deliveryProfileId = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
+$deliveryProfileId.node.profileLocationGroups | Measure-Object
+$locationGroupId = $deliveryProfileId.node.profileLocationGroups[0].locationGroup.id
+```
+
+```
+$zonesToCreate = @()
+
+
+$profileLocationGroup = @{ id = $locationGroupId }
+
+$zone =
+
+```
+
 ## Uploading rates
+
+
+
+```
+$activeDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }).node.id
+
+$updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
+  deliveryProfileUpdate (id: $id, profile: $profile)
+  {
+    profile {
+      id
+      name
+      profileItems (first: 150) {
+        edges {
+          node {
+            product {
+              id
+              handle
+              vendor
+            }
+            variants (first: 2) {
+              edges {
+                node {
+                  id
+                  title
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}'
+
+$addRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $activeDeliveryProfileId;
+    profile = @{
+      locationGroupsToUpdate = $profileLocationGroups
+    }
+  }
+}
+
+$addResult1 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addInactiveProducts)
+$addResult1
+```
 
 
 ## Assigning products to profiles
