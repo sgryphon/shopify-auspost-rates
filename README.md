@@ -1,6 +1,6 @@
 # Shopify - AusPost Rates
 
-Zones an rate data for importing to Shopify.
+Australia Post zones and rate data for importing to Shopify.
 
 ## Requirements
 
@@ -58,6 +58,8 @@ https://shopify.dev/docs/admin-api/graphql/reference/shipping-and-fulfillment/de
 
 ## Get existing shipping profile information
 
+You will need to get the delivery profile ID's and location group ID's to use in other queries.
+
 ```pwsh
 $body = '{
   deliveryProfiles(first:10) {
@@ -78,7 +80,18 @@ $body = '{
 
 $deliveryProfiles = Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body
 $defaultProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.default }).node.id
+```
 
+Parametised queries use `application/json` instead of raw `application/graphql`, with the query passed as a string
+parameter. 
+
+You can view the content of a profile, for the zone definitions with the countries in that zone and the list of 
+delivery methods and prices (for different methods or conditions).
+
+Use this to examine your current profiles, or to check the contents after you have created a new profile for
+Australia Post.
+
+```pwsh
 $jsonHeaders = @{ 
   'Content-Type' = 'application/json';
   'X-Shopify-Access-Token' = $passwordToken
@@ -180,7 +193,7 @@ $zoneData = $defaultProfileDetails.data.deliveryProfile.profileLocationGroups[0]
 $zoneData | Format-Table
 ```
 
-This can then be saved to a comma separated value (CSV) file, e.g. for manipulation on a spreadsheet program.
+This can then be saved to a comma separated value (CSV) file, e.g. for manipulation in a spreadsheet program.
 
 ```
 $zoneData | Export-Csv 'data/zone-country-province.csv'
@@ -189,7 +202,14 @@ $zoneData | Export-Csv 'data/zone-country-province.csv'
 ## Generating rate data files
 
 
-## Creating input structure from data
+## Load Australia Post data to a shipping profile
+
+Use the data files to create zones and assign countries to them, then load the shipping rates for the
+zones.
+
+### Zones and countries
+
+#### Read zone and country data
 
 A zone-country CSV data file can be used to create zone information for input.
 
@@ -222,8 +242,7 @@ $zoneCountryData | ForEach-Object {
 $zonesToCreate | ConvertTo-Json -Depth 5
 ```
 
-
-## Uploading zones
+#### Load zones and countries to shipping profile
 
 Within a profile, each location group that you ship from has different rates. In the example below there is only one
 location group to update.
@@ -287,7 +306,13 @@ $addZonesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders
 $addZonesResult
 ```
 
-## Uploading rates
+### Shipping rates
+
+#### Read shipping rate data
+
+
+
+#### Uploading rates
 
 
 ## Assigning products to profiles
