@@ -204,6 +204,8 @@ $zoneData | Export-Csv 'data/zone-country-province.csv'
 
 ## Load Australia Post data to a shipping profile
 
+Create a new profile named 'Australia Post' to load the data into.
+
 Use the data files to create zones and assign countries to them, then load the shipping rates for the
 zones.
 
@@ -219,7 +221,7 @@ A zone-country CSV data file can be used to create zone information for input.
 ```
 $zoneCountryData = Import-Csv 'data/auspost-zone-country-province.csv'
 $zonesToCreate = [System.Collections.ArrayList]@()
-$zoneInput = $emnullpty
+$zoneInput = $null
 $zoneCountryData | ForEach-Object {
   $line = $_
   if ($line.zone -ne $zoneInput.name) {
@@ -228,7 +230,7 @@ $zoneCountryData | ForEach-Object {
     $i = $zonesToCreate.Add($zoneInput)
   }
   if (-not $line.country) {
-    $zoneInput.countries.Add(@{ restOfWorld = $true })
+    $i = $zoneInput.countries.Add(@{ restOfWorld = $true })
   } else {
     if ($line.country -ne $countryInput.code) {
       if ($line.province) {
@@ -236,10 +238,10 @@ $zoneCountryData | ForEach-Object {
       } else {
         $countryInput = @{ code = $line.country; includeAllProvinces = $true }
       }
-      $zoneInput.countries.Add($countryInput)
+      $i = $zoneInput.countries.Add($countryInput)
     }
     if ($line.province) {
-      $countryInput.provinces.Add(@{ code = $line.province })
+      $i = $countryInput.provinces.Add(@{ code = $line.province })
     }
   }
 }
@@ -254,7 +256,7 @@ location group to update.
 Get to profile to be updated, and add the zones to create to the profile location group ID.
 
 ```
-$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Australia Post' }
 $deliveryProfile.node.profileLocationGroups | Measure-Object
 $locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
 $profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
@@ -270,14 +272,14 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
       id
       name
       profileLocationGroups {
-        locationGroupZones (first: 20) {
+        locationGroupZones (first: 15) {
           edges {
             node {
               zone {
                 id
                 name
               }
-              methodDefinitions (first:30) {
+              methodDefinitions (first:20) {
                 edges {
                   node {
                     id
@@ -293,7 +295,7 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
                     }
                   }
                 }
-
+              }
             }
           }
         }
@@ -331,7 +333,7 @@ $getDeliveryProfileZonesQuery = 'query($id: ID!)
 {
   deliveryProfile (id: $id) {
     profileLocationGroups {
-      locationGroupZones (first: 20) {
+      locationGroupZones (first: 15) {
         edges {
           node {
             zone {
@@ -360,7 +362,7 @@ $zoneIdsAndNames | Measure-Object
 Read the data file and use it to build the zone updates adding the method definitions.
 
 ```pwsh
-$zoneRateData = Import-Csv 'data/auspost-rates-insured-express-to-5kg.csv'
+$zoneRateData = Import-Csv 'data/auspost-rates-to-1kg.csv'
 $zonesToUpdate = [System.Collections.ArrayList]@()
 $currentZone = $null
 $zoneRateData | ForEach-Object {
@@ -398,14 +400,14 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
       id
       name
       profileLocationGroups {
-        locationGroupZones (first: 20) {
+        locationGroupZones (first: 15) {
           edges {
             node {
               zone {
                 id
                 name
               }
-              methodDefinitions (first:30) {
+              methodDefinitions (first:20) {
                 edges {
                   node {
                     id
@@ -490,10 +492,10 @@ You can further filter the objects based on properties.
 Then use an update query to add them to a delivery profile.
 
 ```
-$inactiveProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -ne 'ACTIVE' }
-$inactiveProducts | Measure-Object
+$activeProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -eq 'ACTIVE' }
+$activeProducts | Measure-Object
 
-$inactiveDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping 2' }).node.id
+$activeDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Australia Post' }).node.id
 
 $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   deliveryProfileUpdate (id: $id, profile: $profile)
@@ -528,28 +530,6 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   }
 }'
 
-$addInactiveProducts = @{
-  query = $updateProfileQuery;
-  variables = @{
-    id = $inactiveDeliveryProfileId;
-    profile = @{
-      variantsToAssociate = $inactiveProducts.variants.edges.node.id
-    }
-  }
-}
-
-$addResult1 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addInactiveProducts)
-$addResult1
-```
-
-You can reuse the same query with different variables:
-
-```
-$activeProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -eq 'ACTIVE' }
-$activeProducts | Measure-Object
-
-$activeDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }).node.id
-
 $addActiveProducts = @{
   query = $updateProfileQuery;
   variables = @{
@@ -560,6 +540,28 @@ $addActiveProducts = @{
   }
 }
 
-$addResult2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addActiveProducts)
+$addResult1 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addActiveProducts)
+$addResult1
+```
+
+You can reuse the same query with different variables:
+
+```
+$otherProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -ne 'ACTIVE' }
+$otherProducts | Measure-Object
+
+$otherDeliveryProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Australia Post 2' }).node.id
+
+$addOtherProducts = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $otherDeliveryProfileId;
+    profile = @{
+      variantsToAssociate = $otherProducts.variants.edges.node.id
+    }
+  }
+}
+
+$addResult2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addOtherProducts)
 $addResult2.data.deliveryProfileUpdate.profile
 ```
