@@ -177,10 +177,10 @@ $zoneData = $defaultProfileDetails.data.deliveryProfile.profileLocationGroups[0]
   $zone.countries | ForEach-Object {
     $country = $_
     if ($country.code.restOfWorld) {
-      [PSCustomObject]@{ zone = $zone.name; country = $empty; countryName = $empty; province = $empty; provinceName = $empty }
+      [PSCustomObject]@{ zone = $zone.name; country = $null; countryName = $null; province = $null; provinceName = $null }
     } else {
       if (-not $country.provinces) {
-        [PSCustomObject]@{ zone = $zone.name; country = $country.code.countryCode; countryName = $country.name; province = $empty; provinceName = $empty }
+        [PSCustomObject]@{ zone = $zone.name; country = $country.code.countryCode; countryName = $country.name; province = $null; provinceName = $null }
       } else {;
         $country.provinces | ForEach-Object {
           $province = $_
@@ -207,6 +207,9 @@ $zoneData | Export-Csv 'data/zone-country-province.csv'
 Use the data files to create zones and assign countries to them, then load the shipping rates for the
 zones.
 
+The Shopify API reference for delivery profile updates is: 
+https://shopify.dev/docs/admin-api/graphql/reference/shipping-and-fulfillment/deliveryprofileupdate
+
 ### Zones and countries
 
 #### Read zone and country data
@@ -216,11 +219,12 @@ A zone-country CSV data file can be used to create zone information for input.
 ```
 $zoneCountryData = Import-Csv 'data/auspost-zone-country-province.csv'
 $zonesToCreate = [System.Collections.ArrayList]@()
+$zoneInput = $emnullpty
 $zoneCountryData | ForEach-Object {
   $line = $_
   if ($line.zone -ne $zoneInput.name) {
     $zoneInput = @{ name = $line.zone; countries = [System.Collections.ArrayList]@() }
-    $countryInput = $empty
+    $countryInput = $null
     $i = $zonesToCreate.Add($zoneInput)
   }
   if (-not $line.country) {
@@ -265,21 +269,31 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
     profile {
       id
       name
-      profileItems (first: 150) {
-        edges {
-          node {
-            product {
-              id
-              handle
-              vendor
-            }
-            variants (first: 2) {
-              edges {
-                node {
-                  id
-                  title
-                }
+      profileLocationGroups {
+        locationGroupZones (first: 20) {
+          edges {
+            node {
+              zone {
+                id
+                name
               }
+              methodDefinitions (first:30) {
+                edges {
+                  node {
+                    id
+                    name
+                    rateProvider {
+                      ... on DeliveryRateDefinition {
+                        id
+                        price {
+                          currencyCode
+                          amount
+                        }
+                      }
+                    }
+                  }
+                }
+
             }
           }
         }
@@ -310,9 +324,122 @@ $addZonesResult
 
 #### Read shipping rate data
 
+To update the zones we have created with the rates, first we need to get the created zone IDs.
 
+```pwsh
+$getDeliveryProfileZonesQuery = 'query($id: ID!)
+{
+  deliveryProfile (id: $id) {
+    profileLocationGroups {
+      locationGroupZones (first: 20) {
+        edges {
+          node {
+            zone {
+              id
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}'
+
+$getDeliveryProfileZonesData = @{
+  query = $getDeliveryProfileZonesQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileZones = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileZonesData)
+$zoneIdsAndNames = $profileZones.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges.node.zone
+$zoneIdsAndNames | Measure-Object
+```
+
+Read the data file and use it to build the zone updates adding the method definitions.
+
+```pwsh
+$zoneRateData = Import-Csv 'data/auspost-rates-insured-express-to-5kg.csv'
+$zonesToUpdate = [System.Collections.ArrayList]@()
+$currentZone = $null
+$zoneRateData | ForEach-Object {
+  $line = $_
+  if ($line.zone -ne $currentZone) {
+    $currentZone = $line.zone
+    $zone = $zoneIdsAndNames | Where-Object { $_.name -eq $currentZone}
+    if (-not $zone) { throw "Zone $($_.name) not found" }
+    $zoneInput = @{ id = $zone.id; methodDefinitionsToCreate = [System.Collections.ArrayList]@() }
+    $i = $zonesToUpdate.Add($zoneInput)
+  }
+  $weightConditionsInput = [System.Collections.ArrayList]@()
+  $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  if ([decimal]$line.greaterThanKg) {
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.greaterThanKg; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
+  }
+  $methodInput = @{ 
+    active = $true;
+    name = $line.method;
+    rateDefinition = @{ price = @{ amount = [decimal]$line.rateAud; currencyCode = 'AUD' } };
+    weightConditionsToCreate = $weightConditionsInput;
+  }
+  $i = $zoneInput.methodDefinitionsToCreate.Add($methodInput)
+}
+$zonesToUpdate | ConvertTo-Json -Depth 6
+```
 
 #### Uploading rates
+
+```
+$updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
+  deliveryProfileUpdate (id: $id, profile: $profile)
+  {
+    profile {
+      id
+      name
+      profileLocationGroups {
+        locationGroupZones (first: 20) {
+          edges {
+            node {
+              zone {
+                id
+                name
+              }
+              methodDefinitions (first:30) {
+                edges {
+                  node {
+                    id
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}'
+
+$profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
+
+$addRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
+    }
+  }
+}
+
+$addRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $addRates)
+$addRatesResult
+```
 
 
 ## Assigning products to profiles
