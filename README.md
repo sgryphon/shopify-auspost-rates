@@ -443,6 +443,53 @@ $addRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders
 $addRatesResult
 ```
 
+### Replacing existing rates
+
+To replace existing rates, you remove all the old method definitions for that profile,
+and create new ones.
+
+First get the existing rates. This uses the query from 'Get existing shipping profile information',
+with the Australia Post delivery profile.
+
+```
+$getDeliveryProfileData = @{
+  query = $getDeliveryProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+```
+
+The list of existing delivery method definitions can be easily shown:
+
+```
+$methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
+$methodsToDelete
+```
+
+Then follow the instructions in 'Read shipping rate data' and 'Uploading rates' up to the point where
+`$profileLocationGroupUpdateInput` is created.
+
+Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to update the rates.
+
+```
+$updateRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      methodDefinitionsToDelete = $methodsToDelete
+      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
+    }
+  }
+}
+
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $updateRates)
+$updateRatesResult
+```
+
 
 ## Assigning products to profiles
 
