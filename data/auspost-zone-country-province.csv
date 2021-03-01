@@ -1,888 +1,888 @@
-"zone","country","countryName","province","provinceName"
-"Domestic","AU","Australia","ACT","Australian Capital Territory"
-"Domestic","AU","Australia","NSW","New South Wales"
-"Domestic","AU","Australia","NT","Northern Territory"
-"Domestic","AU","Australia","QLD","Queensland"
-"Domestic","AU","Australia","SA","South Australia"
-"Domestic","AU","Australia","TAS","Tasmania"
-"Domestic","AU","Australia","VIC","Victoria"
-"Domestic","AU","Australia","WA","Western Australia"
-"Domestic","CX","Christmas Island",,
-"Domestic","CC","Cocos (Keeling) Islands",,
-"Domestic","NF","Norfolk Island",,
-"Domestic","HM","Heard Island And Mcdonald Islands",,
-"Zone 1: New Zealand","NZ","New Zealand","AUK","Auckland"
-"Zone 1: New Zealand","NZ","New Zealand","BOP","Bay of Plenty"
-"Zone 1: New Zealand","NZ","New Zealand","CAN","Canterbury"
-"Zone 1: New Zealand","NZ","New Zealand","GIS","Gisborne"
-"Zone 1: New Zealand","NZ","New Zealand","HKB","Hawke's Bay"
-"Zone 1: New Zealand","NZ","New Zealand","MWT","Manawatu-Wanganui"
-"Zone 1: New Zealand","NZ","New Zealand","MBH","Marlborough"
-"Zone 1: New Zealand","NZ","New Zealand","NSN","Nelson"
-"Zone 1: New Zealand","NZ","New Zealand","NTL","Northland"
-"Zone 1: New Zealand","NZ","New Zealand","OTA","Otago"
-"Zone 1: New Zealand","NZ","New Zealand","STL","Southland"
-"Zone 1: New Zealand","NZ","New Zealand","TKI","Taranaki"
-"Zone 1: New Zealand","NZ","New Zealand","TAS","Tasman"
-"Zone 1: New Zealand","NZ","New Zealand","WKO","Waikato"
-"Zone 1: New Zealand","NZ","New Zealand","WGN","Wellington"
-"Zone 1: New Zealand","NZ","New Zealand","WTC","West Coast"
-"Zone 2: China","CN","China","AH","Anhui"
-"Zone 2: China","CN","China","BJ","Beijing"
-"Zone 2: China","CN","China","CQ","Chongqing"
-"Zone 2: China","CN","China","FJ","Fujian"
-"Zone 2: China","CN","China","GS","Gansu"
-"Zone 2: China","CN","China","GD","Guangdong"
-"Zone 2: China","CN","China","GX","Guangxi"
-"Zone 2: China","CN","China","GZ","Guizhou"
-"Zone 2: China","CN","China","HI","Hainan"
-"Zone 2: China","CN","China","HE","Hebei"
-"Zone 2: China","CN","China","HL","Heilongjiang"
-"Zone 2: China","CN","China","HA","Henan"
-"Zone 2: China","CN","China","HB","Hubei"
-"Zone 2: China","CN","China","HN","Hunan"
-"Zone 2: China","CN","China","NM","Inner Mongolia"
-"Zone 2: China","CN","China","JS","Jiangsu"
-"Zone 2: China","CN","China","JX","Jiangxi"
-"Zone 2: China","CN","China","JL","Jilin"
-"Zone 2: China","CN","China","LN","Liaoning"
-"Zone 2: China","CN","China","NX","Ningxia"
-"Zone 2: China","CN","China","QH","Qinghai"
-"Zone 2: China","CN","China","SN","Shaanxi"
-"Zone 2: China","CN","China","SD","Shandong"
-"Zone 2: China","CN","China","SH","Shanghai"
-"Zone 2: China","CN","China","SX","Shanxi"
-"Zone 2: China","CN","China","SC","Sichuan"
-"Zone 2: China","CN","China","TJ","Tianjin"
-"Zone 2: China","CN","China","XJ","Xinjiang"
-"Zone 2: China","CN","China","YZ","Xizang"
-"Zone 2: China","CN","China","YN","Yunnan"
-"Zone 2: China","CN","China","ZJ","Zhejiang"
-"Zone 3: Rest of Asia","HK","Hong Kong","HK","Hong Kong Island"
-"Zone 3: Rest of Asia","HK","Hong Kong","KL","Kowloon"
-"Zone 3: Rest of Asia","HK","Hong Kong","NT","New Territories"
-"Zone 3: Rest of Asia","IN","India","AN","Andaman and Nicobar Islands"
-"Zone 3: Rest of Asia","IN","India","AP","Andhra Pradesh"
-"Zone 3: Rest of Asia","IN","India","AR","Arunachal Pradesh"
-"Zone 3: Rest of Asia","IN","India","AS","Assam"
-"Zone 3: Rest of Asia","IN","India","BR","Bihar"
-"Zone 3: Rest of Asia","IN","India","CH","Chandigarh"
-"Zone 3: Rest of Asia","IN","India","CG","Chhattisgarh"
-"Zone 3: Rest of Asia","IN","India","DN","Dadra and Nagar Haveli"
-"Zone 3: Rest of Asia","IN","India","DD","Daman and Diu"
-"Zone 3: Rest of Asia","IN","India","DL","Delhi"
-"Zone 3: Rest of Asia","IN","India","GA","Goa"
-"Zone 3: Rest of Asia","IN","India","GJ","Gujarat"
-"Zone 3: Rest of Asia","IN","India","HR","Haryana"
-"Zone 3: Rest of Asia","IN","India","HP","Himachal Pradesh"
-"Zone 3: Rest of Asia","IN","India","JK","Jammu and Kashmir"
-"Zone 3: Rest of Asia","IN","India","JH","Jharkhand"
-"Zone 3: Rest of Asia","IN","India","KA","Karnataka"
-"Zone 3: Rest of Asia","IN","India","KL","Kerala"
-"Zone 3: Rest of Asia","IN","India","LA","Ladakh"
-"Zone 3: Rest of Asia","IN","India","LD","Lakshadweep"
-"Zone 3: Rest of Asia","IN","India","MP","Madhya Pradesh"
-"Zone 3: Rest of Asia","IN","India","MH","Maharashtra"
-"Zone 3: Rest of Asia","IN","India","MN","Manipur"
-"Zone 3: Rest of Asia","IN","India","ML","Meghalaya"
-"Zone 3: Rest of Asia","IN","India","MZ","Mizoram"
-"Zone 3: Rest of Asia","IN","India","NL","Nagaland"
-"Zone 3: Rest of Asia","IN","India","OR","Odisha"
-"Zone 3: Rest of Asia","IN","India","PY","Puducherry"
-"Zone 3: Rest of Asia","IN","India","PB","Punjab"
-"Zone 3: Rest of Asia","IN","India","RJ","Rajasthan"
-"Zone 3: Rest of Asia","IN","India","SK","Sikkim"
-"Zone 3: Rest of Asia","IN","India","TN","Tamil Nadu"
-"Zone 3: Rest of Asia","IN","India","TS","Telangana"
-"Zone 3: Rest of Asia","IN","India","TR","Tripura"
-"Zone 3: Rest of Asia","IN","India","UP","Uttar Pradesh"
-"Zone 3: Rest of Asia","IN","India","UK","Uttarakhand"
-"Zone 3: Rest of Asia","IN","India","WB","West Bengal"
-"Zone 3: Rest of Asia","ID","Indonesia","AC","Aceh"
-"Zone 3: Rest of Asia","ID","Indonesia","BA","Bali"
-"Zone 3: Rest of Asia","ID","Indonesia","BB","Bangka Belitung"
-"Zone 3: Rest of Asia","ID","Indonesia","BT","Banten"
-"Zone 3: Rest of Asia","ID","Indonesia","BE","Bengkulu"
-"Zone 3: Rest of Asia","ID","Indonesia","GO","Gorontalo"
-"Zone 3: Rest of Asia","ID","Indonesia","JK","Jakarta"
-"Zone 3: Rest of Asia","ID","Indonesia","JA","Jambi"
-"Zone 3: Rest of Asia","ID","Indonesia","JB","Jawa Barat"
-"Zone 3: Rest of Asia","ID","Indonesia","JT","Jawa Tengah"
-"Zone 3: Rest of Asia","ID","Indonesia","JI","Jawa Timur"
-"Zone 3: Rest of Asia","ID","Indonesia","KB","Kalimantan Barat"
-"Zone 3: Rest of Asia","ID","Indonesia","KS","Kalimantan Selatan"
-"Zone 3: Rest of Asia","ID","Indonesia","KT","Kalimantan Tengah"
-"Zone 3: Rest of Asia","ID","Indonesia","KI","Kalimantan Timur"
-"Zone 3: Rest of Asia","ID","Indonesia","KU","Kalimantan Utara"
-"Zone 3: Rest of Asia","ID","Indonesia","KR","Kepulauan Riau"
-"Zone 3: Rest of Asia","ID","Indonesia","LA","Lampung"
-"Zone 3: Rest of Asia","ID","Indonesia","MA","Maluku"
-"Zone 3: Rest of Asia","ID","Indonesia","MU","Maluku Utara"
-"Zone 3: Rest of Asia","ID","Indonesia","SU","North Sumatra"
-"Zone 3: Rest of Asia","ID","Indonesia","NB","Nusa Tenggara Barat"
-"Zone 3: Rest of Asia","ID","Indonesia","NT","Nusa Tenggara Timur"
-"Zone 3: Rest of Asia","ID","Indonesia","PA","Papua"
-"Zone 3: Rest of Asia","ID","Indonesia","PB","Papua Barat"
-"Zone 3: Rest of Asia","ID","Indonesia","RI","Riau"
-"Zone 3: Rest of Asia","ID","Indonesia","SS","South Sumatra"
-"Zone 3: Rest of Asia","ID","Indonesia","SR","Sulawesi Barat"
-"Zone 3: Rest of Asia","ID","Indonesia","SN","Sulawesi Selatan"
-"Zone 3: Rest of Asia","ID","Indonesia","ST","Sulawesi Tengah"
-"Zone 3: Rest of Asia","ID","Indonesia","SG","Sulawesi Tenggara"
-"Zone 3: Rest of Asia","ID","Indonesia","SA","Sulawesi Utara"
-"Zone 3: Rest of Asia","ID","Indonesia","SB","West Sumatra"
-"Zone 3: Rest of Asia","ID","Indonesia","YO","Yogyakarta"
-"Zone 3: Rest of Asia","JP","Japan","JP-01","Hokkaidō"
-"Zone 3: Rest of Asia","JP","Japan","JP-02","Aomori"
-"Zone 3: Rest of Asia","JP","Japan","JP-03","Iwate"
-"Zone 3: Rest of Asia","JP","Japan","JP-04","Miyagi"
-"Zone 3: Rest of Asia","JP","Japan","JP-05","Akita"
-"Zone 3: Rest of Asia","JP","Japan","JP-06","Yamagata"
-"Zone 3: Rest of Asia","JP","Japan","JP-07","Fukushima"
-"Zone 3: Rest of Asia","JP","Japan","JP-08","Ibaraki"
-"Zone 3: Rest of Asia","JP","Japan","JP-09","Tochigi"
-"Zone 3: Rest of Asia","JP","Japan","JP-10","Gunma"
-"Zone 3: Rest of Asia","JP","Japan","JP-11","Saitama"
-"Zone 3: Rest of Asia","JP","Japan","JP-12","Chiba"
-"Zone 3: Rest of Asia","JP","Japan","JP-13","Tōkyō"
-"Zone 3: Rest of Asia","JP","Japan","JP-14","Kanagawa"
-"Zone 3: Rest of Asia","JP","Japan","JP-15","Niigata"
-"Zone 3: Rest of Asia","JP","Japan","JP-16","Toyama"
-"Zone 3: Rest of Asia","JP","Japan","JP-17","Ishikawa"
-"Zone 3: Rest of Asia","JP","Japan","JP-18","Fukui"
-"Zone 3: Rest of Asia","JP","Japan","JP-19","Yamanashi"
-"Zone 3: Rest of Asia","JP","Japan","JP-20","Nagano"
-"Zone 3: Rest of Asia","JP","Japan","JP-21","Gifu"
-"Zone 3: Rest of Asia","JP","Japan","JP-22","Shizuoka"
-"Zone 3: Rest of Asia","JP","Japan","JP-23","Aichi"
-"Zone 3: Rest of Asia","JP","Japan","JP-24","Mie"
-"Zone 3: Rest of Asia","JP","Japan","JP-25","Shiga"
-"Zone 3: Rest of Asia","JP","Japan","JP-26","Kyōto"
-"Zone 3: Rest of Asia","JP","Japan","JP-27","Ōsaka"
-"Zone 3: Rest of Asia","JP","Japan","JP-28","Hyōgo"
-"Zone 3: Rest of Asia","JP","Japan","JP-29","Nara"
-"Zone 3: Rest of Asia","JP","Japan","JP-30","Wakayama"
-"Zone 3: Rest of Asia","JP","Japan","JP-31","Tottori"
-"Zone 3: Rest of Asia","JP","Japan","JP-32","Shimane"
-"Zone 3: Rest of Asia","JP","Japan","JP-33","Okayama"
-"Zone 3: Rest of Asia","JP","Japan","JP-34","Hiroshima"
-"Zone 3: Rest of Asia","JP","Japan","JP-35","Yamaguchi"
-"Zone 3: Rest of Asia","JP","Japan","JP-36","Tokushima"
-"Zone 3: Rest of Asia","JP","Japan","JP-37","Kagawa"
-"Zone 3: Rest of Asia","JP","Japan","JP-38","Ehime"
-"Zone 3: Rest of Asia","JP","Japan","JP-39","Kōchi"
-"Zone 3: Rest of Asia","JP","Japan","JP-40","Fukuoka"
-"Zone 3: Rest of Asia","JP","Japan","JP-41","Saga"
-"Zone 3: Rest of Asia","JP","Japan","JP-42","Nagasaki"
-"Zone 3: Rest of Asia","JP","Japan","JP-43","Kumamoto"
-"Zone 3: Rest of Asia","JP","Japan","JP-44","Ōita"
-"Zone 3: Rest of Asia","JP","Japan","JP-45","Miyazaki"
-"Zone 3: Rest of Asia","JP","Japan","JP-46","Kagoshima"
-"Zone 3: Rest of Asia","JP","Japan","JP-47","Okinawa"
-"Zone 3: Rest of Asia","MY","Malaysia","JHR","Johor"
-"Zone 3: Rest of Asia","MY","Malaysia","KDH","Kedah"
-"Zone 3: Rest of Asia","MY","Malaysia","KTN","Kelantan"
-"Zone 3: Rest of Asia","MY","Malaysia","KUL","Kuala Lumpur"
-"Zone 3: Rest of Asia","MY","Malaysia","LBN","Labuan"
-"Zone 3: Rest of Asia","MY","Malaysia","MLK","Melaka"
-"Zone 3: Rest of Asia","MY","Malaysia","NSN","Negeri Sembilan"
-"Zone 3: Rest of Asia","MY","Malaysia","PHG","Pahang"
-"Zone 3: Rest of Asia","MY","Malaysia","PNG","Penang"
-"Zone 3: Rest of Asia","MY","Malaysia","PRK","Perak"
-"Zone 3: Rest of Asia","MY","Malaysia","PLS","Perlis"
-"Zone 3: Rest of Asia","MY","Malaysia","PJY","Putrajaya"
-"Zone 3: Rest of Asia","MY","Malaysia","SBH","Sabah"
-"Zone 3: Rest of Asia","MY","Malaysia","SWK","Sarawak"
-"Zone 3: Rest of Asia","MY","Malaysia","SGR","Selangor"
-"Zone 3: Rest of Asia","MY","Malaysia","TRG","Terengganu"
-"Zone 3: Rest of Asia","MV","Maldives",,
-"Zone 3: Rest of Asia","SG","Singapore",,
-"Zone 3: Rest of Asia","KR","South Korea","KR-26","Busan"
-"Zone 3: Rest of Asia","KR","South Korea","KR-43","Chungbuk"
-"Zone 3: Rest of Asia","KR","South Korea","KR-44","Chungnam"
-"Zone 3: Rest of Asia","KR","South Korea","KR-27","Daegu"
-"Zone 3: Rest of Asia","KR","South Korea","KR-30","Daejeon"
-"Zone 3: Rest of Asia","KR","South Korea","KR-42","Gangwon"
-"Zone 3: Rest of Asia","KR","South Korea","KR-29","Gwangju"
-"Zone 3: Rest of Asia","KR","South Korea","KR-47","Gyeongbuk"
-"Zone 3: Rest of Asia","KR","South Korea","KR-41","Gyeonggi"
-"Zone 3: Rest of Asia","KR","South Korea","KR-48","Gyeongnam"
-"Zone 3: Rest of Asia","KR","South Korea","KR-28","Incheon"
-"Zone 3: Rest of Asia","KR","South Korea","KR-49","Jeju"
-"Zone 3: Rest of Asia","KR","South Korea","KR-45","Jeonbuk"
-"Zone 3: Rest of Asia","KR","South Korea","KR-46","Jeonnam"
-"Zone 3: Rest of Asia","KR","South Korea","KR-50","Sejong"
-"Zone 3: Rest of Asia","KR","South Korea","KR-11","Seoul"
-"Zone 3: Rest of Asia","KR","South Korea","KR-31","Ulsan"
-"Zone 3: Rest of Asia","TW","Taiwan",,
-"Zone 3: Rest of Asia","TH","Thailand","TH-37","Amnat Charoen"
-"Zone 3: Rest of Asia","TH","Thailand","TH-15","Ang Thong"
-"Zone 3: Rest of Asia","TH","Thailand","TH-10","Bangkok"
-"Zone 3: Rest of Asia","TH","Thailand","TH-38","Bueng Kan"
-"Zone 3: Rest of Asia","TH","Thailand","TH-31","Buriram"
-"Zone 3: Rest of Asia","TH","Thailand","TH-24","Chachoengsao"
-"Zone 3: Rest of Asia","TH","Thailand","TH-18","Chai Nat"
-"Zone 3: Rest of Asia","TH","Thailand","TH-36","Chaiyaphum"
-"Zone 3: Rest of Asia","TH","Thailand","TH-22","Chanthaburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-50","Chiang Mai"
-"Zone 3: Rest of Asia","TH","Thailand","TH-57","Chiang Rai"
-"Zone 3: Rest of Asia","TH","Thailand","TH-20","Chon Buri"
-"Zone 3: Rest of Asia","TH","Thailand","TH-86","Chumphon"
-"Zone 3: Rest of Asia","TH","Thailand","TH-46","Kalasin"
-"Zone 3: Rest of Asia","TH","Thailand","TH-62","Kamphaeng Phet"
-"Zone 3: Rest of Asia","TH","Thailand","TH-71","Kanchanaburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-40","Khon Kaen"
-"Zone 3: Rest of Asia","TH","Thailand","TH-81","Krabi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-52","Lampang"
-"Zone 3: Rest of Asia","TH","Thailand","TH-51","Lamphun"
-"Zone 3: Rest of Asia","TH","Thailand","TH-42","Loei"
-"Zone 3: Rest of Asia","TH","Thailand","TH-16","Lopburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-58","Mae Hong Son"
-"Zone 3: Rest of Asia","TH","Thailand","TH-44","Maha Sarakham"
-"Zone 3: Rest of Asia","TH","Thailand","TH-49","Mukdahan"
-"Zone 3: Rest of Asia","TH","Thailand","TH-26","Nakhon Nayok"
-"Zone 3: Rest of Asia","TH","Thailand","TH-73","Nakhon Pathom"
-"Zone 3: Rest of Asia","TH","Thailand","TH-48","Nakhon Phanom"
-"Zone 3: Rest of Asia","TH","Thailand","TH-30","Nakhon Ratchasima"
-"Zone 3: Rest of Asia","TH","Thailand","TH-60","Nakhon Sawan"
-"Zone 3: Rest of Asia","TH","Thailand","TH-80","Nakhon Si Thammarat"
-"Zone 3: Rest of Asia","TH","Thailand","TH-55","Nan"
-"Zone 3: Rest of Asia","TH","Thailand","TH-96","Narathiwat"
-"Zone 3: Rest of Asia","TH","Thailand","TH-39","Nong Bua Lam Phu"
-"Zone 3: Rest of Asia","TH","Thailand","TH-43","Nong Khai"
-"Zone 3: Rest of Asia","TH","Thailand","TH-12","Nonthaburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-13","Pathum Thani"
-"Zone 3: Rest of Asia","TH","Thailand","TH-94","Pattani"
-"Zone 3: Rest of Asia","TH","Thailand","TH-S","Pattaya"
-"Zone 3: Rest of Asia","TH","Thailand","TH-82","Phangnga"
-"Zone 3: Rest of Asia","TH","Thailand","TH-93","Phatthalung"
-"Zone 3: Rest of Asia","TH","Thailand","TH-56","Phayao"
-"Zone 3: Rest of Asia","TH","Thailand","TH-67","Phetchabun"
-"Zone 3: Rest of Asia","TH","Thailand","TH-76","Phetchaburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-66","Phichit"
-"Zone 3: Rest of Asia","TH","Thailand","TH-65","Phitsanulok"
-"Zone 3: Rest of Asia","TH","Thailand","TH-14","Phra Nakhon Si Ayutthaya"
-"Zone 3: Rest of Asia","TH","Thailand","TH-54","Phrae"
-"Zone 3: Rest of Asia","TH","Thailand","TH-83","Phuket"
-"Zone 3: Rest of Asia","TH","Thailand","TH-25","Prachin Buri"
-"Zone 3: Rest of Asia","TH","Thailand","TH-77","Prachuap Khiri Khan"
-"Zone 3: Rest of Asia","TH","Thailand","TH-85","Ranong"
-"Zone 3: Rest of Asia","TH","Thailand","TH-70","Ratchaburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-21","Rayong"
-"Zone 3: Rest of Asia","TH","Thailand","TH-45","Roi Et"
-"Zone 3: Rest of Asia","TH","Thailand","TH-27","Sa Kaeo"
-"Zone 3: Rest of Asia","TH","Thailand","TH-47","Sakon Nakhon"
-"Zone 3: Rest of Asia","TH","Thailand","TH-11","Samut Prakan"
-"Zone 3: Rest of Asia","TH","Thailand","TH-74","Samut Sakhon"
-"Zone 3: Rest of Asia","TH","Thailand","TH-75","Samut Songkhram"
-"Zone 3: Rest of Asia","TH","Thailand","TH-19","Saraburi"
-"Zone 3: Rest of Asia","TH","Thailand","TH-91","Satun"
-"Zone 3: Rest of Asia","TH","Thailand","TH-17","Sing Buri"
-"Zone 3: Rest of Asia","TH","Thailand","TH-33","Sisaket"
-"Zone 3: Rest of Asia","TH","Thailand","TH-90","Songkhla"
-"Zone 3: Rest of Asia","TH","Thailand","TH-64","Sukhothai"
-"Zone 3: Rest of Asia","TH","Thailand","TH-72","Suphan Buri"
-"Zone 3: Rest of Asia","TH","Thailand","TH-84","Surat Thani"
-"Zone 3: Rest of Asia","TH","Thailand","TH-32","Surin"
-"Zone 3: Rest of Asia","TH","Thailand","TH-63","Tak"
-"Zone 3: Rest of Asia","TH","Thailand","TH-92","Trang"
-"Zone 3: Rest of Asia","TH","Thailand","TH-23","Trat"
-"Zone 3: Rest of Asia","TH","Thailand","TH-34","Ubon Ratchathani"
-"Zone 3: Rest of Asia","TH","Thailand","TH-41","Udon Thani"
-"Zone 3: Rest of Asia","TH","Thailand","TH-61","Uthai Thani"
-"Zone 3: Rest of Asia","TH","Thailand","TH-53","Uttaradit"
-"Zone 3: Rest of Asia","TH","Thailand","TH-95","Yala"
-"Zone 3: Rest of Asia","TH","Thailand","TH-35","Yasothon"
-"Zone 3: Rest of Asia","VN","Vietnam",,
-"Zone 4: USA & Canada","CA","Canada","AB","Alberta"
-"Zone 4: USA & Canada","CA","Canada","BC","British Columbia"
-"Zone 4: USA & Canada","CA","Canada","MB","Manitoba"
-"Zone 4: USA & Canada","CA","Canada","NB","New Brunswick"
-"Zone 4: USA & Canada","CA","Canada","NL","Newfoundland and Labrador"
-"Zone 4: USA & Canada","CA","Canada","NT","Northwest Territories"
-"Zone 4: USA & Canada","CA","Canada","NS","Nova Scotia"
-"Zone 4: USA & Canada","CA","Canada","NU","Nunavut"
-"Zone 4: USA & Canada","CA","Canada","ON","Ontario"
-"Zone 4: USA & Canada","CA","Canada","PE","Prince Edward Island"
-"Zone 4: USA & Canada","CA","Canada","QC","Quebec"
-"Zone 4: USA & Canada","CA","Canada","SK","Saskatchewan"
-"Zone 4: USA & Canada","CA","Canada","YT","Yukon"
-"Zone 4: USA & Canada","US","United States","AL","Alabama"
-"Zone 4: USA & Canada","US","United States","AK","Alaska"
-"Zone 4: USA & Canada","US","United States","AZ","Arizona"
-"Zone 4: USA & Canada","US","United States","AR","Arkansas"
-"Zone 4: USA & Canada","US","United States","CA","California"
-"Zone 4: USA & Canada","US","United States","CO","Colorado"
-"Zone 4: USA & Canada","US","United States","CT","Connecticut"
-"Zone 4: USA & Canada","US","United States","DE","Delaware"
-"Zone 4: USA & Canada","US","United States","DC","District of Columbia"
-"Zone 4: USA & Canada","US","United States","FL","Florida"
-"Zone 4: USA & Canada","US","United States","GA","Georgia"
-"Zone 4: USA & Canada","US","United States","HI","Hawaii"
-"Zone 4: USA & Canada","US","United States","ID","Idaho"
-"Zone 4: USA & Canada","US","United States","IL","Illinois"
-"Zone 4: USA & Canada","US","United States","IN","Indiana"
-"Zone 4: USA & Canada","US","United States","IA","Iowa"
-"Zone 4: USA & Canada","US","United States","KS","Kansas"
-"Zone 4: USA & Canada","US","United States","KY","Kentucky"
-"Zone 4: USA & Canada","US","United States","LA","Louisiana"
-"Zone 4: USA & Canada","US","United States","ME","Maine"
-"Zone 4: USA & Canada","US","United States","MD","Maryland"
-"Zone 4: USA & Canada","US","United States","MA","Massachusetts"
-"Zone 4: USA & Canada","US","United States","MI","Michigan"
-"Zone 4: USA & Canada","US","United States","MN","Minnesota"
-"Zone 4: USA & Canada","US","United States","MS","Mississippi"
-"Zone 4: USA & Canada","US","United States","MO","Missouri"
-"Zone 4: USA & Canada","US","United States","MT","Montana"
-"Zone 4: USA & Canada","US","United States","NE","Nebraska"
-"Zone 4: USA & Canada","US","United States","NV","Nevada"
-"Zone 4: USA & Canada","US","United States","NH","New Hampshire"
-"Zone 4: USA & Canada","US","United States","NJ","New Jersey"
-"Zone 4: USA & Canada","US","United States","NM","New Mexico"
-"Zone 4: USA & Canada","US","United States","NY","New York"
-"Zone 4: USA & Canada","US","United States","NC","North Carolina"
-"Zone 4: USA & Canada","US","United States","ND","North Dakota"
-"Zone 4: USA & Canada","US","United States","OH","Ohio"
-"Zone 4: USA & Canada","US","United States","OK","Oklahoma"
-"Zone 4: USA & Canada","US","United States","OR","Oregon"
-"Zone 4: USA & Canada","US","United States","PA","Pennsylvania"
-"Zone 4: USA & Canada","US","United States","PR","Puerto Rico"
-"Zone 4: USA & Canada","US","United States","RI","Rhode Island"
-"Zone 4: USA & Canada","US","United States","SC","South Carolina"
-"Zone 4: USA & Canada","US","United States","SD","South Dakota"
-"Zone 4: USA & Canada","US","United States","TN","Tennessee"
-"Zone 4: USA & Canada","US","United States","TX","Texas"
-"Zone 4: USA & Canada","US","United States","UT","Utah"
-"Zone 4: USA & Canada","US","United States","VT","Vermont"
-"Zone 4: USA & Canada","US","United States","VI","Virgin Islands"
-"Zone 4: USA & Canada","US","United States","VA","Virginia"
-"Zone 4: USA & Canada","US","United States","WA","Washington"
-"Zone 4: USA & Canada","US","United States","WV","West Virginia"
-"Zone 4: USA & Canada","US","United States","WI","Wisconsin"
-"Zone 4: USA & Canada","US","United States","WY","Wyoming"
-"Zone 4: USA & Canada","US","United States","AA","Armed Forces Americas"
-"Zone 4: USA & Canada","US","United States","AE","Armed Forces Europe"
-"Zone 4: USA & Canada","US","United States","AP","Armed Forces Pacific"
-"Zone 4: USA & Canada","UM","United States Minor Outlying Islands",,
-"Zone 5: Pacific islands","US","United States","AS","American Samoa"
-"Zone 5: Pacific islands","US","United States","FM","Federated States of Micronesia"
-"Zone 5: Pacific islands","US","United States","GU","Guam"
-"Zone 5: Pacific islands","US","United States","MH","Marshall Islands"
-"Zone 5: Pacific islands","US","United States","MP","Northern Mariana Islands"
-"Zone 5: Pacific islands","US","United States","PW","Palau"
-"Zone 5: Pacific islands","BD","Bangladesh",,
-"Zone 5: Pacific islands","BN","Brunei",,
-"Zone 5: Pacific islands","KH","Cambodia",,
-"Zone 5: Pacific islands","LA","Lao People's Democratic Republic",,
-"Zone 5: Pacific islands","MO","Macao",,
-"Zone 5: Pacific islands","CK","Cook Islands",,
-"Zone 5: Pacific islands","FJ","Fiji",,
-"Zone 5: Pacific islands","PF","French Polynesia",,
-"Zone 5: Pacific islands","KI","Kiribati",,
-"Zone 5: Pacific islands","WS","Samoa",,
-"Zone 5: Pacific islands","TL","Timor Leste",,
-"Zone 5: Pacific islands","MM","Myanmar",,
-"Zone 5: Pacific islands","NP","Nepal",,
-"Zone 5: Pacific islands","PK","Pakistan",,
-"Zone 5: Pacific islands","PH","Philippines","PH-ABR","Abra"
-"Zone 5: Pacific islands","PH","Philippines","PH-AGN","Agusan del Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-AGS","Agusan del Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-AKL","Aklan"
-"Zone 5: Pacific islands","PH","Philippines","PH-ALB","Albay"
-"Zone 5: Pacific islands","PH","Philippines","PH-ANT","Antique"
-"Zone 5: Pacific islands","PH","Philippines","PH-APA","Apayao"
-"Zone 5: Pacific islands","PH","Philippines","PH-AUR","Aurora"
-"Zone 5: Pacific islands","PH","Philippines","PH-BAS","Basilan"
-"Zone 5: Pacific islands","PH","Philippines","PH-BAN","Bataan"
-"Zone 5: Pacific islands","PH","Philippines","PH-BTN","Batanes"
-"Zone 5: Pacific islands","PH","Philippines","PH-BTG","Batangas"
-"Zone 5: Pacific islands","PH","Philippines","PH-BEN","Benguet"
-"Zone 5: Pacific islands","PH","Philippines","PH-BIL","Biliran"
-"Zone 5: Pacific islands","PH","Philippines","PH-BOH","Bohol"
-"Zone 5: Pacific islands","PH","Philippines","PH-BUK","Bukidnon"
-"Zone 5: Pacific islands","PH","Philippines","PH-BUL","Bulacan"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAG","Cagayan"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAN","Camarines Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAS","Camarines Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAM","Camiguin"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAP","Capiz"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAT","Catanduanes"
-"Zone 5: Pacific islands","PH","Philippines","PH-CAV","Cavite"
-"Zone 5: Pacific islands","PH","Philippines","PH-CEB","Cebu"
-"Zone 5: Pacific islands","PH","Philippines","PH-NCO","Cotabato"
-"Zone 5: Pacific islands","PH","Philippines","PH-COM","Davao de Oro"
-"Zone 5: Pacific islands","PH","Philippines","PH-DAV","Davao del Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-DAS","Davao del Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-DVO","Davao Occidental"
-"Zone 5: Pacific islands","PH","Philippines","PH-DAO","Davao Oriental"
-"Zone 5: Pacific islands","PH","Philippines","PH-DIN","Dinagat Islands"
-"Zone 5: Pacific islands","PH","Philippines","PH-EAS","Eastern Samar"
-"Zone 5: Pacific islands","PH","Philippines","PH-GUI","Guimaras"
-"Zone 5: Pacific islands","PH","Philippines","PH-IFU","Ifugao"
-"Zone 5: Pacific islands","PH","Philippines","PH-ILN","Ilocos Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-ILS","Ilocos Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-ILI","Iloilo"
-"Zone 5: Pacific islands","PH","Philippines","PH-ISA","Isabela"
-"Zone 5: Pacific islands","PH","Philippines","PH-KAL","Kalinga"
-"Zone 5: Pacific islands","PH","Philippines","PH-LUN","La Union"
-"Zone 5: Pacific islands","PH","Philippines","PH-LAG","Laguna"
-"Zone 5: Pacific islands","PH","Philippines","PH-LAN","Lanao del Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-LAS","Lanao del Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-LEY","Leyte"
-"Zone 5: Pacific islands","PH","Philippines","PH-MAG","Maguindanao"
-"Zone 5: Pacific islands","PH","Philippines","PH-MAD","Marinduque"
-"Zone 5: Pacific islands","PH","Philippines","PH-MAS","Masbate"
-"Zone 5: Pacific islands","PH","Philippines","PH-00","Metro Manila"
-"Zone 5: Pacific islands","PH","Philippines","PH-MSC","Misamis Occidental"
-"Zone 5: Pacific islands","PH","Philippines","PH-MSR","Misamis Oriental"
-"Zone 5: Pacific islands","PH","Philippines","PH-MOU","Mountain Province"
-"Zone 5: Pacific islands","PH","Philippines","PH-NEC","Negros Occidental"
-"Zone 5: Pacific islands","PH","Philippines","PH-NER","Negros Oriental"
-"Zone 5: Pacific islands","PH","Philippines","PH-NSA","Northern Samar"
-"Zone 5: Pacific islands","PH","Philippines","PH-NUE","Nueva Ecija"
-"Zone 5: Pacific islands","PH","Philippines","PH-NUV","Nueva Vizcaya"
-"Zone 5: Pacific islands","PH","Philippines","PH-MDC","Occidental Mindoro"
-"Zone 5: Pacific islands","PH","Philippines","PH-MDR","Oriental Mindoro"
-"Zone 5: Pacific islands","PH","Philippines","PH-PLW","Palawan"
-"Zone 5: Pacific islands","PH","Philippines","PH-PAM","Pampanga"
-"Zone 5: Pacific islands","PH","Philippines","PH-PAN","Pangasinan"
-"Zone 5: Pacific islands","PH","Philippines","PH-QUE","Quezon"
-"Zone 5: Pacific islands","PH","Philippines","PH-QUI","Quirino"
-"Zone 5: Pacific islands","PH","Philippines","PH-RIZ","Rizal"
-"Zone 5: Pacific islands","PH","Philippines","PH-ROM","Romblon"
-"Zone 5: Pacific islands","PH","Philippines","PH-WSA","Samar"
-"Zone 5: Pacific islands","PH","Philippines","PH-SAR","Sarangani"
-"Zone 5: Pacific islands","PH","Philippines","PH-SIG","Siquijor"
-"Zone 5: Pacific islands","PH","Philippines","PH-SOR","Sorsogon"
-"Zone 5: Pacific islands","PH","Philippines","PH-SCO","South Cotabato"
-"Zone 5: Pacific islands","PH","Philippines","PH-SLE","Southern Leyte"
-"Zone 5: Pacific islands","PH","Philippines","PH-SUK","Sultan Kudarat"
-"Zone 5: Pacific islands","PH","Philippines","PH-SLU","Sulu"
-"Zone 5: Pacific islands","PH","Philippines","PH-SUN","Surigao del Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-SUR","Surigao del Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-TAR","Tarlac"
-"Zone 5: Pacific islands","PH","Philippines","PH-TAW","Tawi-Tawi"
-"Zone 5: Pacific islands","PH","Philippines","PH-ZMB","Zambales"
-"Zone 5: Pacific islands","PH","Philippines","PH-ZAN","Zamboanga del Norte"
-"Zone 5: Pacific islands","PH","Philippines","PH-ZAS","Zamboanga del Sur"
-"Zone 5: Pacific islands","PH","Philippines","PH-ZSI","Zamboanga Sibugay"
-"Zone 5: Pacific islands","LK","Sri Lanka",,
-"Zone 5: Pacific islands","NR","Nauru",,
-"Zone 5: Pacific islands","NC","New Caledonia",,
-"Zone 5: Pacific islands","NU","Niue",,
-"Zone 5: Pacific islands","PG","Papua New Guinea",,
-"Zone 5: Pacific islands","PN","Pitcairn",,
-"Zone 5: Pacific islands","SB","Solomon Islands",,
-"Zone 5: Pacific islands","TK","Tokelau",,
-"Zone 5: Pacific islands","TO","Tonga",,
-"Zone 5: Pacific islands","TV","Tuvalu",,
-"Zone 5: Pacific islands","VU","Vanuatu",,
-"Zone 5: Pacific islands","WF","Wallis And Futuna",,
-"Zone 6: UK & Ireland","IE","Ireland","CW","Carlow"
-"Zone 6: UK & Ireland","IE","Ireland","CN","Cavan"
-"Zone 6: UK & Ireland","IE","Ireland","CE","Clare"
-"Zone 6: UK & Ireland","IE","Ireland","CO","Cork"
-"Zone 6: UK & Ireland","IE","Ireland","DL","Donegal"
-"Zone 6: UK & Ireland","IE","Ireland","D","Dublin"
-"Zone 6: UK & Ireland","IE","Ireland","G","Galway"
-"Zone 6: UK & Ireland","IE","Ireland","KY","Kerry"
-"Zone 6: UK & Ireland","IE","Ireland","KE","Kildare"
-"Zone 6: UK & Ireland","IE","Ireland","KK","Kilkenny"
-"Zone 6: UK & Ireland","IE","Ireland","LS","Laois"
-"Zone 6: UK & Ireland","IE","Ireland","LM","Leitrim"
-"Zone 6: UK & Ireland","IE","Ireland","LK","Limerick"
-"Zone 6: UK & Ireland","IE","Ireland","LD","Longford"
-"Zone 6: UK & Ireland","IE","Ireland","LH","Louth"
-"Zone 6: UK & Ireland","IE","Ireland","MO","Mayo"
-"Zone 6: UK & Ireland","IE","Ireland","MH","Meath"
-"Zone 6: UK & Ireland","IE","Ireland","MN","Monaghan"
-"Zone 6: UK & Ireland","IE","Ireland","OY","Offaly"
-"Zone 6: UK & Ireland","IE","Ireland","RN","Roscommon"
-"Zone 6: UK & Ireland","IE","Ireland","SO","Sligo"
-"Zone 6: UK & Ireland","IE","Ireland","TA","Tipperary"
-"Zone 6: UK & Ireland","IE","Ireland","WD","Waterford"
-"Zone 6: UK & Ireland","IE","Ireland","WH","Westmeath"
-"Zone 6: UK & Ireland","IE","Ireland","WX","Wexford"
-"Zone 6: UK & Ireland","IE","Ireland","WW","Wicklow"
-"Zone 6: UK & Ireland","GB","United Kingdom",,
-"Zone 6: UK & Ireland","GG","Guernsey",,
-"Zone 6: UK & Ireland","IM","Isle Of Man",,
-"Zone 6: UK & Ireland","JE","Jersey",,
-"Zone 7: Major Europe","FR","France",,
-"Zone 7: Major Europe","DE","Germany",,
-"Zone 7: Major Europe","IT","Italy","AG","Agrigento"
-"Zone 7: Major Europe","IT","Italy","AL","Alessandria"
-"Zone 7: Major Europe","IT","Italy","AN","Ancona"
-"Zone 7: Major Europe","IT","Italy","AO","Aosta"
-"Zone 7: Major Europe","IT","Italy","AR","Arezzo"
-"Zone 7: Major Europe","IT","Italy","AP","Ascoli Piceno"
-"Zone 7: Major Europe","IT","Italy","AT","Asti"
-"Zone 7: Major Europe","IT","Italy","AV","Avellino"
-"Zone 7: Major Europe","IT","Italy","BA","Bari"
-"Zone 7: Major Europe","IT","Italy","BT","Barletta-Andria-Trani"
-"Zone 7: Major Europe","IT","Italy","BL","Belluno"
-"Zone 7: Major Europe","IT","Italy","BN","Benevento"
-"Zone 7: Major Europe","IT","Italy","BG","Bergamo"
-"Zone 7: Major Europe","IT","Italy","BI","Biella"
-"Zone 7: Major Europe","IT","Italy","BO","Bologna"
-"Zone 7: Major Europe","IT","Italy","BZ","Bolzano"
-"Zone 7: Major Europe","IT","Italy","BS","Brescia"
-"Zone 7: Major Europe","IT","Italy","BR","Brindisi"
-"Zone 7: Major Europe","IT","Italy","CA","Cagliari"
-"Zone 7: Major Europe","IT","Italy","CL","Caltanissetta"
-"Zone 7: Major Europe","IT","Italy","CB","Campobasso"
-"Zone 7: Major Europe","IT","Italy","CI","Carbonia-Iglesias"
-"Zone 7: Major Europe","IT","Italy","CE","Caserta"
-"Zone 7: Major Europe","IT","Italy","CT","Catania"
-"Zone 7: Major Europe","IT","Italy","CZ","Catanzaro"
-"Zone 7: Major Europe","IT","Italy","CH","Chieti"
-"Zone 7: Major Europe","IT","Italy","CO","Como"
-"Zone 7: Major Europe","IT","Italy","CS","Cosenza"
-"Zone 7: Major Europe","IT","Italy","CR","Cremona"
-"Zone 7: Major Europe","IT","Italy","KR","Crotone"
-"Zone 7: Major Europe","IT","Italy","CN","Cuneo"
-"Zone 7: Major Europe","IT","Italy","EN","Enna"
-"Zone 7: Major Europe","IT","Italy","FM","Fermo"
-"Zone 7: Major Europe","IT","Italy","FE","Ferrara"
-"Zone 7: Major Europe","IT","Italy","FI","Firenze"
-"Zone 7: Major Europe","IT","Italy","FG","Foggia"
-"Zone 7: Major Europe","IT","Italy","FC","Forlì-Cesena"
-"Zone 7: Major Europe","IT","Italy","FR","Frosinone"
-"Zone 7: Major Europe","IT","Italy","GE","Genova"
-"Zone 7: Major Europe","IT","Italy","GO","Gorizia"
-"Zone 7: Major Europe","IT","Italy","GR","Grosseto"
-"Zone 7: Major Europe","IT","Italy","IM","Imperia"
-"Zone 7: Major Europe","IT","Italy","IS","Isernia"
-"Zone 7: Major Europe","IT","Italy","AQ","L'Aquila"
-"Zone 7: Major Europe","IT","Italy","SP","La Spezia"
-"Zone 7: Major Europe","IT","Italy","LT","Latina"
-"Zone 7: Major Europe","IT","Italy","LE","Lecce"
-"Zone 7: Major Europe","IT","Italy","LC","Lecco"
-"Zone 7: Major Europe","IT","Italy","LI","Livorno"
-"Zone 7: Major Europe","IT","Italy","LO","Lodi"
-"Zone 7: Major Europe","IT","Italy","LU","Lucca"
-"Zone 7: Major Europe","IT","Italy","MC","Macerata"
-"Zone 7: Major Europe","IT","Italy","MN","Mantova"
-"Zone 7: Major Europe","IT","Italy","MS","Massa-Carrara"
-"Zone 7: Major Europe","IT","Italy","MT","Matera"
-"Zone 7: Major Europe","IT","Italy","VS","Medio Campidano"
-"Zone 7: Major Europe","IT","Italy","ME","Messina"
-"Zone 7: Major Europe","IT","Italy","MI","Milano"
-"Zone 7: Major Europe","IT","Italy","MO","Modena"
-"Zone 7: Major Europe","IT","Italy","MB","Monza e Brianza"
-"Zone 7: Major Europe","IT","Italy","NA","Napoli"
-"Zone 7: Major Europe","IT","Italy","NO","Novara"
-"Zone 7: Major Europe","IT","Italy","NU","Nuoro"
-"Zone 7: Major Europe","IT","Italy","OG","Ogliastra"
-"Zone 7: Major Europe","IT","Italy","OT","Olbia-Tempio"
-"Zone 7: Major Europe","IT","Italy","OR","Oristano"
-"Zone 7: Major Europe","IT","Italy","PD","Padova"
-"Zone 7: Major Europe","IT","Italy","PA","Palermo"
-"Zone 7: Major Europe","IT","Italy","PR","Parma"
-"Zone 7: Major Europe","IT","Italy","PV","Pavia"
-"Zone 7: Major Europe","IT","Italy","PG","Perugia"
-"Zone 7: Major Europe","IT","Italy","PU","Pesaro e Urbino"
-"Zone 7: Major Europe","IT","Italy","PE","Pescara"
-"Zone 7: Major Europe","IT","Italy","PC","Piacenza"
-"Zone 7: Major Europe","IT","Italy","PI","Pisa"
-"Zone 7: Major Europe","IT","Italy","PT","Pistoia"
-"Zone 7: Major Europe","IT","Italy","PN","Pordenone"
-"Zone 7: Major Europe","IT","Italy","PZ","Potenza"
-"Zone 7: Major Europe","IT","Italy","PO","Prato"
-"Zone 7: Major Europe","IT","Italy","RG","Ragusa"
-"Zone 7: Major Europe","IT","Italy","RA","Ravenna"
-"Zone 7: Major Europe","IT","Italy","RC","Reggio Calabria"
-"Zone 7: Major Europe","IT","Italy","RE","Reggio Emilia"
-"Zone 7: Major Europe","IT","Italy","RI","Rieti"
-"Zone 7: Major Europe","IT","Italy","RN","Rimini"
-"Zone 7: Major Europe","IT","Italy","RM","Roma"
-"Zone 7: Major Europe","IT","Italy","RO","Rovigo"
-"Zone 7: Major Europe","IT","Italy","SA","Salerno"
-"Zone 7: Major Europe","IT","Italy","SS","Sassari"
-"Zone 7: Major Europe","IT","Italy","SV","Savona"
-"Zone 7: Major Europe","IT","Italy","SI","Siena"
-"Zone 7: Major Europe","IT","Italy","SR","Siracusa"
-"Zone 7: Major Europe","IT","Italy","SO","Sondrio"
-"Zone 7: Major Europe","IT","Italy","TA","Taranto"
-"Zone 7: Major Europe","IT","Italy","TE","Teramo"
-"Zone 7: Major Europe","IT","Italy","TR","Terni"
-"Zone 7: Major Europe","IT","Italy","TO","Torino"
-"Zone 7: Major Europe","IT","Italy","TP","Trapani"
-"Zone 7: Major Europe","IT","Italy","TN","Trento"
-"Zone 7: Major Europe","IT","Italy","TV","Treviso"
-"Zone 7: Major Europe","IT","Italy","TS","Trieste"
-"Zone 7: Major Europe","IT","Italy","UD","Udine"
-"Zone 7: Major Europe","IT","Italy","VA","Varese"
-"Zone 7: Major Europe","IT","Italy","VE","Venezia"
-"Zone 7: Major Europe","IT","Italy","VB","Verbano-Cusio-Ossola"
-"Zone 7: Major Europe","IT","Italy","VC","Vercelli"
-"Zone 7: Major Europe","IT","Italy","VR","Verona"
-"Zone 7: Major Europe","IT","Italy","VV","Vibo Valentia"
-"Zone 7: Major Europe","IT","Italy","VI","Vicenza"
-"Zone 7: Major Europe","IT","Italy","VT","Viterbo"
-"Zone 7: Major Europe","NL","Netherlands",,
-"Zone 7: Major Europe","NO","Norway",,
-"Zone 7: Major Europe","ES","Spain","C","A Coruña"
-"Zone 7: Major Europe","ES","Spain","VI","Álava"
-"Zone 7: Major Europe","ES","Spain","AB","Albacete"
-"Zone 7: Major Europe","ES","Spain","A","Alicante"
-"Zone 7: Major Europe","ES","Spain","AL","Almería"
-"Zone 7: Major Europe","ES","Spain","O","Asturias"
-"Zone 7: Major Europe","ES","Spain","AV","Ávila"
-"Zone 7: Major Europe","ES","Spain","BA","Badajoz"
-"Zone 7: Major Europe","ES","Spain","PM","Balears"
-"Zone 7: Major Europe","ES","Spain","B","Barcelona"
-"Zone 7: Major Europe","ES","Spain","BU","Burgos"
-"Zone 7: Major Europe","ES","Spain","CC","Cáceres"
-"Zone 7: Major Europe","ES","Spain","CA","Cádiz"
-"Zone 7: Major Europe","ES","Spain","S","Cantabria"
-"Zone 7: Major Europe","ES","Spain","CS","Castellón"
-"Zone 7: Major Europe","ES","Spain","CE","Ceuta"
-"Zone 7: Major Europe","ES","Spain","CR","Ciudad Real"
-"Zone 7: Major Europe","ES","Spain","CO","Córdoba"
-"Zone 7: Major Europe","ES","Spain","CU","Cuenca"
-"Zone 7: Major Europe","ES","Spain","GI","Girona"
-"Zone 7: Major Europe","ES","Spain","GR","Granada"
-"Zone 7: Major Europe","ES","Spain","GU","Guadalajara"
-"Zone 7: Major Europe","ES","Spain","SS","Guipúzcoa"
-"Zone 7: Major Europe","ES","Spain","H","Huelva"
-"Zone 7: Major Europe","ES","Spain","HU","Huesca"
-"Zone 7: Major Europe","ES","Spain","J","Jaén"
-"Zone 7: Major Europe","ES","Spain","LO","La Rioja"
-"Zone 7: Major Europe","ES","Spain","GC","Las Palmas"
-"Zone 7: Major Europe","ES","Spain","LE","León"
-"Zone 7: Major Europe","ES","Spain","L","Lleida"
-"Zone 7: Major Europe","ES","Spain","LU","Lugo"
-"Zone 7: Major Europe","ES","Spain","M","Madrid"
-"Zone 7: Major Europe","ES","Spain","MA","Málaga"
-"Zone 7: Major Europe","ES","Spain","ML","Melilla"
-"Zone 7: Major Europe","ES","Spain","MU","Murcia"
-"Zone 7: Major Europe","ES","Spain","NA","Navarra"
-"Zone 7: Major Europe","ES","Spain","OR","Ourense"
-"Zone 7: Major Europe","ES","Spain","P","Palencia"
-"Zone 7: Major Europe","ES","Spain","PO","Pontevedra"
-"Zone 7: Major Europe","ES","Spain","SA","Salamanca"
-"Zone 7: Major Europe","ES","Spain","TF","Santa Cruz de Tenerife"
-"Zone 7: Major Europe","ES","Spain","SG","Segovia"
-"Zone 7: Major Europe","ES","Spain","SE","Sevilla"
-"Zone 7: Major Europe","ES","Spain","SO","Soria"
-"Zone 7: Major Europe","ES","Spain","T","Tarragona"
-"Zone 7: Major Europe","ES","Spain","TE","Teruel"
-"Zone 7: Major Europe","ES","Spain","TO","Toledo"
-"Zone 7: Major Europe","ES","Spain","V","Valencia"
-"Zone 7: Major Europe","ES","Spain","VA","Valladolid"
-"Zone 7: Major Europe","ES","Spain","BI","Vizcaya"
-"Zone 7: Major Europe","ES","Spain","ZA","Zamora"
-"Zone 7: Major Europe","ES","Spain","Z","Zaragoza"
-"Zone 7: Major Europe","SE","Sweden",,
-"Zone 7: Major Europe","CH","Switzerland",,
-"Zone 7: Major Europe","BV","Bouvet Island",,
-"Zone 7: Major Europe","YT","Mayotte",,
-"Zone 7: Major Europe","SM","San Marino",,
-"Zone 7: Major Europe","SJ","Svalbard And Jan Mayen",,
-"Zone 7: Major Europe","TF","French Southern Territories",,
-"Zone 8: Rest of World 1","RU","Russia","ALT","Altai Krai"
-"Zone 8: Rest of World 1","RU","Russia","AL","Altai Republic"
-"Zone 8: Rest of World 1","RU","Russia","AMU","Amur Oblast"
-"Zone 8: Rest of World 1","RU","Russia","ARK","Arkhangelsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","AST","Astrakhan Oblast"
-"Zone 8: Rest of World 1","RU","Russia","BEL","Belgorod Oblast"
-"Zone 8: Rest of World 1","RU","Russia","BRY","Bryansk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","CE","Chechen Republic"
-"Zone 8: Rest of World 1","RU","Russia","CHE","Chelyabinsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","CHU","Chukotka Autonomous Okrug"
-"Zone 8: Rest of World 1","RU","Russia","CU","Chuvash Republic"
-"Zone 8: Rest of World 1","RU","Russia","IRK","Irkutsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","IVA","Ivanovo Oblast"
-"Zone 8: Rest of World 1","RU","Russia","YEV","Jewish Autonomous Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KB","Kabardino-Balkarian Republic"
-"Zone 8: Rest of World 1","RU","Russia","KGD","Kaliningrad Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KLU","Kaluga Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KAM","Kamchatka Krai"
-"Zone 8: Rest of World 1","RU","Russia","KC","Karachay–Cherkess Republic"
-"Zone 8: Rest of World 1","RU","Russia","KEM","Kemerovo Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KHA","Khabarovsk Krai"
-"Zone 8: Rest of World 1","RU","Russia","KHM","Khanty-Mansi Autonomous Okrug"
-"Zone 8: Rest of World 1","RU","Russia","KIR","Kirov Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KO","Komi Republic"
-"Zone 8: Rest of World 1","RU","Russia","KOS","Kostroma Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KDA","Krasnodar Krai"
-"Zone 8: Rest of World 1","RU","Russia","KYA","Krasnoyarsk Krai"
-"Zone 8: Rest of World 1","RU","Russia","KGN","Kurgan Oblast"
-"Zone 8: Rest of World 1","RU","Russia","KRS","Kursk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","LEN","Leningrad Oblast"
-"Zone 8: Rest of World 1","RU","Russia","LIP","Lipetsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","MAG","Magadan Oblast"
-"Zone 8: Rest of World 1","RU","Russia","ME","Mari El Republic"
-"Zone 8: Rest of World 1","RU","Russia","MOW","Moscow"
-"Zone 8: Rest of World 1","RU","Russia","MOS","Moscow Oblast"
-"Zone 8: Rest of World 1","RU","Russia","MUR","Murmansk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","NIZ","Nizhny Novgorod Oblast"
-"Zone 8: Rest of World 1","RU","Russia","NGR","Novgorod Oblast"
-"Zone 8: Rest of World 1","RU","Russia","NVS","Novosibirsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","OMS","Omsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","ORE","Orenburg Oblast"
-"Zone 8: Rest of World 1","RU","Russia","ORL","Oryol Oblast"
-"Zone 8: Rest of World 1","RU","Russia","PNZ","Penza Oblast"
-"Zone 8: Rest of World 1","RU","Russia","PER","Perm Krai"
-"Zone 8: Rest of World 1","RU","Russia","PRI","Primorsky Krai"
-"Zone 8: Rest of World 1","RU","Russia","PSK","Pskov Oblast"
-"Zone 8: Rest of World 1","RU","Russia","AD","Republic of Adygeya"
-"Zone 8: Rest of World 1","RU","Russia","BA","Republic of Bashkortostan"
-"Zone 8: Rest of World 1","RU","Russia","BU","Republic of Buryatia"
-"Zone 8: Rest of World 1","RU","Russia","DA","Republic of Dagestan"
-"Zone 8: Rest of World 1","RU","Russia","IN","Republic of Ingushetia"
-"Zone 8: Rest of World 1","RU","Russia","KL","Republic of Kalmykia"
-"Zone 8: Rest of World 1","RU","Russia","KR","Republic of Karelia"
-"Zone 8: Rest of World 1","RU","Russia","KK","Republic of Khakassia"
-"Zone 8: Rest of World 1","RU","Russia","MO","Republic of Mordovia"
-"Zone 8: Rest of World 1","RU","Russia","SE","Republic of North Ossetia–Alania"
-"Zone 8: Rest of World 1","RU","Russia","TA","Republic of Tatarstan"
-"Zone 8: Rest of World 1","RU","Russia","ROS","Rostov Oblast"
-"Zone 8: Rest of World 1","RU","Russia","RYA","Ryazan Oblast"
-"Zone 8: Rest of World 1","RU","Russia","SPE","Saint Petersburg"
-"Zone 8: Rest of World 1","RU","Russia","SA","Sakha Republic (Yakutia)"
-"Zone 8: Rest of World 1","RU","Russia","SAK","Sakhalin Oblast"
-"Zone 8: Rest of World 1","RU","Russia","SAM","Samara Oblast"
-"Zone 8: Rest of World 1","RU","Russia","SAR","Saratov Oblast"
-"Zone 8: Rest of World 1","RU","Russia","SMO","Smolensk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","STA","Stavropol Krai"
-"Zone 8: Rest of World 1","RU","Russia","SVE","Sverdlovsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","TAM","Tambov Oblast"
-"Zone 8: Rest of World 1","RU","Russia","TOM","Tomsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","TUL","Tula Oblast"
-"Zone 8: Rest of World 1","RU","Russia","TVE","Tver Oblast"
-"Zone 8: Rest of World 1","RU","Russia","TYU","Tyumen Oblast"
-"Zone 8: Rest of World 1","RU","Russia","TY","Tyva Republic"
-"Zone 8: Rest of World 1","RU","Russia","UD","Udmurtia"
-"Zone 8: Rest of World 1","RU","Russia","ULY","Ulyanovsk Oblast"
-"Zone 8: Rest of World 1","RU","Russia","VLA","Vladimir Oblast"
-"Zone 8: Rest of World 1","RU","Russia","VGG","Volgograd Oblast"
-"Zone 8: Rest of World 1","RU","Russia","VLG","Vologda Oblast"
-"Zone 8: Rest of World 1","RU","Russia","VOR","Voronezh Oblast"
-"Zone 8: Rest of World 1","RU","Russia","YAN","Yamalo-Nenets Autonomous Okrug"
-"Zone 8: Rest of World 1","RU","Russia","YAR","Yaroslavl Oblast"
-"Zone 8: Rest of World 1","RU","Russia","ZAB","Zabaykalsky Krai"
-"Zone 8: Rest of World 1","AL","Albania",,
-"Zone 8: Rest of World 1","AT","Austria",,
-"Zone 8: Rest of World 1","BE","Belgium",,
-"Zone 8: Rest of World 1","BA","Bosnia And Herzegovina",,
-"Zone 8: Rest of World 1","BG","Bulgaria",,
-"Zone 8: Rest of World 1","HR","Croatia",,
-"Zone 8: Rest of World 1","CY","Cyprus",,
-"Zone 8: Rest of World 1","CZ","Czech Republic",,
-"Zone 8: Rest of World 1","DK","Denmark",,
-"Zone 8: Rest of World 1","EE","Estonia",,
-"Zone 8: Rest of World 1","FI","Finland",,
-"Zone 8: Rest of World 1","GR","Greece",,
-"Zone 8: Rest of World 1","HU","Hungary",,
-"Zone 8: Rest of World 1","IS","Iceland",,
-"Zone 8: Rest of World 1","XK","Kosovo",,
-"Zone 8: Rest of World 1","MT","Malta",,
-"Zone 8: Rest of World 1","ME","Montenegro",,
-"Zone 8: Rest of World 1","MK","North Macedonia",,
-"Zone 8: Rest of World 1","PL","Poland",,
-"Zone 8: Rest of World 1","PT","Portugal","PT-20","Açores"
-"Zone 8: Rest of World 1","PT","Portugal","PT-01","Aveiro"
-"Zone 8: Rest of World 1","PT","Portugal","PT-02","Beja"
-"Zone 8: Rest of World 1","PT","Portugal","PT-03","Braga"
-"Zone 8: Rest of World 1","PT","Portugal","PT-04","Bragança"
-"Zone 8: Rest of World 1","PT","Portugal","PT-05","Castelo Branco"
-"Zone 8: Rest of World 1","PT","Portugal","PT-06","Coimbra"
-"Zone 8: Rest of World 1","PT","Portugal","PT-07","Évora"
-"Zone 8: Rest of World 1","PT","Portugal","PT-08","Faro"
-"Zone 8: Rest of World 1","PT","Portugal","PT-09","Guarda"
-"Zone 8: Rest of World 1","PT","Portugal","PT-10","Leiria"
-"Zone 8: Rest of World 1","PT","Portugal","PT-11","Lisboa"
-"Zone 8: Rest of World 1","PT","Portugal","PT-30","Madeira"
-"Zone 8: Rest of World 1","PT","Portugal","PT-12","Portalegre"
-"Zone 8: Rest of World 1","PT","Portugal","PT-13","Porto"
-"Zone 8: Rest of World 1","PT","Portugal","PT-14","Santarém"
-"Zone 8: Rest of World 1","PT","Portugal","PT-15","Setúbal"
-"Zone 8: Rest of World 1","PT","Portugal","PT-16","Viana do Castelo"
-"Zone 8: Rest of World 1","PT","Portugal","PT-17","Vila Real"
-"Zone 8: Rest of World 1","PT","Portugal","PT-18","Viseu"
-"Zone 8: Rest of World 1","RO","Romania","AB","Alba"
-"Zone 8: Rest of World 1","RO","Romania","AR","Arad"
-"Zone 8: Rest of World 1","RO","Romania","AG","Argeș"
-"Zone 8: Rest of World 1","RO","Romania","BC","Bacău"
-"Zone 8: Rest of World 1","RO","Romania","BH","Bihor"
-"Zone 8: Rest of World 1","RO","Romania","BN","Bistrița-Năsăud"
-"Zone 8: Rest of World 1","RO","Romania","BT","Botoșani"
-"Zone 8: Rest of World 1","RO","Romania","BR","Brăila"
-"Zone 8: Rest of World 1","RO","Romania","BV","Brașov"
-"Zone 8: Rest of World 1","RO","Romania","B","București"
-"Zone 8: Rest of World 1","RO","Romania","BZ","Buzău"
-"Zone 8: Rest of World 1","RO","Romania","CS","Caraș-Severin"
-"Zone 8: Rest of World 1","RO","Romania","CJ","Cluj"
-"Zone 8: Rest of World 1","RO","Romania","CT","Constanța"
-"Zone 8: Rest of World 1","RO","Romania","CV","Covasna"
-"Zone 8: Rest of World 1","RO","Romania","CL","Călărași"
-"Zone 8: Rest of World 1","RO","Romania","DJ","Dolj"
-"Zone 8: Rest of World 1","RO","Romania","DB","Dâmbovița"
-"Zone 8: Rest of World 1","RO","Romania","GL","Galați"
-"Zone 8: Rest of World 1","RO","Romania","GR","Giurgiu"
-"Zone 8: Rest of World 1","RO","Romania","GJ","Gorj"
-"Zone 8: Rest of World 1","RO","Romania","HR","Harghita"
-"Zone 8: Rest of World 1","RO","Romania","HD","Hunedoara"
-"Zone 8: Rest of World 1","RO","Romania","IL","Ialomița"
-"Zone 8: Rest of World 1","RO","Romania","IS","Iași"
-"Zone 8: Rest of World 1","RO","Romania","IF","Ilfov"
-"Zone 8: Rest of World 1","RO","Romania","MM","Maramureș"
-"Zone 8: Rest of World 1","RO","Romania","MH","Mehedinți"
-"Zone 8: Rest of World 1","RO","Romania","MS","Mureș"
-"Zone 8: Rest of World 1","RO","Romania","NT","Neamț"
-"Zone 8: Rest of World 1","RO","Romania","OT","Olt"
-"Zone 8: Rest of World 1","RO","Romania","PH","Prahova"
-"Zone 8: Rest of World 1","RO","Romania","SJ","Sălaj"
-"Zone 8: Rest of World 1","RO","Romania","SM","Satu Mare"
-"Zone 8: Rest of World 1","RO","Romania","SB","Sibiu"
-"Zone 8: Rest of World 1","RO","Romania","SV","Suceava"
-"Zone 8: Rest of World 1","RO","Romania","TR","Teleorman"
-"Zone 8: Rest of World 1","RO","Romania","TM","Timiș"
-"Zone 8: Rest of World 1","RO","Romania","TL","Tulcea"
-"Zone 8: Rest of World 1","RO","Romania","VL","Vâlcea"
-"Zone 8: Rest of World 1","RO","Romania","VS","Vaslui"
-"Zone 8: Rest of World 1","RO","Romania","VN","Vrancea"
-"Zone 8: Rest of World 1","RS","Serbia",,
-"Zone 8: Rest of World 1","SK","Slovakia",,
-"Zone 8: Rest of World 1","SI","Slovenia",,
-"Zone 8: Rest of World 1","TR","Turkey",,
-"Zone 8: Rest of World 1","UA","Ukraine",,
-"Zone 8: Rest of World 1","ZA","South Africa","EC","Eastern Cape"
-"Zone 8: Rest of World 1","ZA","South Africa","FS","Free State"
-"Zone 8: Rest of World 1","ZA","South Africa","GT","Gauteng"
-"Zone 8: Rest of World 1","ZA","South Africa","NL","KwaZulu-Natal"
-"Zone 8: Rest of World 1","ZA","South Africa","LP","Limpopo"
-"Zone 8: Rest of World 1","ZA","South Africa","MP","Mpumalanga"
-"Zone 8: Rest of World 1","ZA","South Africa","NW","North West"
-"Zone 8: Rest of World 1","ZA","South Africa","NC","Northern Cape"
-"Zone 8: Rest of World 1","ZA","South Africa","WC","Western Cape"
-"Zone 8: Rest of World 1","BR","Brazil","AC","Acre"
-"Zone 8: Rest of World 1","BR","Brazil","AL","Alagoas"
-"Zone 8: Rest of World 1","BR","Brazil","AP","Amapá"
-"Zone 8: Rest of World 1","BR","Brazil","AM","Amazonas"
-"Zone 8: Rest of World 1","BR","Brazil","BA","Bahia"
-"Zone 8: Rest of World 1","BR","Brazil","CE","Ceará"
-"Zone 8: Rest of World 1","BR","Brazil","DF","Distrito Federal"
-"Zone 8: Rest of World 1","BR","Brazil","ES","Espírito Santo"
-"Zone 8: Rest of World 1","BR","Brazil","GO","Goiás"
-"Zone 8: Rest of World 1","BR","Brazil","MA","Maranhão"
-"Zone 8: Rest of World 1","BR","Brazil","MT","Mato Grosso"
-"Zone 8: Rest of World 1","BR","Brazil","MS","Mato Grosso do Sul"
-"Zone 8: Rest of World 1","BR","Brazil","MG","Minas Gerais"
-"Zone 8: Rest of World 1","BR","Brazil","PA","Pará"
-"Zone 8: Rest of World 1","BR","Brazil","PB","Paraíba"
-"Zone 8: Rest of World 1","BR","Brazil","PR","Paraná"
-"Zone 8: Rest of World 1","BR","Brazil","PE","Pernambuco"
-"Zone 8: Rest of World 1","BR","Brazil","PI","Piauí"
-"Zone 8: Rest of World 1","BR","Brazil","RN","Rio Grande do Norte"
-"Zone 8: Rest of World 1","BR","Brazil","RS","Rio Grande do Sul"
-"Zone 8: Rest of World 1","BR","Brazil","RJ","Rio de Janeiro"
-"Zone 8: Rest of World 1","BR","Brazil","RO","Rondônia"
-"Zone 8: Rest of World 1","BR","Brazil","RR","Roraima"
-"Zone 8: Rest of World 1","BR","Brazil","SC","Santa Catarina"
-"Zone 8: Rest of World 1","BR","Brazil","SP","São Paulo"
-"Zone 8: Rest of World 1","BR","Brazil","SE","Sergipe"
-"Zone 8: Rest of World 1","BR","Brazil","TO","Tocantins"
-"Zone 9: Rest of World 2",,,,
+zone,destination,country,countryName,province,provinceName
+Domestic,Domestic,AU,Australia,ACT,Australian Capital Territory
+Domestic,Domestic,AU,Australia,NSW,New South Wales
+Domestic,Domestic,AU,Australia,NT,Northern Territory
+Domestic,Domestic,AU,Australia,QLD,Queensland
+Domestic,Domestic,AU,Australia,SA,South Australia
+Domestic,Domestic,AU,Australia,TAS,Tasmania
+Domestic,Domestic,AU,Australia,VIC,Victoria
+Domestic,Domestic,AU,Australia,WA,Western Australia
+Domestic,Domestic,CX,Christmas Island,,
+Domestic,Domestic,CC,Cocos (Keeling) Islands,,
+Domestic,Domestic,NF,Norfolk Island,,
+Domestic,Domestic,HM,Heard Island And Mcdonald Islands,,
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,AUK,Auckland
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,BOP,Bay of Plenty
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,CAN,Canterbury
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,GIS,Gisborne
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,HKB,Hawke's Bay
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,MWT,Manawatu-Wanganui
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,MBH,Marlborough
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,NSN,Nelson
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,NTL,Northland
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,OTA,Otago
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,STL,Southland
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,TKI,Taranaki
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,TAS,Tasman
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,WKO,Waikato
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,WGN,Wellington
+Zone 1: New Zealand,New Zealand,NZ,New Zealand,WTC,West Coast
+Zone 2: Asia Pacific,China,CN,China,AH,Anhui
+Zone 2: Asia Pacific,China,CN,China,BJ,Beijing
+Zone 2: Asia Pacific,China,CN,China,CQ,Chongqing
+Zone 2: Asia Pacific,China,CN,China,FJ,Fujian
+Zone 2: Asia Pacific,China,CN,China,GS,Gansu
+Zone 2: Asia Pacific,China,CN,China,GD,Guangdong
+Zone 2: Asia Pacific,China,CN,China,GX,Guangxi
+Zone 2: Asia Pacific,China,CN,China,GZ,Guizhou
+Zone 2: Asia Pacific,China,CN,China,HI,Hainan
+Zone 2: Asia Pacific,China,CN,China,HE,Hebei
+Zone 2: Asia Pacific,China,CN,China,HL,Heilongjiang
+Zone 2: Asia Pacific,China,CN,China,HA,Henan
+Zone 2: Asia Pacific,China,CN,China,HB,Hubei
+Zone 2: Asia Pacific,China,CN,China,HN,Hunan
+Zone 2: Asia Pacific,China,CN,China,NM,Inner Mongolia
+Zone 2: Asia Pacific,China,CN,China,JS,Jiangsu
+Zone 2: Asia Pacific,China,CN,China,JX,Jiangxi
+Zone 2: Asia Pacific,China,CN,China,JL,Jilin
+Zone 2: Asia Pacific,China,CN,China,LN,Liaoning
+Zone 2: Asia Pacific,China,CN,China,NX,Ningxia
+Zone 2: Asia Pacific,China,CN,China,QH,Qinghai
+Zone 2: Asia Pacific,China,CN,China,SN,Shaanxi
+Zone 2: Asia Pacific,China,CN,China,SD,Shandong
+Zone 2: Asia Pacific,China,CN,China,SH,Shanghai
+Zone 2: Asia Pacific,China,CN,China,SX,Shanxi
+Zone 2: Asia Pacific,China,CN,China,SC,Sichuan
+Zone 2: Asia Pacific,China,CN,China,TJ,Tianjin
+Zone 2: Asia Pacific,China,CN,China,XJ,Xinjiang
+Zone 2: Asia Pacific,China,CN,China,YZ,Xizang
+Zone 2: Asia Pacific,China,CN,China,YN,Yunnan
+Zone 2: Asia Pacific,China,CN,China,ZJ,Zhejiang
+Zone 2: Asia Pacific,Rest of Asia,HK,Hong Kong,HK,Hong Kong Island
+Zone 2: Asia Pacific,Rest of Asia,HK,Hong Kong,KL,Kowloon
+Zone 2: Asia Pacific,Rest of Asia,HK,Hong Kong,NT,New Territories
+Zone 2: Asia Pacific,Rest of Asia,IN,India,AN,Andaman and Nicobar Islands
+Zone 2: Asia Pacific,Rest of Asia,IN,India,AP,Andhra Pradesh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,AR,Arunachal Pradesh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,AS,Assam
+Zone 2: Asia Pacific,Rest of Asia,IN,India,BR,Bihar
+Zone 2: Asia Pacific,Rest of Asia,IN,India,CH,Chandigarh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,CG,Chhattisgarh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,DN,Dadra and Nagar Haveli
+Zone 2: Asia Pacific,Rest of Asia,IN,India,DD,Daman and Diu
+Zone 2: Asia Pacific,Rest of Asia,IN,India,DL,Delhi
+Zone 2: Asia Pacific,Rest of Asia,IN,India,GA,Goa
+Zone 2: Asia Pacific,Rest of Asia,IN,India,GJ,Gujarat
+Zone 2: Asia Pacific,Rest of Asia,IN,India,HR,Haryana
+Zone 2: Asia Pacific,Rest of Asia,IN,India,HP,Himachal Pradesh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,JK,Jammu and Kashmir
+Zone 2: Asia Pacific,Rest of Asia,IN,India,JH,Jharkhand
+Zone 2: Asia Pacific,Rest of Asia,IN,India,KA,Karnataka
+Zone 2: Asia Pacific,Rest of Asia,IN,India,KL,Kerala
+Zone 2: Asia Pacific,Rest of Asia,IN,India,LA,Ladakh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,LD,Lakshadweep
+Zone 2: Asia Pacific,Rest of Asia,IN,India,MP,Madhya Pradesh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,MH,Maharashtra
+Zone 2: Asia Pacific,Rest of Asia,IN,India,MN,Manipur
+Zone 2: Asia Pacific,Rest of Asia,IN,India,ML,Meghalaya
+Zone 2: Asia Pacific,Rest of Asia,IN,India,MZ,Mizoram
+Zone 2: Asia Pacific,Rest of Asia,IN,India,NL,Nagaland
+Zone 2: Asia Pacific,Rest of Asia,IN,India,OR,Odisha
+Zone 2: Asia Pacific,Rest of Asia,IN,India,PY,Puducherry
+Zone 2: Asia Pacific,Rest of Asia,IN,India,PB,Punjab
+Zone 2: Asia Pacific,Rest of Asia,IN,India,RJ,Rajasthan
+Zone 2: Asia Pacific,Rest of Asia,IN,India,SK,Sikkim
+Zone 2: Asia Pacific,Rest of Asia,IN,India,TN,Tamil Nadu
+Zone 2: Asia Pacific,Rest of Asia,IN,India,TS,Telangana
+Zone 2: Asia Pacific,Rest of Asia,IN,India,TR,Tripura
+Zone 2: Asia Pacific,Rest of Asia,IN,India,UP,Uttar Pradesh
+Zone 2: Asia Pacific,Rest of Asia,IN,India,UK,Uttarakhand
+Zone 2: Asia Pacific,Rest of Asia,IN,India,WB,West Bengal
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,AC,Aceh
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,BA,Bali
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,BB,Bangka Belitung
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,BT,Banten
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,BE,Bengkulu
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,GO,Gorontalo
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,JK,Jakarta
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,JA,Jambi
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,JB,Jawa Barat
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,JT,Jawa Tengah
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,JI,Jawa Timur
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,KB,Kalimantan Barat
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,KS,Kalimantan Selatan
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,KT,Kalimantan Tengah
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,KI,Kalimantan Timur
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,KU,Kalimantan Utara
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,KR,Kepulauan Riau
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,LA,Lampung
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,MA,Maluku
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,MU,Maluku Utara
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SU,North Sumatra
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,NB,Nusa Tenggara Barat
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,NT,Nusa Tenggara Timur
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,PA,Papua
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,PB,Papua Barat
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,RI,Riau
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SS,South Sumatra
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SR,Sulawesi Barat
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SN,Sulawesi Selatan
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,ST,Sulawesi Tengah
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SG,Sulawesi Tenggara
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SA,Sulawesi Utara
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,SB,West Sumatra
+Zone 2: Asia Pacific,Rest of Asia,ID,Indonesia,YO,Yogyakarta
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-01,Hokkaidō
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-02,Aomori
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-03,Iwate
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-04,Miyagi
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-05,Akita
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-06,Yamagata
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-07,Fukushima
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-08,Ibaraki
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-09,Tochigi
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-10,Gunma
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-11,Saitama
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-12,Chiba
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-13,Tōkyō
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-14,Kanagawa
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-15,Niigata
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-16,Toyama
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-17,Ishikawa
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-18,Fukui
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-19,Yamanashi
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-20,Nagano
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-21,Gifu
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-22,Shizuoka
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-23,Aichi
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-24,Mie
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-25,Shiga
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-26,Kyōto
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-27,Ōsaka
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-28,Hyōgo
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-29,Nara
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-30,Wakayama
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-31,Tottori
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-32,Shimane
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-33,Okayama
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-34,Hiroshima
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-35,Yamaguchi
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-36,Tokushima
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-37,Kagawa
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-38,Ehime
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-39,Kōchi
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-40,Fukuoka
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-41,Saga
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-42,Nagasaki
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-43,Kumamoto
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-44,Ōita
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-45,Miyazaki
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-46,Kagoshima
+Zone 2: Asia Pacific,Rest of Asia,JP,Japan,JP-47,Okinawa
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,JHR,Johor
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,KDH,Kedah
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,KTN,Kelantan
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,KUL,Kuala Lumpur
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,LBN,Labuan
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,MLK,Melaka
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,NSN,Negeri Sembilan
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,PHG,Pahang
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,PNG,Penang
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,PRK,Perak
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,PLS,Perlis
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,PJY,Putrajaya
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,SBH,Sabah
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,SWK,Sarawak
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,SGR,Selangor
+Zone 2: Asia Pacific,Rest of Asia,MY,Malaysia,TRG,Terengganu
+Zone 2: Asia Pacific,Rest of Asia,MV,Maldives,,
+Zone 2: Asia Pacific,Rest of Asia,SG,Singapore,,
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-26,Busan
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-43,Chungbuk
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-44,Chungnam
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-27,Daegu
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-30,Daejeon
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-42,Gangwon
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-29,Gwangju
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-47,Gyeongbuk
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-41,Gyeonggi
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-48,Gyeongnam
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-28,Incheon
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-49,Jeju
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-45,Jeonbuk
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-46,Jeonnam
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-50,Sejong
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-11,Seoul
+Zone 2: Asia Pacific,Rest of Asia,KR,South Korea,KR-31,Ulsan
+Zone 2: Asia Pacific,Rest of Asia,TW,Taiwan,,
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-37,Amnat Charoen
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-15,Ang Thong
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-10,Bangkok
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-38,Bueng Kan
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-31,Buriram
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-24,Chachoengsao
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-18,Chai Nat
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-36,Chaiyaphum
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-22,Chanthaburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-50,Chiang Mai
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-57,Chiang Rai
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-20,Chon Buri
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-86,Chumphon
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-46,Kalasin
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-62,Kamphaeng Phet
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-71,Kanchanaburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-40,Khon Kaen
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-81,Krabi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-52,Lampang
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-51,Lamphun
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-42,Loei
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-16,Lopburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-58,Mae Hong Son
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-44,Maha Sarakham
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-49,Mukdahan
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-26,Nakhon Nayok
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-73,Nakhon Pathom
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-48,Nakhon Phanom
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-30,Nakhon Ratchasima
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-60,Nakhon Sawan
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-80,Nakhon Si Thammarat
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-55,Nan
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-96,Narathiwat
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-39,Nong Bua Lam Phu
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-43,Nong Khai
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-12,Nonthaburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-13,Pathum Thani
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-94,Pattani
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-S,Pattaya
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-82,Phangnga
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-93,Phatthalung
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-56,Phayao
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-67,Phetchabun
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-76,Phetchaburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-66,Phichit
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-65,Phitsanulok
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-14,Phra Nakhon Si Ayutthaya
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-54,Phrae
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-83,Phuket
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-25,Prachin Buri
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-77,Prachuap Khiri Khan
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-85,Ranong
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-70,Ratchaburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-21,Rayong
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-45,Roi Et
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-27,Sa Kaeo
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-47,Sakon Nakhon
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-11,Samut Prakan
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-74,Samut Sakhon
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-75,Samut Songkhram
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-19,Saraburi
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-91,Satun
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-17,Sing Buri
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-33,Sisaket
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-90,Songkhla
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-64,Sukhothai
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-72,Suphan Buri
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-84,Surat Thani
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-32,Surin
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-63,Tak
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-92,Trang
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-23,Trat
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-34,Ubon Ratchathani
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-41,Udon Thani
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-61,Uthai Thani
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-53,Uttaradit
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-95,Yala
+Zone 2: Asia Pacific,Rest of Asia,TH,Thailand,TH-35,Yasothon
+Zone 2: Asia Pacific,Rest of Asia,VN,Vietnam,,
+Zone 2: Asia Pacific,Pacific islands,US,United States,AS,American Samoa
+Zone 2: Asia Pacific,Pacific islands,US,United States,FM,Federated States of Micronesia
+Zone 2: Asia Pacific,Pacific islands,US,United States,GU,Guam
+Zone 2: Asia Pacific,Pacific islands,US,United States,MH,Marshall Islands
+Zone 2: Asia Pacific,Pacific islands,US,United States,MP,Northern Mariana Islands
+Zone 2: Asia Pacific,Pacific islands,US,United States,PW,Palau
+Zone 2: Asia Pacific,Pacific islands,BD,Bangladesh,,
+Zone 2: Asia Pacific,Pacific islands,BN,Brunei,,
+Zone 2: Asia Pacific,Pacific islands,KH,Cambodia,,
+Zone 2: Asia Pacific,Pacific islands,LA,Lao People's Democratic Republic,,
+Zone 2: Asia Pacific,Pacific islands,MO,Macao,,
+Zone 2: Asia Pacific,Pacific islands,CK,Cook Islands,,
+Zone 2: Asia Pacific,Pacific islands,FJ,Fiji,,
+Zone 2: Asia Pacific,Pacific islands,PF,French Polynesia,,
+Zone 2: Asia Pacific,Pacific islands,KI,Kiribati,,
+Zone 2: Asia Pacific,Pacific islands,WS,Samoa,,
+Zone 2: Asia Pacific,Pacific islands,TL,Timor Leste,,
+Zone 2: Asia Pacific,Pacific islands,MM,Myanmar,,
+Zone 2: Asia Pacific,Pacific islands,NP,Nepal,,
+Zone 2: Asia Pacific,Pacific islands,PK,Pakistan,,
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ABR,Abra
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-AGN,Agusan del Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-AGS,Agusan del Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-AKL,Aklan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ALB,Albay
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ANT,Antique
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-APA,Apayao
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-AUR,Aurora
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BAS,Basilan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BAN,Bataan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BTN,Batanes
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BTG,Batangas
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BEN,Benguet
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BIL,Biliran
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BOH,Bohol
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BUK,Bukidnon
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-BUL,Bulacan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAG,Cagayan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAN,Camarines Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAS,Camarines Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAM,Camiguin
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAP,Capiz
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAT,Catanduanes
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CAV,Cavite
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-CEB,Cebu
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-NCO,Cotabato
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-COM,Davao de Oro
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-DAV,Davao del Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-DAS,Davao del Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-DVO,Davao Occidental
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-DAO,Davao Oriental
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-DIN,Dinagat Islands
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-EAS,Eastern Samar
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-GUI,Guimaras
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-IFU,Ifugao
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ILN,Ilocos Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ILS,Ilocos Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ILI,Iloilo
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ISA,Isabela
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-KAL,Kalinga
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-LUN,La Union
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-LAG,Laguna
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-LAN,Lanao del Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-LAS,Lanao del Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-LEY,Leyte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MAG,Maguindanao
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MAD,Marinduque
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MAS,Masbate
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-00,Metro Manila
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MSC,Misamis Occidental
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MSR,Misamis Oriental
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MOU,Mountain Province
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-NEC,Negros Occidental
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-NER,Negros Oriental
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-NSA,Northern Samar
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-NUE,Nueva Ecija
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-NUV,Nueva Vizcaya
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MDC,Occidental Mindoro
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-MDR,Oriental Mindoro
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-PLW,Palawan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-PAM,Pampanga
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-PAN,Pangasinan
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-QUE,Quezon
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-QUI,Quirino
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-RIZ,Rizal
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ROM,Romblon
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-WSA,Samar
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SAR,Sarangani
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SIG,Siquijor
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SOR,Sorsogon
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SCO,South Cotabato
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SLE,Southern Leyte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SUK,Sultan Kudarat
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SLU,Sulu
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SUN,Surigao del Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-SUR,Surigao del Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-TAR,Tarlac
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-TAW,Tawi-Tawi
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ZMB,Zambales
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ZAN,Zamboanga del Norte
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ZAS,Zamboanga del Sur
+Zone 2: Asia Pacific,Pacific islands,PH,Philippines,PH-ZSI,Zamboanga Sibugay
+Zone 2: Asia Pacific,Pacific islands,LK,Sri Lanka,,
+Zone 2: Asia Pacific,Pacific islands,NR,Nauru,,
+Zone 2: Asia Pacific,Pacific islands,NC,New Caledonia,,
+Zone 2: Asia Pacific,Pacific islands,NU,Niue,,
+Zone 2: Asia Pacific,Pacific islands,PG,Papua New Guinea,,
+Zone 2: Asia Pacific,Pacific islands,PN,Pitcairn,,
+Zone 2: Asia Pacific,Pacific islands,SB,Solomon Islands,,
+Zone 2: Asia Pacific,Pacific islands,TK,Tokelau,,
+Zone 2: Asia Pacific,Pacific islands,TO,Tonga,,
+Zone 2: Asia Pacific,Pacific islands,TV,Tuvalu,,
+Zone 2: Asia Pacific,Pacific islands,VU,Vanuatu,,
+Zone 2: Asia Pacific,Pacific islands,WF,Wallis And Futuna,,
+Zone 3: US & Canada,USA & Canada,CA,Canada,AB,Alberta
+Zone 3: US & Canada,USA & Canada,CA,Canada,BC,British Columbia
+Zone 3: US & Canada,USA & Canada,CA,Canada,MB,Manitoba
+Zone 3: US & Canada,USA & Canada,CA,Canada,NB,New Brunswick
+Zone 3: US & Canada,USA & Canada,CA,Canada,NL,Newfoundland and Labrador
+Zone 3: US & Canada,USA & Canada,CA,Canada,NT,Northwest Territories
+Zone 3: US & Canada,USA & Canada,CA,Canada,NS,Nova Scotia
+Zone 3: US & Canada,USA & Canada,CA,Canada,NU,Nunavut
+Zone 3: US & Canada,USA & Canada,CA,Canada,ON,Ontario
+Zone 3: US & Canada,USA & Canada,CA,Canada,PE,Prince Edward Island
+Zone 3: US & Canada,USA & Canada,CA,Canada,QC,Quebec
+Zone 3: US & Canada,USA & Canada,CA,Canada,SK,Saskatchewan
+Zone 3: US & Canada,USA & Canada,CA,Canada,YT,Yukon
+Zone 3: US & Canada,USA & Canada,US,United States,AL,Alabama
+Zone 3: US & Canada,USA & Canada,US,United States,AK,Alaska
+Zone 3: US & Canada,USA & Canada,US,United States,AZ,Arizona
+Zone 3: US & Canada,USA & Canada,US,United States,AR,Arkansas
+Zone 3: US & Canada,USA & Canada,US,United States,CA,California
+Zone 3: US & Canada,USA & Canada,US,United States,CO,Colorado
+Zone 3: US & Canada,USA & Canada,US,United States,CT,Connecticut
+Zone 3: US & Canada,USA & Canada,US,United States,DE,Delaware
+Zone 3: US & Canada,USA & Canada,US,United States,DC,District of Columbia
+Zone 3: US & Canada,USA & Canada,US,United States,FL,Florida
+Zone 3: US & Canada,USA & Canada,US,United States,GA,Georgia
+Zone 3: US & Canada,USA & Canada,US,United States,HI,Hawaii
+Zone 3: US & Canada,USA & Canada,US,United States,ID,Idaho
+Zone 3: US & Canada,USA & Canada,US,United States,IL,Illinois
+Zone 3: US & Canada,USA & Canada,US,United States,IN,Indiana
+Zone 3: US & Canada,USA & Canada,US,United States,IA,Iowa
+Zone 3: US & Canada,USA & Canada,US,United States,KS,Kansas
+Zone 3: US & Canada,USA & Canada,US,United States,KY,Kentucky
+Zone 3: US & Canada,USA & Canada,US,United States,LA,Louisiana
+Zone 3: US & Canada,USA & Canada,US,United States,ME,Maine
+Zone 3: US & Canada,USA & Canada,US,United States,MD,Maryland
+Zone 3: US & Canada,USA & Canada,US,United States,MA,Massachusetts
+Zone 3: US & Canada,USA & Canada,US,United States,MI,Michigan
+Zone 3: US & Canada,USA & Canada,US,United States,MN,Minnesota
+Zone 3: US & Canada,USA & Canada,US,United States,MS,Mississippi
+Zone 3: US & Canada,USA & Canada,US,United States,MO,Missouri
+Zone 3: US & Canada,USA & Canada,US,United States,MT,Montana
+Zone 3: US & Canada,USA & Canada,US,United States,NE,Nebraska
+Zone 3: US & Canada,USA & Canada,US,United States,NV,Nevada
+Zone 3: US & Canada,USA & Canada,US,United States,NH,New Hampshire
+Zone 3: US & Canada,USA & Canada,US,United States,NJ,New Jersey
+Zone 3: US & Canada,USA & Canada,US,United States,NM,New Mexico
+Zone 3: US & Canada,USA & Canada,US,United States,NY,New York
+Zone 3: US & Canada,USA & Canada,US,United States,NC,North Carolina
+Zone 3: US & Canada,USA & Canada,US,United States,ND,North Dakota
+Zone 3: US & Canada,USA & Canada,US,United States,OH,Ohio
+Zone 3: US & Canada,USA & Canada,US,United States,OK,Oklahoma
+Zone 3: US & Canada,USA & Canada,US,United States,OR,Oregon
+Zone 3: US & Canada,USA & Canada,US,United States,PA,Pennsylvania
+Zone 3: US & Canada,USA & Canada,US,United States,PR,Puerto Rico
+Zone 3: US & Canada,USA & Canada,US,United States,RI,Rhode Island
+Zone 3: US & Canada,USA & Canada,US,United States,SC,South Carolina
+Zone 3: US & Canada,USA & Canada,US,United States,SD,South Dakota
+Zone 3: US & Canada,USA & Canada,US,United States,TN,Tennessee
+Zone 3: US & Canada,USA & Canada,US,United States,TX,Texas
+Zone 3: US & Canada,USA & Canada,US,United States,UT,Utah
+Zone 3: US & Canada,USA & Canada,US,United States,VT,Vermont
+Zone 3: US & Canada,USA & Canada,US,United States,VI,Virgin Islands
+Zone 3: US & Canada,USA & Canada,US,United States,VA,Virginia
+Zone 3: US & Canada,USA & Canada,US,United States,WA,Washington
+Zone 3: US & Canada,USA & Canada,US,United States,WV,West Virginia
+Zone 3: US & Canada,USA & Canada,US,United States,WI,Wisconsin
+Zone 3: US & Canada,USA & Canada,US,United States,WY,Wyoming
+Zone 3: US & Canada,USA & Canada,US,United States,AA,Armed Forces Americas
+Zone 3: US & Canada,USA & Canada,US,United States,AE,Armed Forces Europe
+Zone 3: US & Canada,USA & Canada,US,United States,AP,Armed Forces Pacific
+Zone 3: US & Canada,USA & Canada,UM,United States Minor Outlying Islands,,
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CW,Carlow
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CN,Cavan
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CE,Clare
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CO,Cork
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,DL,Donegal
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,D,Dublin
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,G,Galway
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,KY,Kerry
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,KE,Kildare
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,KK,Kilkenny
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,LS,Laois
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,LM,Leitrim
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,LK,Limerick
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,LD,Longford
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,LH,Louth
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,MO,Mayo
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,MH,Meath
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,MN,Monaghan
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,OY,Offaly
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,RN,Roscommon
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,SO,Sligo
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,TA,Tipperary
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,WD,Waterford
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,WH,Westmeath
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,WX,Wexford
+Zone 4: UK & Europe,UK & Ireland,IE,Ireland,WW,Wicklow
+Zone 4: UK & Europe,UK & Ireland,GB,United Kingdom,,
+Zone 4: UK & Europe,UK & Ireland,GG,Guernsey,,
+Zone 4: UK & Europe,UK & Ireland,IM,Isle Of Man,,
+Zone 4: UK & Europe,UK & Ireland,JE,Jersey,,
+Zone 4: UK & Europe,Major Europe,FR,France,,
+Zone 4: UK & Europe,Major Europe,DE,Germany,,
+Zone 4: UK & Europe,Major Europe,IT,Italy,AG,Agrigento
+Zone 4: UK & Europe,Major Europe,IT,Italy,AL,Alessandria
+Zone 4: UK & Europe,Major Europe,IT,Italy,AN,Ancona
+Zone 4: UK & Europe,Major Europe,IT,Italy,AO,Aosta
+Zone 4: UK & Europe,Major Europe,IT,Italy,AR,Arezzo
+Zone 4: UK & Europe,Major Europe,IT,Italy,AP,Ascoli Piceno
+Zone 4: UK & Europe,Major Europe,IT,Italy,AT,Asti
+Zone 4: UK & Europe,Major Europe,IT,Italy,AV,Avellino
+Zone 4: UK & Europe,Major Europe,IT,Italy,BA,Bari
+Zone 4: UK & Europe,Major Europe,IT,Italy,BT,Barletta-Andria-Trani
+Zone 4: UK & Europe,Major Europe,IT,Italy,BL,Belluno
+Zone 4: UK & Europe,Major Europe,IT,Italy,BN,Benevento
+Zone 4: UK & Europe,Major Europe,IT,Italy,BG,Bergamo
+Zone 4: UK & Europe,Major Europe,IT,Italy,BI,Biella
+Zone 4: UK & Europe,Major Europe,IT,Italy,BO,Bologna
+Zone 4: UK & Europe,Major Europe,IT,Italy,BZ,Bolzano
+Zone 4: UK & Europe,Major Europe,IT,Italy,BS,Brescia
+Zone 4: UK & Europe,Major Europe,IT,Italy,BR,Brindisi
+Zone 4: UK & Europe,Major Europe,IT,Italy,CA,Cagliari
+Zone 4: UK & Europe,Major Europe,IT,Italy,CL,Caltanissetta
+Zone 4: UK & Europe,Major Europe,IT,Italy,CB,Campobasso
+Zone 4: UK & Europe,Major Europe,IT,Italy,CI,Carbonia-Iglesias
+Zone 4: UK & Europe,Major Europe,IT,Italy,CE,Caserta
+Zone 4: UK & Europe,Major Europe,IT,Italy,CT,Catania
+Zone 4: UK & Europe,Major Europe,IT,Italy,CZ,Catanzaro
+Zone 4: UK & Europe,Major Europe,IT,Italy,CH,Chieti
+Zone 4: UK & Europe,Major Europe,IT,Italy,CO,Como
+Zone 4: UK & Europe,Major Europe,IT,Italy,CS,Cosenza
+Zone 4: UK & Europe,Major Europe,IT,Italy,CR,Cremona
+Zone 4: UK & Europe,Major Europe,IT,Italy,KR,Crotone
+Zone 4: UK & Europe,Major Europe,IT,Italy,CN,Cuneo
+Zone 4: UK & Europe,Major Europe,IT,Italy,EN,Enna
+Zone 4: UK & Europe,Major Europe,IT,Italy,FM,Fermo
+Zone 4: UK & Europe,Major Europe,IT,Italy,FE,Ferrara
+Zone 4: UK & Europe,Major Europe,IT,Italy,FI,Firenze
+Zone 4: UK & Europe,Major Europe,IT,Italy,FG,Foggia
+Zone 4: UK & Europe,Major Europe,IT,Italy,FC,Forlì-Cesena
+Zone 4: UK & Europe,Major Europe,IT,Italy,FR,Frosinone
+Zone 4: UK & Europe,Major Europe,IT,Italy,GE,Genova
+Zone 4: UK & Europe,Major Europe,IT,Italy,GO,Gorizia
+Zone 4: UK & Europe,Major Europe,IT,Italy,GR,Grosseto
+Zone 4: UK & Europe,Major Europe,IT,Italy,IM,Imperia
+Zone 4: UK & Europe,Major Europe,IT,Italy,IS,Isernia
+Zone 4: UK & Europe,Major Europe,IT,Italy,AQ,L'Aquila
+Zone 4: UK & Europe,Major Europe,IT,Italy,SP,La Spezia
+Zone 4: UK & Europe,Major Europe,IT,Italy,LT,Latina
+Zone 4: UK & Europe,Major Europe,IT,Italy,LE,Lecce
+Zone 4: UK & Europe,Major Europe,IT,Italy,LC,Lecco
+Zone 4: UK & Europe,Major Europe,IT,Italy,LI,Livorno
+Zone 4: UK & Europe,Major Europe,IT,Italy,LO,Lodi
+Zone 4: UK & Europe,Major Europe,IT,Italy,LU,Lucca
+Zone 4: UK & Europe,Major Europe,IT,Italy,MC,Macerata
+Zone 4: UK & Europe,Major Europe,IT,Italy,MN,Mantova
+Zone 4: UK & Europe,Major Europe,IT,Italy,MS,Massa-Carrara
+Zone 4: UK & Europe,Major Europe,IT,Italy,MT,Matera
+Zone 4: UK & Europe,Major Europe,IT,Italy,VS,Medio Campidano
+Zone 4: UK & Europe,Major Europe,IT,Italy,ME,Messina
+Zone 4: UK & Europe,Major Europe,IT,Italy,MI,Milano
+Zone 4: UK & Europe,Major Europe,IT,Italy,MO,Modena
+Zone 4: UK & Europe,Major Europe,IT,Italy,MB,Monza e Brianza
+Zone 4: UK & Europe,Major Europe,IT,Italy,NA,Napoli
+Zone 4: UK & Europe,Major Europe,IT,Italy,NO,Novara
+Zone 4: UK & Europe,Major Europe,IT,Italy,NU,Nuoro
+Zone 4: UK & Europe,Major Europe,IT,Italy,OG,Ogliastra
+Zone 4: UK & Europe,Major Europe,IT,Italy,OT,Olbia-Tempio
+Zone 4: UK & Europe,Major Europe,IT,Italy,OR,Oristano
+Zone 4: UK & Europe,Major Europe,IT,Italy,PD,Padova
+Zone 4: UK & Europe,Major Europe,IT,Italy,PA,Palermo
+Zone 4: UK & Europe,Major Europe,IT,Italy,PR,Parma
+Zone 4: UK & Europe,Major Europe,IT,Italy,PV,Pavia
+Zone 4: UK & Europe,Major Europe,IT,Italy,PG,Perugia
+Zone 4: UK & Europe,Major Europe,IT,Italy,PU,Pesaro e Urbino
+Zone 4: UK & Europe,Major Europe,IT,Italy,PE,Pescara
+Zone 4: UK & Europe,Major Europe,IT,Italy,PC,Piacenza
+Zone 4: UK & Europe,Major Europe,IT,Italy,PI,Pisa
+Zone 4: UK & Europe,Major Europe,IT,Italy,PT,Pistoia
+Zone 4: UK & Europe,Major Europe,IT,Italy,PN,Pordenone
+Zone 4: UK & Europe,Major Europe,IT,Italy,PZ,Potenza
+Zone 4: UK & Europe,Major Europe,IT,Italy,PO,Prato
+Zone 4: UK & Europe,Major Europe,IT,Italy,RG,Ragusa
+Zone 4: UK & Europe,Major Europe,IT,Italy,RA,Ravenna
+Zone 4: UK & Europe,Major Europe,IT,Italy,RC,Reggio Calabria
+Zone 4: UK & Europe,Major Europe,IT,Italy,RE,Reggio Emilia
+Zone 4: UK & Europe,Major Europe,IT,Italy,RI,Rieti
+Zone 4: UK & Europe,Major Europe,IT,Italy,RN,Rimini
+Zone 4: UK & Europe,Major Europe,IT,Italy,RM,Roma
+Zone 4: UK & Europe,Major Europe,IT,Italy,RO,Rovigo
+Zone 4: UK & Europe,Major Europe,IT,Italy,SA,Salerno
+Zone 4: UK & Europe,Major Europe,IT,Italy,SS,Sassari
+Zone 4: UK & Europe,Major Europe,IT,Italy,SV,Savona
+Zone 4: UK & Europe,Major Europe,IT,Italy,SI,Siena
+Zone 4: UK & Europe,Major Europe,IT,Italy,SR,Siracusa
+Zone 4: UK & Europe,Major Europe,IT,Italy,SO,Sondrio
+Zone 4: UK & Europe,Major Europe,IT,Italy,TA,Taranto
+Zone 4: UK & Europe,Major Europe,IT,Italy,TE,Teramo
+Zone 4: UK & Europe,Major Europe,IT,Italy,TR,Terni
+Zone 4: UK & Europe,Major Europe,IT,Italy,TO,Torino
+Zone 4: UK & Europe,Major Europe,IT,Italy,TP,Trapani
+Zone 4: UK & Europe,Major Europe,IT,Italy,TN,Trento
+Zone 4: UK & Europe,Major Europe,IT,Italy,TV,Treviso
+Zone 4: UK & Europe,Major Europe,IT,Italy,TS,Trieste
+Zone 4: UK & Europe,Major Europe,IT,Italy,UD,Udine
+Zone 4: UK & Europe,Major Europe,IT,Italy,VA,Varese
+Zone 4: UK & Europe,Major Europe,IT,Italy,VE,Venezia
+Zone 4: UK & Europe,Major Europe,IT,Italy,VB,Verbano-Cusio-Ossola
+Zone 4: UK & Europe,Major Europe,IT,Italy,VC,Vercelli
+Zone 4: UK & Europe,Major Europe,IT,Italy,VR,Verona
+Zone 4: UK & Europe,Major Europe,IT,Italy,VV,Vibo Valentia
+Zone 4: UK & Europe,Major Europe,IT,Italy,VI,Vicenza
+Zone 4: UK & Europe,Major Europe,IT,Italy,VT,Viterbo
+Zone 4: UK & Europe,Major Europe,NL,Netherlands,,
+Zone 4: UK & Europe,Major Europe,NO,Norway,,
+Zone 4: UK & Europe,Major Europe,ES,Spain,C,A Coruña
+Zone 4: UK & Europe,Major Europe,ES,Spain,VI,Álava
+Zone 4: UK & Europe,Major Europe,ES,Spain,AB,Albacete
+Zone 4: UK & Europe,Major Europe,ES,Spain,A,Alicante
+Zone 4: UK & Europe,Major Europe,ES,Spain,AL,Almería
+Zone 4: UK & Europe,Major Europe,ES,Spain,O,Asturias
+Zone 4: UK & Europe,Major Europe,ES,Spain,AV,Ávila
+Zone 4: UK & Europe,Major Europe,ES,Spain,BA,Badajoz
+Zone 4: UK & Europe,Major Europe,ES,Spain,PM,Balears
+Zone 4: UK & Europe,Major Europe,ES,Spain,B,Barcelona
+Zone 4: UK & Europe,Major Europe,ES,Spain,BU,Burgos
+Zone 4: UK & Europe,Major Europe,ES,Spain,CC,Cáceres
+Zone 4: UK & Europe,Major Europe,ES,Spain,CA,Cádiz
+Zone 4: UK & Europe,Major Europe,ES,Spain,S,Cantabria
+Zone 4: UK & Europe,Major Europe,ES,Spain,CS,Castellón
+Zone 4: UK & Europe,Major Europe,ES,Spain,CE,Ceuta
+Zone 4: UK & Europe,Major Europe,ES,Spain,CR,Ciudad Real
+Zone 4: UK & Europe,Major Europe,ES,Spain,CO,Córdoba
+Zone 4: UK & Europe,Major Europe,ES,Spain,CU,Cuenca
+Zone 4: UK & Europe,Major Europe,ES,Spain,GI,Girona
+Zone 4: UK & Europe,Major Europe,ES,Spain,GR,Granada
+Zone 4: UK & Europe,Major Europe,ES,Spain,GU,Guadalajara
+Zone 4: UK & Europe,Major Europe,ES,Spain,SS,Guipúzcoa
+Zone 4: UK & Europe,Major Europe,ES,Spain,H,Huelva
+Zone 4: UK & Europe,Major Europe,ES,Spain,HU,Huesca
+Zone 4: UK & Europe,Major Europe,ES,Spain,J,Jaén
+Zone 4: UK & Europe,Major Europe,ES,Spain,LO,La Rioja
+Zone 4: UK & Europe,Major Europe,ES,Spain,GC,Las Palmas
+Zone 4: UK & Europe,Major Europe,ES,Spain,LE,León
+Zone 4: UK & Europe,Major Europe,ES,Spain,L,Lleida
+Zone 4: UK & Europe,Major Europe,ES,Spain,LU,Lugo
+Zone 4: UK & Europe,Major Europe,ES,Spain,M,Madrid
+Zone 4: UK & Europe,Major Europe,ES,Spain,MA,Málaga
+Zone 4: UK & Europe,Major Europe,ES,Spain,ML,Melilla
+Zone 4: UK & Europe,Major Europe,ES,Spain,MU,Murcia
+Zone 4: UK & Europe,Major Europe,ES,Spain,NA,Navarra
+Zone 4: UK & Europe,Major Europe,ES,Spain,OR,Ourense
+Zone 4: UK & Europe,Major Europe,ES,Spain,P,Palencia
+Zone 4: UK & Europe,Major Europe,ES,Spain,PO,Pontevedra
+Zone 4: UK & Europe,Major Europe,ES,Spain,SA,Salamanca
+Zone 4: UK & Europe,Major Europe,ES,Spain,TF,Santa Cruz de Tenerife
+Zone 4: UK & Europe,Major Europe,ES,Spain,SG,Segovia
+Zone 4: UK & Europe,Major Europe,ES,Spain,SE,Sevilla
+Zone 4: UK & Europe,Major Europe,ES,Spain,SO,Soria
+Zone 4: UK & Europe,Major Europe,ES,Spain,T,Tarragona
+Zone 4: UK & Europe,Major Europe,ES,Spain,TE,Teruel
+Zone 4: UK & Europe,Major Europe,ES,Spain,TO,Toledo
+Zone 4: UK & Europe,Major Europe,ES,Spain,V,Valencia
+Zone 4: UK & Europe,Major Europe,ES,Spain,VA,Valladolid
+Zone 4: UK & Europe,Major Europe,ES,Spain,BI,Vizcaya
+Zone 4: UK & Europe,Major Europe,ES,Spain,ZA,Zamora
+Zone 4: UK & Europe,Major Europe,ES,Spain,Z,Zaragoza
+Zone 4: UK & Europe,Major Europe,SE,Sweden,,
+Zone 4: UK & Europe,Major Europe,CH,Switzerland,,
+Zone 4: UK & Europe,Major Europe,BV,Bouvet Island,,
+Zone 4: UK & Europe,Major Europe,YT,Mayotte,,
+Zone 4: UK & Europe,Major Europe,SM,San Marino,,
+Zone 4: UK & Europe,Major Europe,SJ,Svalbard And Jan Mayen,,
+Zone 4: UK & Europe,Major Europe,TF,French Southern Territories,,
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ALT,Altai Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,AL,Altai Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,AMU,Amur Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ARK,Arkhangelsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,AST,Astrakhan Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,BEL,Belgorod Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,BRY,Bryansk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,CE,Chechen Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,CHE,Chelyabinsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,CHU,Chukotka Autonomous Okrug
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,CU,Chuvash Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,IRK,Irkutsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,IVA,Ivanovo Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,YEV,Jewish Autonomous Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KB,Kabardino-Balkarian Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KGD,Kaliningrad Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KLU,Kaluga Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KAM,Kamchatka Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KC,Karachay–Cherkess Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KEM,Kemerovo Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KHA,Khabarovsk Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KHM,Khanty-Mansi Autonomous Okrug
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KIR,Kirov Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KO,Komi Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KOS,Kostroma Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KDA,Krasnodar Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KYA,Krasnoyarsk Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KGN,Kurgan Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KRS,Kursk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,LEN,Leningrad Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,LIP,Lipetsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,MAG,Magadan Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ME,Mari El Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,MOW,Moscow
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,MOS,Moscow Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,MUR,Murmansk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,NIZ,Nizhny Novgorod Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,NGR,Novgorod Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,NVS,Novosibirsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,OMS,Omsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ORE,Orenburg Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ORL,Oryol Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,PNZ,Penza Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,PER,Perm Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,PRI,Primorsky Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,PSK,Pskov Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,AD,Republic of Adygeya
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,BA,Republic of Bashkortostan
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,BU,Republic of Buryatia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,DA,Republic of Dagestan
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,IN,Republic of Ingushetia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KL,Republic of Kalmykia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KR,Republic of Karelia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,KK,Republic of Khakassia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,MO,Republic of Mordovia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SE,Republic of North Ossetia–Alania
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TA,Republic of Tatarstan
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ROS,Rostov Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,RYA,Ryazan Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SPE,Saint Petersburg
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SA,Sakha Republic (Yakutia)
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SAK,Sakhalin Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SAM,Samara Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SAR,Saratov Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SMO,Smolensk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,STA,Stavropol Krai
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,SVE,Sverdlovsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TAM,Tambov Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TOM,Tomsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TUL,Tula Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TVE,Tver Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TYU,Tyumen Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,TY,Tyva Republic
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,UD,Udmurtia
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ULY,Ulyanovsk Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,VLA,Vladimir Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,VGG,Volgograd Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,VLG,Vologda Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,VOR,Voronezh Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,YAN,Yamalo-Nenets Autonomous Okrug
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,YAR,Yaroslavl Oblast
+Zone 4: UK & Europe,Rest of World 1,RU,Russia,ZAB,Zabaykalsky Krai
+Zone 4: UK & Europe,Rest of World 1,AL,Albania,,
+Zone 4: UK & Europe,Rest of World 1,AT,Austria,,
+Zone 4: UK & Europe,Rest of World 1,BE,Belgium,,
+Zone 4: UK & Europe,Rest of World 1,BA,Bosnia And Herzegovina,,
+Zone 4: UK & Europe,Rest of World 1,BG,Bulgaria,,
+Zone 4: UK & Europe,Rest of World 1,HR,Croatia,,
+Zone 4: UK & Europe,Rest of World 1,CY,Cyprus,,
+Zone 4: UK & Europe,Rest of World 1,CZ,Czech Republic,,
+Zone 4: UK & Europe,Rest of World 1,DK,Denmark,,
+Zone 4: UK & Europe,Rest of World 1,EE,Estonia,,
+Zone 4: UK & Europe,Rest of World 1,FI,Finland,,
+Zone 4: UK & Europe,Rest of World 1,GR,Greece,,
+Zone 4: UK & Europe,Rest of World 1,HU,Hungary,,
+Zone 4: UK & Europe,Rest of World 1,IS,Iceland,,
+Zone 4: UK & Europe,Rest of World 1,XK,Kosovo,,
+Zone 4: UK & Europe,Rest of World 1,MT,Malta,,
+Zone 4: UK & Europe,Rest of World 1,ME,Montenegro,,
+Zone 4: UK & Europe,Rest of World 1,MK,North Macedonia,,
+Zone 4: UK & Europe,Rest of World 1,PL,Poland,,
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-20,Açores
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-01,Aveiro
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-02,Beja
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-03,Braga
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-04,Bragança
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-05,Castelo Branco
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-06,Coimbra
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-07,Évora
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-08,Faro
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-09,Guarda
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-10,Leiria
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-11,Lisboa
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-30,Madeira
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-12,Portalegre
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-13,Porto
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-14,Santarém
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-15,Setúbal
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-16,Viana do Castelo
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-17,Vila Real
+Zone 4: UK & Europe,Rest of World 1,PT,Portugal,PT-18,Viseu
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,AB,Alba
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,AR,Arad
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,AG,Argeș
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BC,Bacău
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BH,Bihor
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BN,Bistrița-Năsăud
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BT,Botoșani
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BR,Brăila
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BV,Brașov
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,B,București
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,BZ,Buzău
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,CS,Caraș-Severin
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,CJ,Cluj
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,CT,Constanța
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,CV,Covasna
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,CL,Călărași
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,DJ,Dolj
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,DB,Dâmbovița
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,GL,Galați
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,GR,Giurgiu
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,GJ,Gorj
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,HR,Harghita
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,HD,Hunedoara
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,IL,Ialomița
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,IS,Iași
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,IF,Ilfov
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,MM,Maramureș
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,MH,Mehedinți
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,MS,Mureș
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,NT,Neamț
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,OT,Olt
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,PH,Prahova
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,SJ,Sălaj
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,SM,Satu Mare
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,SB,Sibiu
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,SV,Suceava
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,TR,Teleorman
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,TM,Timiș
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,TL,Tulcea
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,VL,Vâlcea
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,VS,Vaslui
+Zone 4: UK & Europe,Rest of World 1,RO,Romania,VN,Vrancea
+Zone 4: UK & Europe,Rest of World 1,RS,Serbia,,
+Zone 4: UK & Europe,Rest of World 1,SK,Slovakia,,
+Zone 4: UK & Europe,Rest of World 1,SI,Slovenia,,
+Zone 4: UK & Europe,Rest of World 1,TR,Turkey,,
+Zone 4: UK & Europe,Rest of World 1,UA,Ukraine,,
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,EC,Eastern Cape
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,FS,Free State
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,GT,Gauteng
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,NL,KwaZulu-Natal
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,LP,Limpopo
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,MP,Mpumalanga
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,NW,North West
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,NC,Northern Cape
+Zone 4: UK & Europe,Rest of World 1,ZA,South Africa,WC,Western Cape
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,AC,Acre
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,AL,Alagoas
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,AP,Amapá
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,AM,Amazonas
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,BA,Bahia
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,CE,Ceará
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,DF,Distrito Federal
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,ES,Espírito Santo
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,GO,Goiás
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,MA,Maranhão
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,MT,Mato Grosso
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,MS,Mato Grosso do Sul
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,MG,Minas Gerais
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,PA,Pará
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,PB,Paraíba
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,PR,Paraná
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,PE,Pernambuco
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,PI,Piauí
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,RN,Rio Grande do Norte
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,RS,Rio Grande do Sul
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,RJ,Rio de Janeiro
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,RO,Rondônia
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,RR,Roraima
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,SC,Santa Catarina
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,SP,São Paulo
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,SE,Sergipe
+Zone 4: UK & Europe,Rest of World 1,BR,Brazil,TO,Tocantins
+Zone 5: Rest of the World,Rest of World 2,,,,

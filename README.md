@@ -490,6 +490,44 @@ $updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHead
 $updateRatesResult
 ```
 
+### Replacing existing zones
+
+Get details of the existing profile you want to replace:
+
+```
+$getDeliveryProfileData = @{
+  query = $getDeliveryProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+```
+
+Get all existing location group zones:
+
+```
+$zonesToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.zone.id
+$zonesToDelete
+```
+
+Then delete them:
+
+```
+$deleteZones = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id
+    profile = @{
+      zonesToDelete = $zonesToDelete
+    }
+  }
+}
+
+$deleteZonesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $deleteZones)
+$deleteZonesResult
+```
 
 ## Assigning products to profiles
 
