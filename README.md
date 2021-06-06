@@ -13,7 +13,7 @@ You will need to have PowerShell Core (crossplatform) installed to run the scrip
 In the Shopfiy admin, go to Apps > Manage private apps.
 
 You will need to enable private apps, and then create a new app (call it something like "AusPost Rates" or "Data Manager", or whatever name makes sense to you). It will need Read and write permission to Shipping, as well as other functions you want to use, e.g. to
-use scripts to add productsd to shipping, you need Read access to Products.
+use scripts to add products to shipping, you need Read access to Products.
 
 Record the API parameters in variables, which will be used in other scripts.
 
@@ -362,7 +362,7 @@ $zoneIdsAndNames | Measure-Object
 Read the data file and use it to build the zone updates adding the method definitions.
 
 ```pwsh
-$zoneRateData = Import-Csv 'data/auspost-rates-to-1kg.csv'
+$zoneRateData = Import-Csv 'data/auspost-rates-to-1-5kg.csv'
 $zonesToUpdate = [System.Collections.ArrayList]@()
 $currentZone = $null
 $zoneRateData | ForEach-Object {
