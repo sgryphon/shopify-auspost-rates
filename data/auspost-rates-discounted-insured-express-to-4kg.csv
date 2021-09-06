@@ -1,13 +1,13 @@
 zone,method,greaterThanKg,lessThanKg,rateAud
-Domestic,Wholesale Insured Express,0,0.251,8.51
-Domestic,Wholesale Insured Express,0.251,0.501,10.26
-Domestic,Wholesale Insured Express,0.501,1.001,16.45
-Domestic,Wholesale Insured Express,1.001,1.501,22.58
-Domestic,Wholesale Insured Express,1.501,2.001,26.08
-Domestic,Wholesale Insured Express,2.001,2.501,29.58
-Domestic,Wholesale Insured Express,2.501,3.001,33.08
-Domestic,Wholesale Insured Express,3.001,3.501,40.92
-Domestic,Wholesale Insured Express,3.501,4.001,44.42
+Domestic,Wholesale Insured Express,0,0.251,8.61
+Domestic,Wholesale Insured Express,0.251,0.501,10.36
+Domestic,Wholesale Insured Express,0.501,1.001,16.59
+Domestic,Wholesale Insured Express,1.001,1.501,22.72
+Domestic,Wholesale Insured Express,1.501,2.001,26.22
+Domestic,Wholesale Insured Express,2.001,2.501,29.72
+Domestic,Wholesale Insured Express,2.501,3.001,33.22
+Domestic,Wholesale Insured Express,3.001,3.501,41.09
+Domestic,Wholesale Insured Express,3.501,4.001,44.59
 Zone 1: New Zealand,International Insured Express,0,0.251,18.12
 Zone 1: New Zealand,International Insured Express,0.251,0.501,22.32
 Zone 1: New Zealand,International Insured Express,0.501,1.001,30.60

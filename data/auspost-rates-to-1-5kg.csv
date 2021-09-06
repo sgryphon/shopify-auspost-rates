@@ -1,10 +1,10 @@
 zone,method,greaterThanKg,lessThanKg,rateAud
-Domestic,Parcel Post,0,0.501,9.15
-Domestic,Parcel Post (1kg),0.501,1.001,12.50
-Domestic,Parcel Post (1.5kg),1.001,1.501,15.75
-Domestic,Express Post,0,0.501,12.15
-Domestic,Express Post (1kg),0.501,1.001,16.00
-Domestic,Express Post (1.5kg),1.001,1.501,19.75
+Domestic,Parcel Post,0,0.501,9.30
+Domestic,Parcel Post (1kg),0.501,1.001,12.70
+Domestic,Parcel Post (1.5kg),1.001,1.501,15.95
+Domestic,Express Post,0,0.501,12.30
+Domestic,Express Post (1kg),0.501,1.001,16.20
+Domestic,Express Post (1.5kg),1.001,1.501,19.95
 Zone 1: New Zealand,International Standard,0,0.251,15.20
 Zone 1: New Zealand,International Standard (500g),0.251,0.501,18.20
 Zone 1: New Zealand,International Standard (1kg),0.501,1.001,24.00
