@@ -12,13 +12,12 @@ You will need to have PowerShell Core (crossplatform) installed to run the scrip
 
 In the Shopfiy admin, go to Apps > Manage private apps.
 
-You will need to enable private apps, and then create a new app (call it something like "AusPost Rates" or "Data Manager", or whatever name makes sense to you). It will need Read and write permission to Shipping, as well as other functions you want to use, e.g. to
-use scripts to add products to shipping, you need Read access to Products.
+You will need to enable private apps, and then create a new app (call it something like "AusPost Rates" or "Data Manager", or whatever name makes sense to you). It will need Read and write permission to Shipping, as well as other functions you want to use, e.g. to use scripts to add products to shipping, you need Read access to Products.
 
-Record the API parameters in variables, which will be used in other scripts.
+Record the API parameters in variables, which will be used in other scripts. For graph queries you will need the 'Password' value (you don't need the API key for Shared Secret).
 
 ```pwsh
-$passwordToken = '<Password>'
+$password = '<Password>'
 $shopName = '<shop name>'
 ```
 
@@ -30,7 +29,7 @@ First set up the base URL and headers, using the variables above.
 $uri = "https://$shopName.myshopify.com/admin/api/2021-01/graphql.json"
 $headers = @{ 
   'Content-Type' = 'application/graphql';
-  'X-Shopify-Access-Token' = $passwordToken
+  'X-Shopify-Access-Token' = $password
 }
 ```
 
@@ -80,6 +79,7 @@ $body = '{
 
 $deliveryProfiles = Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body
 $defaultProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.default }).node.id
+$defaultProfileId
 ```
 
 Parametised queries use `application/json` instead of raw `application/graphql`, with the query passed as a string
@@ -94,7 +94,7 @@ Australia Post.
 ```pwsh
 $jsonHeaders = @{ 
   'Content-Type' = 'application/json';
-  'X-Shopify-Access-Token' = $passwordToken
+  'X-Shopify-Access-Token' = $password
 }
 
 $getDeliveryProfileQuery = 'query($id: ID!)
@@ -256,7 +256,7 @@ location group to update.
 Get to profile to be updated, and add the zones to create to the profile location group ID.
 
 ```
-$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Australia Post' }
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'General Profile' }
 $deliveryProfile.node.profileLocationGroups | Measure-Object
 $locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
 $profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
@@ -490,7 +490,7 @@ $updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHead
 $updateRatesResult
 ```
 
-### Replacing existing zones
+### Replacing the entire existing zones (not just rates, but the zone definitions)
 
 Get details of the existing profile you want to replace:
 
@@ -650,3 +650,173 @@ $addOtherProducts = @{
 $addResult2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 4 $addOtherProducts)
 $addResult2.data.deliveryProfileUpdate.profile
 ```
+
+## Multiple profiles
+
+To update the rates in a second profile.
+
+Follow the process up to **Get existing shipping profile information**, where you have retrieved `$deliveryProfiles`. To see all the profile names you can query `$deliveryProfiles.data.deliveryProfiles.edges`.
+
+**Note:** Use the name of the rate you want to change, e.g. 'Wholesale Shipping':
+
+```
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
+$deliveryProfile.node.profileLocationGroups | Measure-Object
+```
+
+### Rates to be deleted
+
+Get the existing profile details:
+
+```
+$getDeliveryProfileData = @{
+  query = $getDeliveryProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+```
+
+Then convert that to the rates to be deleted:
+
+```
+$methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
+$methodsToDelete
+```
+
+### Rates to add
+
+Then follow the instructions in 'Read shipping rate data' and 'Uploading rates' up to the point where
+`$profileLocationGroupUpdateInput` is created.
+
+Get the created zone IDs.
+
+```pwsh
+$getDeliveryProfileZonesQuery = 'query($id: ID!)
+{
+  deliveryProfile (id: $id) {
+    profileLocationGroups {
+      locationGroupZones (first: 15) {
+        edges {
+          node {
+            zone {
+              id
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}'
+
+$getDeliveryProfileZonesData = @{
+  query = $getDeliveryProfileZonesQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileZones = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileZonesData)
+$zoneIdsAndNames = $profileZones.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges.node.zone
+$zoneIdsAndNames | Measure-Object
+```
+
+Read the data file and use it to build the zone updates adding the method definitions.
+
+**Note:** Use the file name of the rates being changed, e.g. 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
+
+```pwsh
+$zoneRateData = Import-Csv 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
+$zonesToUpdate = [System.Collections.ArrayList]@()
+$currentZone = $null
+$zoneRateData | ForEach-Object {
+  $line = $_
+  if ($line.zone -ne $currentZone) {
+    $currentZone = $line.zone
+    $zone = $zoneIdsAndNames | Where-Object { $_.name -eq $currentZone}
+    if (-not $zone) { throw "Zone $($_.name) not found" }
+    $zoneInput = @{ id = $zone.id; methodDefinitionsToCreate = [System.Collections.ArrayList]@() }
+    $i = $zonesToUpdate.Add($zoneInput)
+  }
+  $weightConditionsInput = [System.Collections.ArrayList]@()
+  $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  if ([decimal]$line.greaterThanKg) {
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.greaterThanKg; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
+  }
+  $methodInput = @{ 
+    active = $true;
+    name = $line.method;
+    rateDefinition = @{ price = @{ amount = [decimal]$line.rateAud; currencyCode = 'AUD' } };
+    weightConditionsToCreate = $weightConditionsInput;
+  }
+  $i = $zoneInput.methodDefinitionsToCreate.Add($methodInput)
+}
+$zonesToUpdate | ConvertTo-Json -Depth 6
+```
+
+We can then build the quety to update the zones:
+
+```
+$updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
+  deliveryProfileUpdate (id: $id, profile: $profile)
+  {
+    profile {
+      id
+      name
+      profileLocationGroups {
+        locationGroupZones (first: 15) {
+          edges {
+            node {
+              zone {
+                id
+                name
+              }
+              methodDefinitions (first:20) {
+                edges {
+                  node {
+                    id
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}'
+
+$profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
+```
+
+### Send the update
+
+Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to update the rates.
+
+Build the update query:
+
+```
+$updateRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      methodDefinitionsToDelete = $methodsToDelete
+      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
+    }
+  }
+}
+
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $updateRates)
+$updateRatesResult
+```
+
+Check the rates have updated in the UI.
