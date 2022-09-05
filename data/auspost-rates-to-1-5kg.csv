@@ -1,47 +1,47 @@
 zone,method,greaterThanKg,lessThanKg,rateAud
-Domestic,Parcel Post,0,0.501,9.30
-Domestic,Parcel Post (1kg),0.501,1.001,12.70
-Domestic,Parcel Post (1.5kg),1.001,1.501,15.95
-Domestic,Express Post,0,0.501,12.30
-Domestic,Express Post (1kg),0.501,1.001,16.20
-Domestic,Express Post (1.5kg),1.001,1.501,19.95
-Zone 1: New Zealand,International Standard,0,0.251,15.20
-Zone 1: New Zealand,International Standard (500g),0.251,0.501,18.20
-Zone 1: New Zealand,International Standard (1kg),0.501,1.001,24.00
-Zone 1: New Zealand,International Standard (1.5kg),1.001,1.501,29.80
-Zone 1: New Zealand,International Express,0,0.251,30.20
-Zone 1: New Zealand,International Express (500g),0.251,0.501,33.20
-Zone 1: New Zealand,International Express (1kg),0.501,1.001,39.00
-Zone 1: New Zealand,International Express (1.5kg),1.001,1.501,44.80
-Zone 2: Asia Pacific,International Standard,0,0.251,18.90
-Zone 2: Asia Pacific,International Standard (500g),0.251,0.501,21.90
-Zone 2: Asia Pacific,International Standard (1kg),0.501,1.001,33.60
-Zone 2: Asia Pacific,International Standard (1.5kg),1.001,1.501,45.30
-Zone 2: Asia Pacific,International Express,0,0.251,33.90
-Zone 2: Asia Pacific,International Express (500g),0.251,0.501,36.90
-Zone 2: Asia Pacific,International Express (1kg),0.501,1.001,48.60
-Zone 2: Asia Pacific,International Express (1.5kg),1.001,1.501,60.30
-Zone 3: US & Canada,International Standard,0,0.251,21.00
-Zone 3: US & Canada,International Standard (500g),0.251,0.501,24.00
-Zone 3: US & Canada,International Standard (1kg),0.501,1.001,36.90
-Zone 3: US & Canada,International Standard (1.5kg),1.001,1.501,49.80
-Zone 3: US & Canada,International Express,0,0.251,36.00
-Zone 3: US & Canada,International Express (500g),0.251,0.501,39.00
-Zone 3: US & Canada,International Express (1kg),0.501,1.001,51.90
-Zone 3: US & Canada,International Express (1.5kg),1.001,1.501,64.80
-Zone 4: UK & Europe,International Standard,0,0.251,26.40
-Zone 4: UK & Europe,International Standard (500g),0.251,0.501,29.40
-Zone 4: UK & Europe,International Standard (1kg),0.501,1.001,42.30
-Zone 4: UK & Europe,International Standard (1.5kg),1.001,1.501,55.20
-Zone 4: UK & Europe,International Express,0,0.251,41.40
-Zone 4: UK & Europe,International Express (500g),0.251,0.501,44.40
-Zone 4: UK & Europe,International Express (1kg),0.501,1.001,57.30
-Zone 4: UK & Europe,International Express (1.5kg),1.001,1.501,70.20
-Zone 5: Rest of the World,International Standard,0,0.251,31.80
-Zone 5: Rest of the World,International Standard (500g),0.251,0.501,34.80
-Zone 5: Rest of the World,International Standard (1kg),0.501,1.001,51.35
-Zone 5: Rest of the World,International Standard (1.5kg),1.001,1.501,67.90
-Zone 5: Rest of the World,International Express,0,0.251,46.80
-Zone 5: Rest of the World,International Express (500g),0.251,0.501,49.80
-Zone 5: Rest of the World,International Express (1kg),0.501,1.001,66.35
-Zone 5: Rest of the World,International Express (1.5kg),1.001,1.501,82.90
+Domestic,Parcel Post,0,0.501,9.70
+Domestic,Parcel Post (1kg),0.501,1.001,13.25
+Domestic,Parcel Post (1.5kg),1.001,1.501,16.65
+Domestic,Express Post,0,0.501,12.70
+Domestic,Express Post (1kg),0.501,1.001,16.75
+Domestic,Express Post (1.5kg),1.001,1.501,20.65
+Zone 1: New Zealand,International Standard,0,0.251,14.80
+Zone 1: New Zealand,International Standard (500g),0.251,0.501,17.90
+Zone 1: New Zealand,International Standard (1kg),0.501,1.001,24.05
+Zone 1: New Zealand,International Standard (1.5kg),1.001,1.501,30.20
+Zone 1: New Zealand,International Express,0,0.251,29.80
+Zone 1: New Zealand,International Express (500g),0.251,0.501,32.90
+Zone 1: New Zealand,International Express (1kg),0.501,1.001,39.05
+Zone 1: New Zealand,International Express (1.5kg),1.001,1.501,45.20
+Zone 2: Asia Pacific,International Standard,0,0.251,18.00
+Zone 2: Asia Pacific,International Standard (500g),0.251,0.501,23.50
+Zone 2: Asia Pacific,International Standard (1kg),0.501,1.001,34.50
+Zone 2: Asia Pacific,International Standard (1.5kg),1.001,1.501,45.50
+Zone 2: Asia Pacific,International Express,0,0.251,33.00
+Zone 2: Asia Pacific,International Express (500g),0.251,0.501,38.50
+Zone 2: Asia Pacific,International Express (1kg),0.501,1.001,49.50
+Zone 2: Asia Pacific,International Express (1.5kg),1.001,1.501,60.50
+Zone 3: US & Canada,International Standard,0,0.251,19.95
+Zone 3: US & Canada,International Standard (500g),0.251,0.501,25.90
+Zone 3: US & Canada,International Standard (1kg),0.501,1.001,37.80
+Zone 3: US & Canada,International Standard (1.5kg),1.001,1.501,49.70
+Zone 3: US & Canada,International Express,0,0.251,34.95
+Zone 3: US & Canada,International Express (500g),0.251,0.501,40.90
+Zone 3: US & Canada,International Express (1kg),0.501,1.001,52.80
+Zone 3: US & Canada,International Express (1.5kg),1.001,1.501,64.70
+Zone 4: UK & Europe,International Standard,0,0.251,24.75
+Zone 4: UK & Europe,International Standard (500g),0.251,0.501,31.00
+Zone 4: UK & Europe,International Standard (1kg),0.501,1.001,43.50
+Zone 4: UK & Europe,International Standard (1.5kg),1.001,1.501,56.00
+Zone 4: UK & Europe,International Express,0,0.251,39.75
+Zone 4: UK & Europe,International Express (500g),0.251,0.501,46.00
+Zone 4: UK & Europe,International Express (1kg),0.501,1.001,58.50
+Zone 4: UK & Europe,International Express (1.5kg),1.001,1.501,71.00
+Zone 5: Rest of the World,International Standard,0,0.251,29.50
+Zone 5: Rest of the World,International Standard (500g),0.251,0.501,37.50
+Zone 5: Rest of the World,International Standard (1kg),0.501,1.001,53.50
+Zone 5: Rest of the World,International Standard (1.5kg),1.001,1.501,69.50
+Zone 5: Rest of the World,International Express,0,0.251,44.50
+Zone 5: Rest of the World,International Express (500g),0.251,0.501,52.50
+Zone 5: Rest of the World,International Express (1kg),0.501,1.001,68.50
+Zone 5: Rest of the World,International Express (1.5kg),1.001,1.501,84.50
