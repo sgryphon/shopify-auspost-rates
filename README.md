@@ -1,14 +1,19 @@
-# Shopify - AusPost Rates
+Shopify - AusPost Rates
+=======================
 
 Australia Post zones and rate data for importing to Shopify.
 
-## Requirements
+
+Requirements
+------------
 
 This project contains PowerShell scripts that can be used to upload shipping rates to Shopify via the API.
 
 You will need to have PowerShell Core (crossplatform) installed to run the scripts.
 
-## Configure a Private App to get access to the API
+
+Configure a Private App to get access to the API
+------------------------------------------------
 
 In the Shopfiy admin, go to Apps > Manage private apps.
 
@@ -16,16 +21,18 @@ You will need to enable private apps, and then create a new app (call it somethi
 
 Record the API parameters in variables, which will be used in other scripts. For graph queries you will need the 'Password' value (you don't need the API key for Shared Secret).
 
-```pwsh
+```powershell
 $password = '<Password>'
 $shopName = '<shop name>'
 ```
 
-## Accessing the GraphQL API
+
+Accessing the GraphQL API
+-------------------------
 
 First set up the base URL and headers, using the variables above.
 
-```pwsh
+```powershell
 $uri = "https://$shopName.myshopify.com/admin/api/2021-01/graphql.json"
 $headers = @{ 
   'Content-Type' = 'application/graphql';
@@ -35,7 +42,7 @@ $headers = @{
 
 A simple query can be used to check the existing shipping profiles.
 
-```pwsh
+```powershell
 $body = '{
   deliveryProfiles(first:10) {
     edges {
@@ -55,11 +62,12 @@ You can also interactively test out queries in the Shopify API developer documen
 https://shopify.dev/docs/admin-api/graphql/reference/shipping-and-fulfillment/deliveryprofile#samples
 
 
-## Get existing shipping profile information
+Get existing shipping profile information
+-----------------------------------------
 
 You will need to get the delivery profile ID's and location group ID's to use in other queries.
 
-```pwsh
+```powershell
 $body = '{
   deliveryProfiles(first:10) {
     edges {
@@ -91,7 +99,7 @@ delivery methods and prices (for different methods or conditions).
 Use this to examine your current profiles, or to check the contents after you have created a new profile for
 Australia Post.
 
-```pwsh
+```powershell
 $jsonHeaders = @{ 
   'Content-Type' = 'application/json';
   'X-Shopify-Access-Token' = $password
@@ -171,7 +179,7 @@ $defaultProfileDetails | ConvertTo-Json -Depth 15
 
 This outputs a summary of the zone name, and countries and provinces allocated to that zone.
 
-```
+```powershell
 $zoneData = $defaultProfileDetails.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges | ForEach-Object {
   $zone = $_.node.zone
   $zone.countries | ForEach-Object {
@@ -195,14 +203,15 @@ $zoneData | Format-Table
 
 This can then be saved to a comma separated value (CSV) file, e.g. for manipulation in a spreadsheet program.
 
-```
+```powershell
 $zoneData | Export-Csv 'data/zone-country-province.csv'
 ```
 
-## Generating rate data files
 
+Generating rate data files
+--------------------------
 
-## Load Australia Post data to a shipping profile
+### Load Australia Post data to a shipping profile
 
 Create a new profile named 'Australia Post' to load the data into.
 
@@ -218,7 +227,7 @@ https://shopify.dev/docs/admin-api/graphql/reference/shipping-and-fulfillment/de
 
 A zone-country CSV data file can be used to create zone information for input.
 
-```
+```powershell
 $zoneCountryData = Import-Csv 'data/auspost-zone-country-province.csv'
 $zonesToCreate = [System.Collections.ArrayList]@()
 $zoneInput = $null
@@ -255,7 +264,7 @@ location group to update.
 
 Get to profile to be updated, and add the zones to create to the profile location group ID.
 
-```
+```powershell
 $deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'General Profile' }
 $deliveryProfile.node.profileLocationGroups | Measure-Object
 $locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
@@ -264,7 +273,7 @@ $profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToC
 
 Send this as an update.
 
-```
+```powershell
 $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   deliveryProfileUpdate (id: $id, profile: $profile)
   {
@@ -328,7 +337,7 @@ $addZonesResult
 
 To update the zones we have created with the rates, first we need to get the created zone IDs.
 
-```pwsh
+```powershell
 $getDeliveryProfileZonesQuery = 'query($id: ID!)
 {
   deliveryProfile (id: $id) {
@@ -361,7 +370,7 @@ $zoneIdsAndNames | Measure-Object
 
 Read the data file and use it to build the zone updates adding the method definitions.
 
-```pwsh
+```powershell
 $zoneRateData = Import-Csv 'data/auspost-rates-to-1-5kg.csv'
 $zonesToUpdate = [System.Collections.ArrayList]@()
 $currentZone = $null
@@ -392,7 +401,7 @@ $zonesToUpdate | ConvertTo-Json -Depth 6
 
 #### Uploading rates
 
-```
+```powershell
 $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   deliveryProfileUpdate (id: $id, profile: $profile)
   {
@@ -448,10 +457,16 @@ $addRatesResult
 To replace existing rates, you remove all the old method definitions for that profile,
 and create new ones.
 
+Get the existing profile ID, based on the name (change the name to update different profiles)
+
+```powershell
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'General Profile' }
+```
+
 First get the existing rates. This uses the query from 'Get existing shipping profile information',
 with the Australia Post delivery profile.
 
-```
+```powershell
 $getDeliveryProfileData = @{
   query = $getDeliveryProfileQuery;
   variables = @{
@@ -464,7 +479,7 @@ $profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders
 
 The list of existing delivery method definitions can be easily shown:
 
-```
+```powershell
 $methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
 $methodsToDelete
 ```
@@ -474,7 +489,7 @@ Then follow the instructions in 'Read shipping rate data' and 'Uploading rates' 
 
 Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to update the rates.
 
-```
+```powershell
 $updateRates = @{
   query = $updateProfileQuery;
   variables = @{
@@ -494,7 +509,7 @@ $updateRatesResult
 
 Get details of the existing profile you want to replace:
 
-```
+```powershell
 $getDeliveryProfileData = @{
   query = $getDeliveryProfileQuery;
   variables = @{
@@ -507,14 +522,14 @@ $profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders
 
 Get all existing location group zones:
 
-```
+```powershell
 $zonesToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.zone.id
 $zonesToDelete
 ```
 
 Then delete them:
 
-```
+```powershell
 $deleteZones = @{
   query = $updateProfileQuery;
   variables = @{
@@ -529,11 +544,13 @@ $deleteZonesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHead
 $deleteZonesResult
 ```
 
-## Assigning products to profiles
+
+Assigning products to profiles
+-------------------------------
 
 Get a list of all products you want to assign, e.g. from one vendor.
 
-```
+```powershell
 $getProductsQuery = 'query($first: Int, $filter: String)
   {
     products(first: $first, query: $filter) {
@@ -576,7 +593,7 @@ You can further filter the objects based on properties.
 
 Then use an update query to add them to a delivery profile.
 
-```
+```powershell
 $activeProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -eq 'ACTIVE' }
 $activeProducts | Measure-Object
 
@@ -631,7 +648,7 @@ $addResult1
 
 You can reuse the same query with different variables:
 
-```
+```powershell
 $otherProducts = $wholesaleProducts.data.products.edges.node | ? { $_.status -ne 'ACTIVE' }
 $otherProducts | Measure-Object
 
@@ -651,7 +668,9 @@ $addResult2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Bo
 $addResult2.data.deliveryProfileUpdate.profile
 ```
 
-## Multiple profiles
+
+Multiple profiles
+-----------------
 
 To update the rates in a second profile.
 
@@ -659,7 +678,7 @@ Follow the process up to **Get existing shipping profile information**, where yo
 
 **Note:** Use the name of the rate you want to change, e.g. 'Wholesale Shipping':
 
-```
+```powershell
 $deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
 $deliveryProfile.node.profileLocationGroups | Measure-Object
 ```
@@ -668,7 +687,7 @@ $deliveryProfile.node.profileLocationGroups | Measure-Object
 
 Get the existing profile details:
 
-```
+```powershell
 $getDeliveryProfileData = @{
   query = $getDeliveryProfileQuery;
   variables = @{
@@ -681,7 +700,7 @@ $profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders
 
 Then convert that to the rates to be deleted:
 
-```
+```powershell
 $methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
 $methodsToDelete
 ```
@@ -693,7 +712,7 @@ Then follow the instructions in 'Read shipping rate data' and 'Uploading rates' 
 
 Get the created zone IDs.
 
-```pwsh
+```powershell
 $getDeliveryProfileZonesQuery = 'query($id: ID!)
 {
   deliveryProfile (id: $id) {
@@ -728,7 +747,7 @@ Read the data file and use it to build the zone updates adding the method defini
 
 **Note:** Use the file name of the rates being changed, e.g. 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
 
-```pwsh
+```powershell
 $zoneRateData = Import-Csv 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
 $zonesToUpdate = [System.Collections.ArrayList]@()
 $currentZone = $null
@@ -759,7 +778,7 @@ $zonesToUpdate | ConvertTo-Json -Depth 6
 
 We can then build the quety to update the zones:
 
-```
+```powershell
 $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   deliveryProfileUpdate (id: $id, profile: $profile)
   {
@@ -803,7 +822,7 @@ Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to updat
 
 Build the update query:
 
-```
+```powershell
 $updateRates = @{
   query = $updateProfileQuery;
   variables = @{
@@ -820,3 +839,253 @@ $updateRatesResult
 ```
 
 Check the rates have updated in the UI.
+
+
+New rate update process
+-----------------------
+
+### Update rate data files
+
+* Get the new rates from the Australia Post website, https://auspost.com.au/
+
+* Open `data/auspost-rates-data.ods` (OpenOffice, or should also be able to open in MS Office)
+
+* Check that there are no changes affective `Zones and countries` and `Domestic zones`, i.e. the zones are the same (just the rates change). If the zones or zone structure has changed, then updates may be a lot more involved than just a rate update.
+
+* Update the `Rate data` sheet, fill in the new base values (in blue); check other values calculate correctly.
+
+* Check Rate definitions 1 and Rate definitions contain the list of rates you want, or create your own.
+
+e.g. Rate definitions 1 has retail rates for both standard and express options, up to 1 kg, for domestic + all zones.
+Rate definitions 2 is desgined for wholesale products, with only express rates, with insurance, and larger weights (up to 5kg), but with a discount applied.
+
+* Export the output tables `Zone rates 1` and `Zone rates 2` to CSV.
+
+* Commit to track in source control
+
+### Preparing for update
+
+* Open a PowerShell terminal
+
+* Check credentials working as per `Configure a Private App to get access to the API` and `Accessing the GraphQL API`
+
+```powershell
+$password = '<Password>'
+$shopName = '<shop name>'
+
+$uri = "https://$shopName.myshopify.com/admin/api/2021-01/graphql.json"
+$headers = @{ 
+  'Content-Type' = 'application/graphql';
+  'X-Shopify-Access-Token' = $password
+}
+
+$body = '{
+  deliveryProfiles(first:10) {
+    edges {
+      node {
+        id
+        name
+        default
+      }
+    }
+  }
+}'
+
+Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body | ConvertTo-Json -Depth 5
+```
+
+* Get profile information, following `Get existing shipping profile information`
+
+```powershell
+$body = '{
+  deliveryProfiles(first:10) {
+    edges {
+      node {
+        id
+        name
+        default
+        profileLocationGroups {
+          locationGroup {
+            id
+          }
+        }
+      }
+    }
+  }
+}'
+
+$deliveryProfiles = Invoke-RestMethod -Method Post -Uri $uri -Headers $headers -Body $body
+$defaultProfileId = ($deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.default }).node.id
+$defaultProfileId
+```
+
+### Replace rates for a profile for shoping
+
+* Then follow the details in `Replacing existing rates`, starting with selecting the profile (change the name for a different profile):
+
+```powershell
+$profileName = 'General Profile'
+$zoneRateDataFile = 'data/auspost-rates-to-1-5kg.csv'
+
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq $profileName }
+$deliveryProfile.node.profileLocationGroups | Measure-Object
+$locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
+$profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
+```
+
+Then getting the profile and checking the list of existing method definitions to delete:
+
+```powershell
+$getDeliveryProfileData = @{
+  query = $getDeliveryProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+
+$methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
+$methodsToDelete
+```
+
+* With the data prepared above, load the CSV data following `Read shipping rate data` 
+
+First, get the zone IDs
+
+```powershell
+$getDeliveryProfileZonesQuery = 'query($id: ID!)
+{
+  deliveryProfile (id: $id) {
+    profileLocationGroups {
+      locationGroupZones (first: 15) {
+        edges {
+          node {
+            zone {
+              id
+              name
+            }
+          }
+        }
+      }
+    }
+  }
+}'
+
+$getDeliveryProfileZonesData = @{
+  query = $getDeliveryProfileZonesQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileZones = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileZonesData)
+$zoneIdsAndNames = $profileZones.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges.node.zone
+$zoneIdsAndNames | Measure-Object
+```
+
+Then read the data file and build the new rates (change the data file to match the profile)
+
+```powershell
+$zoneRateData = Import-Csv $zoneRateDataFile
+$zonesToUpdate = [System.Collections.ArrayList]@()
+$currentZone = $null
+$zoneRateData | ForEach-Object {
+  $line = $_
+  if ($line.zone -ne $currentZone) {
+    $currentZone = $line.zone
+    $zone = $zoneIdsAndNames | Where-Object { $_.name -eq $currentZone}
+    if (-not $zone) { throw "Zone $($_.name) not found" }
+    $zoneInput = @{ id = $zone.id; methodDefinitionsToCreate = [System.Collections.ArrayList]@() }
+    $i = $zonesToUpdate.Add($zoneInput)
+  }
+  $weightConditionsInput = [System.Collections.ArrayList]@()
+  $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  if ([decimal]$line.greaterThanKg) {
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.greaterThanKg; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
+  }
+  $methodInput = @{ 
+    active = $true;
+    name = $line.method;
+    rateDefinition = @{ price = @{ amount = [decimal]$line.rateAud; currencyCode = 'AUD' } };
+    weightConditionsToCreate = $weightConditionsInput;
+  }
+  $i = $zoneInput.methodDefinitionsToCreate.Add($methodInput)
+}
+$zonesToUpdate | ConvertTo-Json -Depth 6
+```
+
+* And then 'Uploading rates' up to the point where `$profileLocationGroupUpdateInput` is created.
+
+```powershell
+$updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
+  deliveryProfileUpdate (id: $id, profile: $profile)
+  {
+    profile {
+      id
+      name
+      profileLocationGroups {
+        locationGroupZones (first: 15) {
+          edges {
+            node {
+              zone {
+                id
+                name
+              }
+              methodDefinitions (first:20) {
+                edges {
+                  node {
+                    id
+                    name
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    userErrors {
+      field
+      message
+    }
+  }
+}'
+
+$profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
+```
+
+* Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to update the rates.
+
+```powershell
+$updateRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      methodDefinitionsToDelete = $methodsToDelete
+      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
+    }
+  }
+}
+
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $updateRates)
+$updateRatesResult | ConvertTo-Json -Depth 9
+```
+
+* After loading, check the rates in Shopify Admin > Settings > Shipping and delivery > Manage (for the profile), then scroll down and look at the rates.
+
+
+### Replace additional profiles
+
+* Follow the steps above in `Replace rates for a profile for shoping`, but for a different profile and data file, e.g.:
+
+```powershell
+$profileName = 'Wholesale Shipping'
+$zoneRateDataFile = 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
+
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq $profileName }
+$deliveryProfile.node.profileLocationGroups | Measure-Object
+$locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
+$profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
+```
