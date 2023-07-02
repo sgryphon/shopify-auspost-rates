@@ -1,55 +1,55 @@
 zone,method,greaterThanKg,lessThanKg,rateAud
-Domestic,Wholesale Insured Express,0,0.251,8.89
-Domestic,Wholesale Insured Express,0.251,0.501,10.64
-Domestic,Wholesale Insured Express,0.501,1.001,16.98
-Domestic,Wholesale Insured Express,1.001,1.501,23.21
-Domestic,Wholesale Insured Express,1.501,2.001,26.71
-Domestic,Wholesale Insured Express,2.001,2.501,30.21
-Domestic,Wholesale Insured Express,2.501,3.001,33.71
-Domestic,Wholesale Insured Express,3.001,3.501,41.69
-Domestic,Wholesale Insured Express,3.501,4.001,45.19
-Zone 1: New Zealand,International Insured Express,0,0.251,17.88
-Zone 1: New Zealand,International Insured Express,0.251,0.501,22.14
-Zone 1: New Zealand,International Insured Express,0.501,1.001,30.63
-Zone 1: New Zealand,International Insured Express,1.001,1.501,39.12
-Zone 1: New Zealand,International Insured Express,1.501,2.001,47.61
-Zone 1: New Zealand,International Insured Express,2.001,2.501,54.87
-Zone 1: New Zealand,International Insured Express,2.501,3.001,62.13
-Zone 1: New Zealand,International Insured Express,3.001,3.501,69.39
-Zone 1: New Zealand,International Insured Express,3.501,4.001,76.65
-Zone 2: Asia Pacific,International Insured Express,0,0.251,19.80
-Zone 2: Asia Pacific,International Insured Express,0.251,0.501,25.50
-Zone 2: Asia Pacific,International Insured Express,0.501,1.001,36.90
-Zone 2: Asia Pacific,International Insured Express,1.001,1.501,48.30
-Zone 2: Asia Pacific,International Insured Express,1.501,2.001,59.70
-Zone 2: Asia Pacific,International Insured Express,2.001,2.501,67.95
-Zone 2: Asia Pacific,International Insured Express,2.501,3.001,76.20
-Zone 2: Asia Pacific,International Insured Express,3.001,3.501,84.45
-Zone 2: Asia Pacific,International Insured Express,3.501,4.001,92.70
-Zone 3: US & Canada,International Insured Express,0,0.251,20.97
-Zone 3: US & Canada,International Insured Express,0.251,0.501,26.94
-Zone 3: US & Canada,International Insured Express,0.501,1.001,38.88
-Zone 3: US & Canada,International Insured Express,1.001,1.501,50.82
-Zone 3: US & Canada,International Insured Express,1.501,2.001,62.76
-Zone 3: US & Canada,International Insured Express,2.001,2.501,71.61
-Zone 3: US & Canada,International Insured Express,2.501,3.001,80.46
-Zone 3: US & Canada,International Insured Express,3.001,3.501,89.31
-Zone 3: US & Canada,International Insured Express,3.501,4.001,98.16
-Zone 4: UK & Europe,International Insured Express,0,0.251,23.85
-Zone 4: UK & Europe,International Insured Express,0.251,0.501,30.00
-Zone 4: UK & Europe,International Insured Express,0.501,1.001,42.30
-Zone 4: UK & Europe,International Insured Express,1.001,1.501,54.60
-Zone 4: UK & Europe,International Insured Express,1.501,2.001,66.90
-Zone 4: UK & Europe,International Insured Express,2.001,2.501,76.20
-Zone 4: UK & Europe,International Insured Express,2.501,3.001,85.50
-Zone 4: UK & Europe,International Insured Express,3.001,3.501,94.80
-Zone 4: UK & Europe,International Insured Express,3.501,4.001,104.10
-Zone 5: Rest of the World,International Insured Express,0,0.251,26.70
-Zone 5: Rest of the World,International Insured Express,0.251,0.501,33.90
-Zone 5: Rest of the World,International Insured Express,0.501,1.001,48.30
-Zone 5: Rest of the World,International Insured Express,1.001,1.501,62.70
-Zone 5: Rest of the World,International Insured Express,1.501,2.001,77.10
-Zone 5: Rest of the World,International Insured Express,2.001,2.501,87.96
-Zone 5: Rest of the World,International Insured Express,2.501,3.001,98.82
-Zone 5: Rest of the World,International Insured Express,3.001,3.501,109.68
-Zone 5: Rest of the World,International Insured Express,3.501,4.001,120.54
+Domestic,Wholesale Insured Express,0,0.251,9.87
+Domestic,Wholesale Insured Express,0.251,0.501,11.62
+Domestic,Wholesale Insured Express,0.501,1.001,18.20
+Domestic,Wholesale Insured Express,1.001,1.501,24.68
+Domestic,Wholesale Insured Express,1.501,2.001,28.18
+Domestic,Wholesale Insured Express,2.001,2.501,31.68
+Domestic,Wholesale Insured Express,2.501,3.001,35.18
+Domestic,Wholesale Insured Express,3.001,3.501,43.72
+Domestic,Wholesale Insured Express,3.501,4.001,47.22
+Zone 1: New Zealand,International Insured Express,0,0.251,18.21
+Zone 1: New Zealand,International Insured Express,0.251,0.501,22.50
+Zone 1: New Zealand,International Insured Express,0.501,1.001,31.11
+Zone 1: New Zealand,International Insured Express,1.001,1.501,39.72
+Zone 1: New Zealand,International Insured Express,1.501,2.001,48.33
+Zone 1: New Zealand,International Insured Express,2.001,2.501,55.59
+Zone 1: New Zealand,International Insured Express,2.501,3.001,62.85
+Zone 1: New Zealand,International Insured Express,3.001,3.501,70.11
+Zone 1: New Zealand,International Insured Express,3.501,4.001,77.37
+Zone 2: Asia Pacific,International Insured Express,0,0.251,20.25
+Zone 2: Asia Pacific,International Insured Express,0.251,0.501,26.07
+Zone 2: Asia Pacific,International Insured Express,0.501,1.001,37.74
+Zone 2: Asia Pacific,International Insured Express,1.001,1.501,49.41
+Zone 2: Asia Pacific,International Insured Express,1.501,2.001,61.08
+Zone 2: Asia Pacific,International Insured Express,2.001,2.501,69.33
+Zone 2: Asia Pacific,International Insured Express,2.501,3.001,77.58
+Zone 2: Asia Pacific,International Insured Express,3.001,3.501,85.83
+Zone 2: Asia Pacific,International Insured Express,3.501,4.001,94.08
+Zone 3: US & Canada,International Insured Express,0,0.251,21.60
+Zone 3: US & Canada,International Insured Express,0.251,0.501,27.75
+Zone 3: US & Canada,International Insured Express,0.501,1.001,40.05
+Zone 3: US & Canada,International Insured Express,1.001,1.501,52.38
+Zone 3: US & Canada,International Insured Express,1.501,2.001,64.71
+Zone 3: US & Canada,International Insured Express,2.001,2.501,73.56
+Zone 3: US & Canada,International Insured Express,2.501,3.001,82.41
+Zone 3: US & Canada,International Insured Express,3.001,3.501,91.26
+Zone 3: US & Canada,International Insured Express,3.501,4.001,100.11
+Zone 4: UK & Europe,International Insured Express,0,0.251,24.45
+Zone 4: UK & Europe,International Insured Express,0.251,0.501,30.81
+Zone 4: UK & Europe,International Insured Express,0.501,1.001,43.35
+Zone 4: UK & Europe,International Insured Express,1.001,1.501,55.95
+Zone 4: UK & Europe,International Insured Express,1.501,2.001,68.55
+Zone 4: UK & Europe,International Insured Express,2.001,2.501,77.85
+Zone 4: UK & Europe,International Insured Express,2.501,3.001,87.15
+Zone 4: UK & Europe,International Insured Express,3.001,3.501,96.45
+Zone 4: UK & Europe,International Insured Express,3.501,4.001,105.75
+Zone 5: Rest of the World,International Insured Express,0,0.251,27.57
+Zone 5: Rest of the World,International Insured Express,0.251,0.501,35.01
+Zone 5: Rest of the World,International Insured Express,0.501,1.001,49.89
+Zone 5: Rest of the World,International Insured Express,1.001,1.501,64.77
+Zone 5: Rest of the World,International Insured Express,1.501,2.001,79.65
+Zone 5: Rest of the World,International Insured Express,2.001,2.501,90.51
+Zone 5: Rest of the World,International Insured Express,2.501,3.001,101.37
+Zone 5: Rest of the World,International Insured Express,3.001,3.501,112.23
+Zone 5: Rest of the World,International Insured Express,3.501,4.001,123.09
