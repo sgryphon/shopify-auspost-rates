@@ -384,7 +384,9 @@ $zoneRateData | ForEach-Object {
     $i = $zonesToUpdate.Add($zoneInput)
   }
   $weightConditionsInput = [System.Collections.ArrayList]@()
-  $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  if ([decimal]$line.lessThanKg) {
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  }
   if ([decimal]$line.greaterThanKg) {
     $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.greaterThanKg; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
   }
