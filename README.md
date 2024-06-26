@@ -221,6 +221,16 @@ zones.
 The Shopify API reference for delivery profile updates is: 
 https://shopify.dev/docs/admin-api/graphql/reference/shipping-and-fulfillment/deliveryprofileupdate
 
+### Select the profile to update
+
+Get the profile you want to update based on the name:
+
+```powershell
+$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'General Profile' }
+$deliveryProfile.node.profileLocationGroups | Measure-Object
+$locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
+```
+
 ### Zones and countries
 
 #### Read zone and country data
@@ -262,12 +272,9 @@ $zonesToCreate | ConvertTo-Json -Depth 5
 Within a profile, each location group that you ship from has different rates. In the example below there is only one
 location group to update.
 
-Get to profile to be updated, and add the zones to create to the profile location group ID.
+Use the profile selected above, and add the zones to create to the profile location group ID.
 
 ```powershell
-$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'General Profile' }
-$deliveryProfile.node.profileLocationGroups | Measure-Object
-$locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
 $profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
 ```
 
@@ -371,7 +378,7 @@ $zoneIdsAndNames | Measure-Object
 Read the data file and use it to build the zone updates adding the method definitions.
 
 ```powershell
-$zoneRateData = Import-Csv 'data/auspost-rates-to-1-5kg.csv'
+$zoneRateData = Import-Csv 'data/auspost-rates-to-5kg.csv'
 $zonesToUpdate = [System.Collections.ArrayList]@()
 $currentZone = $null
 $zoneRateData | ForEach-Object {
@@ -385,10 +392,10 @@ $zoneRateData | ForEach-Object {
   }
   $weightConditionsInput = [System.Collections.ArrayList]@()
   if ([decimal]$line.lessThanKg) {
-    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'GRAMS'; value = [decimal]$line.lessThanKg * 1000; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
   }
   if ([decimal]$line.greaterThanKg) {
-    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.greaterThanKg; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'GRAMS'; value = [decimal]$line.greaterThanKg * 1000; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
   }
   $methodInput = @{ 
     active = $true;
@@ -418,7 +425,7 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
                 id
                 name
               }
-              methodDefinitions (first:20) {
+              methodDefinitions (first:40) {
                 edges {
                   node {
                     id
@@ -439,7 +446,11 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
 }'
 
 $profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
+```
 
+If you are replacing rates continue back in the replacing instructions (see below); otherwise continue to add the new rates.
+
+```powershell
 $addRates = @{
   query = $updateProfileQuery;
   variables = @{
@@ -503,7 +514,7 @@ $updateRates = @{
   }
 }
 
-$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $updateRates)
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 15 $updateRates)
 $updateRatesResult
 ```
 
@@ -681,8 +692,8 @@ Follow the process up to **Get existing shipping profile information**, where yo
 **Note:** Use the name of the rate you want to change, e.g. 'Wholesale Shipping':
 
 ```powershell
-$deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
-$deliveryProfile.node.profileLocationGroups | Measure-Object
+$deliveryProfile2 = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
+$deliveryProfile2.node.profileLocationGroups | Measure-Object
 ```
 
 ### Rates to be deleted
@@ -690,14 +701,14 @@ $deliveryProfile.node.profileLocationGroups | Measure-Object
 Get the existing profile details:
 
 ```powershell
-$getDeliveryProfileData = @{
+$getDeliveryProfileData2 = @{
   query = $getDeliveryProfileQuery;
   variables = @{
-    id = $deliveryProfile.node.id;
+    id = $deliveryProfile2.node.id;
   }
 }
 
-$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+$profileDetails2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData2)
 ```
 
 Then convert that to the rates to be deleted:
