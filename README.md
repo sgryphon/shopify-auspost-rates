@@ -518,6 +518,45 @@ $updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHead
 $updateRatesResult
 ```
 
+#### Separate delete and add
+
+If the data doesn't update in one go cleanly, e.g. you get multiple rate definitions, try deleting separately. Run this, then query the rates again (above, at the start of 'Replacing existing rates') and see if there are any more to delete.
+
+You may need to delete and check multiple times, as it may only do a few (e.g. 40) rows at a time. Check the IDs change each time you query a batch to be deleted:
+
+```powershell
+$updateRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      methodDefinitionsToDelete = $methodsToDelete
+    }
+  }
+}
+
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 15 $updateRates)
+$updateRatesResult
+```
+
+New rates:
+
+```powershell
+$updateRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
+    }
+  }
+}
+
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 15 $updateRates)
+$updateRatesResult
+```
+
+
 ### Replacing the entire existing zones (not just rates, but the zone definitions)
 
 Get details of the existing profile you want to replace:
@@ -694,6 +733,7 @@ Follow the process up to **Get existing shipping profile information**, where yo
 ```powershell
 $deliveryProfile2 = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object { $_.node.name -eq 'Wholesale Shipping' }
 $deliveryProfile2.node.profileLocationGroups | Measure-Object
+$locationGroupId2 = $deliveryProfile2.node.profileLocationGroups[0].locationGroup.id
 ```
 
 ### Rates to be deleted
@@ -714,8 +754,8 @@ $profileDetails2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeader
 Then convert that to the rates to be deleted:
 
 ```powershell
-$methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
-$methodsToDelete
+$methodsToDelete2 = $profileDetails2.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
+$methodsToDelete2
 ```
 
 ### Rates to add
@@ -744,16 +784,16 @@ $getDeliveryProfileZonesQuery = 'query($id: ID!)
   }
 }'
 
-$getDeliveryProfileZonesData = @{
+$getDeliveryProfileZonesData2 = @{
   query = $getDeliveryProfileZonesQuery;
   variables = @{
-    id = $deliveryProfile.node.id;
+    id = $deliveryProfile2.node.id;
   }
 }
 
-$profileZones = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileZonesData)
-$zoneIdsAndNames = $profileZones.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges.node.zone
-$zoneIdsAndNames | Measure-Object
+$profileZones2 = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileZonesData2)
+$zoneIdsAndNames2 = $profileZones2.data.deliveryProfile.profileLocationGroups[0].locationGroupZones.edges.node.zone
+$zoneIdsAndNames2 | Measure-Object
 ```
 
 Read the data file and use it to build the zone updates adding the method definitions.
@@ -761,22 +801,24 @@ Read the data file and use it to build the zone updates adding the method defini
 **Note:** Use the file name of the rates being changed, e.g. 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
 
 ```powershell
-$zoneRateData = Import-Csv 'data/auspost-rates-discounted-insured-express-to-4kg.csv'
-$zonesToUpdate = [System.Collections.ArrayList]@()
+$zoneRateData2 = Import-Csv 'data/auspost-rates-discounted-insured-express-to-5kg.csv'
+$zonesToUpdate2 = [System.Collections.ArrayList]@()
 $currentZone = $null
-$zoneRateData | ForEach-Object {
+$zoneRateData2 | ForEach-Object {
   $line = $_
   if ($line.zone -ne $currentZone) {
     $currentZone = $line.zone
-    $zone = $zoneIdsAndNames | Where-Object { $_.name -eq $currentZone}
+    $zone = $zoneIdsAndNames2 | Where-Object { $_.name -eq $currentZone}
     if (-not $zone) { throw "Zone $($_.name) not found" }
     $zoneInput = @{ id = $zone.id; methodDefinitionsToCreate = [System.Collections.ArrayList]@() }
-    $i = $zonesToUpdate.Add($zoneInput)
+    $i = $zonesToUpdate2.Add($zoneInput)
   }
   $weightConditionsInput = [System.Collections.ArrayList]@()
-  $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.lessThanKg; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  if ([decimal]$line.lessThanKg) {
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'GRAMS'; value = [decimal]$line.lessThanKg * 1000; }; operator = 'LESS_THAN_OR_EQUAL_TO' })
+  }
   if ([decimal]$line.greaterThanKg) {
-    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'KILOGRAMS'; value = [decimal]$line.greaterThanKg; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
+    $i = $weightConditionsInput.Add(@{ criteria = @{ unit = 'GRAMS'; value = [decimal]$line.greaterThanKg * 1000; }; operator = 'GREATER_THAN_OR_EQUAL_TO' })
   }
   $methodInput = @{ 
     active = $true;
@@ -786,7 +828,7 @@ $zoneRateData | ForEach-Object {
   }
   $i = $zoneInput.methodDefinitionsToCreate.Add($methodInput)
 }
-$zonesToUpdate | ConvertTo-Json -Depth 6
+$zonesToUpdate2 | ConvertTo-Json -Depth 6
 ```
 
 We can then build the quety to update the zones:
@@ -826,28 +868,44 @@ $updateProfileQuery = 'mutation($id: ID!, $profile: DeliveryProfileInput!) {
   }
 }'
 
-$profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
+$profileLocationGroupUpdateInput2 = @{ id = $locationGroupId2; zonesToUpdate = $zonesToUpdate2 }
 ```
 
 ### Send the update
 
-Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to update the rates.
+Then use both `$profileLocationGroupUpdateInput2` and `$methodsToDelete2` to update the rates.
 
-Build the update query:
+Build the delete query:
 
 ```powershell
 $updateRates = @{
   query = $updateProfileQuery;
   variables = @{
-    id = $deliveryProfile.node.id;
+    id = $deliveryProfile2.node.id;
     profile = @{
-      methodDefinitionsToDelete = $methodsToDelete
-      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
+      methodDefinitionsToDelete = $methodsToDelete2
     }
   }
 }
 
 $updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $updateRates)
+$updateRatesResult
+```
+
+And then the update:
+
+```powershell
+$updateRates2 = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile2.node.id;
+    profile = @{
+      locationGroupsToUpdate = @( $profileLocationGroupUpdateInput2 )
+    }
+  }
+}
+
+$updateRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $updateRates2)
 $updateRatesResult
 ```
 
