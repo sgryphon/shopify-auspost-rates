@@ -32,17 +32,28 @@ Zone 2: Asia Pacific,International Insured Express (DAP),3.001,3.501,90.66
 Zone 2: Asia Pacific,International Insured Express (DAP),3.501,4.001,99.39
 Zone 2: Asia Pacific,International Insured Express (DAP),4.001,4.501,108.12
 Zone 2: Asia Pacific,International Insured Express (DAP),4.501,5.001,116.85
-Zone 3: US & Canada,International Insured Express (DAP),0,0.251,23.58
-Zone 3: US & Canada,International Insured Express (DAP),0.251,0.501,30.00
-Zone 3: US & Canada,International Insured Express (DAP),0.501,1.001,42.72
-Zone 3: US & Canada,International Insured Express (DAP),1.001,1.501,55.53
-Zone 3: US & Canada,International Insured Express (DAP),1.501,2.001,68.31
-Zone 3: US & Canada,International Insured Express (DAP),2.001,2.501,77.76
-Zone 3: US & Canada,International Insured Express (DAP),2.501,3.001,87.21
-Zone 3: US & Canada,International Insured Express (DAP),3.001,3.501,96.66
-Zone 3: US & Canada,International Insured Express (DAP),3.501,4.001,106.11
-Zone 3: US & Canada,International Insured Express (DAP),4.001,4.501,115.56
-Zone 3: US & Canada,International Insured Express (DAP),4.501,5.001,125.01
+Zone 3a: Canada,International Insured Express (DAP),0,0.251,23.58
+Zone 3a: Canada,International Insured Express (DAP),0.251,0.501,30.00
+Zone 3a: Canada,International Insured Express (DAP),0.501,1.001,42.72
+Zone 3a: Canada,International Insured Express (DAP),1.001,1.501,55.53
+Zone 3a: Canada,International Insured Express (DAP),1.501,2.001,68.31
+Zone 3a: Canada,International Insured Express (DAP),2.001,2.501,77.76
+Zone 3a: Canada,International Insured Express (DAP),2.501,3.001,87.21
+Zone 3a: Canada,International Insured Express (DAP),3.001,3.501,96.66
+Zone 3a: Canada,International Insured Express (DAP),3.501,4.001,106.11
+Zone 3a: Canada,International Insured Express (DAP),4.001,4.501,115.56
+Zone 3a: Canada,International Insured Express (DAP),4.501,5.001,125.01
+Zone 3b: US,International Insured Express (DAP),0,0.251,26.58
+Zone 3b: US,International Insured Express (DAP),0.251,0.501,33.00
+Zone 3b: US,International Insured Express (DAP),0.501,1.001,45.72
+Zone 3b: US,International Insured Express (DAP),1.001,1.501,58.53
+Zone 3b: US,International Insured Express (DAP),1.501,2.001,71.31
+Zone 3b: US,International Insured Express (DAP),2.001,2.501,83.10
+Zone 3b: US,International Insured Express (DAP),2.501,3.001,94.89
+Zone 3b: US,International Insured Express (DAP),3.001,3.501,106.68
+Zone 3b: US,International Insured Express (DAP),3.501,4.001,118.47
+Zone 3b: US,International Insured Express (DAP),4.001,4.501,130.26
+Zone 3b: US,International Insured Express (DAP),4.501,5.001,142.05
 Zone 4: UK & Europe,International Insured Express (DAP),0,0.251,26.70
 Zone 4: UK & Europe,International Insured Express (DAP),0.251,0.501,33.24
 Zone 4: UK & Europe,International Insured Express (DAP),0.501,1.001,46.38

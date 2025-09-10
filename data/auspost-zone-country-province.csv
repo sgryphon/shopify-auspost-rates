@@ -408,76 +408,76 @@ Zone 2: Asia Pacific,Pacific islands,TO,Tonga,,
 Zone 2: Asia Pacific,Pacific islands,TV,Tuvalu,,
 Zone 2: Asia Pacific,Pacific islands,VU,Vanuatu,,
 Zone 2: Asia Pacific,Pacific islands,WF,Wallis And Futuna,,
-Zone 3: US & Canada,USA & Canada,CA,Canada,AB,Alberta
-Zone 3: US & Canada,USA & Canada,CA,Canada,BC,British Columbia
-Zone 3: US & Canada,USA & Canada,CA,Canada,MB,Manitoba
-Zone 3: US & Canada,USA & Canada,CA,Canada,NB,New Brunswick
-Zone 3: US & Canada,USA & Canada,CA,Canada,NL,Newfoundland and Labrador
-Zone 3: US & Canada,USA & Canada,CA,Canada,NT,Northwest Territories
-Zone 3: US & Canada,USA & Canada,CA,Canada,NS,Nova Scotia
-Zone 3: US & Canada,USA & Canada,CA,Canada,NU,Nunavut
-Zone 3: US & Canada,USA & Canada,CA,Canada,ON,Ontario
-Zone 3: US & Canada,USA & Canada,CA,Canada,PE,Prince Edward Island
-Zone 3: US & Canada,USA & Canada,CA,Canada,QC,Quebec
-Zone 3: US & Canada,USA & Canada,CA,Canada,SK,Saskatchewan
-Zone 3: US & Canada,USA & Canada,CA,Canada,YT,Yukon
-Zone 3: US & Canada,USA & Canada,US,United States,AL,Alabama
-Zone 3: US & Canada,USA & Canada,US,United States,AK,Alaska
-Zone 3: US & Canada,USA & Canada,US,United States,AZ,Arizona
-Zone 3: US & Canada,USA & Canada,US,United States,AR,Arkansas
-Zone 3: US & Canada,USA & Canada,US,United States,CA,California
-Zone 3: US & Canada,USA & Canada,US,United States,CO,Colorado
-Zone 3: US & Canada,USA & Canada,US,United States,CT,Connecticut
-Zone 3: US & Canada,USA & Canada,US,United States,DE,Delaware
-Zone 3: US & Canada,USA & Canada,US,United States,DC,District of Columbia
-Zone 3: US & Canada,USA & Canada,US,United States,FL,Florida
-Zone 3: US & Canada,USA & Canada,US,United States,GA,Georgia
-Zone 3: US & Canada,USA & Canada,US,United States,HI,Hawaii
-Zone 3: US & Canada,USA & Canada,US,United States,ID,Idaho
-Zone 3: US & Canada,USA & Canada,US,United States,IL,Illinois
-Zone 3: US & Canada,USA & Canada,US,United States,IN,Indiana
-Zone 3: US & Canada,USA & Canada,US,United States,IA,Iowa
-Zone 3: US & Canada,USA & Canada,US,United States,KS,Kansas
-Zone 3: US & Canada,USA & Canada,US,United States,KY,Kentucky
-Zone 3: US & Canada,USA & Canada,US,United States,LA,Louisiana
-Zone 3: US & Canada,USA & Canada,US,United States,ME,Maine
-Zone 3: US & Canada,USA & Canada,US,United States,MD,Maryland
-Zone 3: US & Canada,USA & Canada,US,United States,MA,Massachusetts
-Zone 3: US & Canada,USA & Canada,US,United States,MI,Michigan
-Zone 3: US & Canada,USA & Canada,US,United States,MN,Minnesota
-Zone 3: US & Canada,USA & Canada,US,United States,MS,Mississippi
-Zone 3: US & Canada,USA & Canada,US,United States,MO,Missouri
-Zone 3: US & Canada,USA & Canada,US,United States,MT,Montana
-Zone 3: US & Canada,USA & Canada,US,United States,NE,Nebraska
-Zone 3: US & Canada,USA & Canada,US,United States,NV,Nevada
-Zone 3: US & Canada,USA & Canada,US,United States,NH,New Hampshire
-Zone 3: US & Canada,USA & Canada,US,United States,NJ,New Jersey
-Zone 3: US & Canada,USA & Canada,US,United States,NM,New Mexico
-Zone 3: US & Canada,USA & Canada,US,United States,NY,New York
-Zone 3: US & Canada,USA & Canada,US,United States,NC,North Carolina
-Zone 3: US & Canada,USA & Canada,US,United States,ND,North Dakota
-Zone 3: US & Canada,USA & Canada,US,United States,OH,Ohio
-Zone 3: US & Canada,USA & Canada,US,United States,OK,Oklahoma
-Zone 3: US & Canada,USA & Canada,US,United States,OR,Oregon
-Zone 3: US & Canada,USA & Canada,US,United States,PA,Pennsylvania
-Zone 3: US & Canada,USA & Canada,US,United States,PR,Puerto Rico
-Zone 3: US & Canada,USA & Canada,US,United States,RI,Rhode Island
-Zone 3: US & Canada,USA & Canada,US,United States,SC,South Carolina
-Zone 3: US & Canada,USA & Canada,US,United States,SD,South Dakota
-Zone 3: US & Canada,USA & Canada,US,United States,TN,Tennessee
-Zone 3: US & Canada,USA & Canada,US,United States,TX,Texas
-Zone 3: US & Canada,USA & Canada,US,United States,UT,Utah
-Zone 3: US & Canada,USA & Canada,US,United States,VT,Vermont
-Zone 3: US & Canada,USA & Canada,US,United States,VI,Virgin Islands
-Zone 3: US & Canada,USA & Canada,US,United States,VA,Virginia
-Zone 3: US & Canada,USA & Canada,US,United States,WA,Washington
-Zone 3: US & Canada,USA & Canada,US,United States,WV,West Virginia
-Zone 3: US & Canada,USA & Canada,US,United States,WI,Wisconsin
-Zone 3: US & Canada,USA & Canada,US,United States,WY,Wyoming
-Zone 3: US & Canada,USA & Canada,US,United States,AA,Armed Forces Americas
-Zone 3: US & Canada,USA & Canada,US,United States,AE,Armed Forces Europe
-Zone 3: US & Canada,USA & Canada,US,United States,AP,Armed Forces Pacific
-Zone 3: US & Canada,USA & Canada,UM,United States Minor Outlying Islands,,
+Zone 3a: Canada,USA & Canada,CA,Canada,AB,Alberta
+Zone 3a: Canada,USA & Canada,CA,Canada,BC,British Columbia
+Zone 3a: Canada,USA & Canada,CA,Canada,MB,Manitoba
+Zone 3a: Canada,USA & Canada,CA,Canada,NB,New Brunswick
+Zone 3a: Canada,USA & Canada,CA,Canada,NL,Newfoundland and Labrador
+Zone 3a: Canada,USA & Canada,CA,Canada,NT,Northwest Territories
+Zone 3a: Canada,USA & Canada,CA,Canada,NS,Nova Scotia
+Zone 3a: Canada,USA & Canada,CA,Canada,NU,Nunavut
+Zone 3a: Canada,USA & Canada,CA,Canada,ON,Ontario
+Zone 3a: Canada,USA & Canada,CA,Canada,PE,Prince Edward Island
+Zone 3a: Canada,USA & Canada,CA,Canada,QC,Quebec
+Zone 3a: Canada,USA & Canada,CA,Canada,SK,Saskatchewan
+Zone 3a: Canada,USA & Canada,CA,Canada,YT,Yukon
+Zone 3b: US,USA & Canada,US,United States,AL,Alabama
+Zone 3b: US,USA & Canada,US,United States,AK,Alaska
+Zone 3b: US,USA & Canada,US,United States,AZ,Arizona
+Zone 3b: US,USA & Canada,US,United States,AR,Arkansas
+Zone 3b: US,USA & Canada,US,United States,CA,California
+Zone 3b: US,USA & Canada,US,United States,CO,Colorado
+Zone 3b: US,USA & Canada,US,United States,CT,Connecticut
+Zone 3b: US,USA & Canada,US,United States,DE,Delaware
+Zone 3b: US,USA & Canada,US,United States,DC,District of Columbia
+Zone 3b: US,USA & Canada,US,United States,FL,Florida
+Zone 3b: US,USA & Canada,US,United States,GA,Georgia
+Zone 3b: US,USA & Canada,US,United States,HI,Hawaii
+Zone 3b: US,USA & Canada,US,United States,ID,Idaho
+Zone 3b: US,USA & Canada,US,United States,IL,Illinois
+Zone 3b: US,USA & Canada,US,United States,IN,Indiana
+Zone 3b: US,USA & Canada,US,United States,IA,Iowa
+Zone 3b: US,USA & Canada,US,United States,KS,Kansas
+Zone 3b: US,USA & Canada,US,United States,KY,Kentucky
+Zone 3b: US,USA & Canada,US,United States,LA,Louisiana
+Zone 3b: US,USA & Canada,US,United States,ME,Maine
+Zone 3b: US,USA & Canada,US,United States,MD,Maryland
+Zone 3b: US,USA & Canada,US,United States,MA,Massachusetts
+Zone 3b: US,USA & Canada,US,United States,MI,Michigan
+Zone 3b: US,USA & Canada,US,United States,MN,Minnesota
+Zone 3b: US,USA & Canada,US,United States,MS,Mississippi
+Zone 3b: US,USA & Canada,US,United States,MO,Missouri
+Zone 3b: US,USA & Canada,US,United States,MT,Montana
+Zone 3b: US,USA & Canada,US,United States,NE,Nebraska
+Zone 3b: US,USA & Canada,US,United States,NV,Nevada
+Zone 3b: US,USA & Canada,US,United States,NH,New Hampshire
+Zone 3b: US,USA & Canada,US,United States,NJ,New Jersey
+Zone 3b: US,USA & Canada,US,United States,NM,New Mexico
+Zone 3b: US,USA & Canada,US,United States,NY,New York
+Zone 3b: US,USA & Canada,US,United States,NC,North Carolina
+Zone 3b: US,USA & Canada,US,United States,ND,North Dakota
+Zone 3b: US,USA & Canada,US,United States,OH,Ohio
+Zone 3b: US,USA & Canada,US,United States,OK,Oklahoma
+Zone 3b: US,USA & Canada,US,United States,OR,Oregon
+Zone 3b: US,USA & Canada,US,United States,PA,Pennsylvania
+Zone 3b: US,USA & Canada,US,United States,PR,Puerto Rico
+Zone 3b: US,USA & Canada,US,United States,RI,Rhode Island
+Zone 3b: US,USA & Canada,US,United States,SC,South Carolina
+Zone 3b: US,USA & Canada,US,United States,SD,South Dakota
+Zone 3b: US,USA & Canada,US,United States,TN,Tennessee
+Zone 3b: US,USA & Canada,US,United States,TX,Texas
+Zone 3b: US,USA & Canada,US,United States,UT,Utah
+Zone 3b: US,USA & Canada,US,United States,VT,Vermont
+Zone 3b: US,USA & Canada,US,United States,VI,Virgin Islands
+Zone 3b: US,USA & Canada,US,United States,VA,Virginia
+Zone 3b: US,USA & Canada,US,United States,WA,Washington
+Zone 3b: US,USA & Canada,US,United States,WV,West Virginia
+Zone 3b: US,USA & Canada,US,United States,WI,Wisconsin
+Zone 3b: US,USA & Canada,US,United States,WY,Wyoming
+Zone 3b: US,USA & Canada,US,United States,AA,Armed Forces Americas
+Zone 3b: US,USA & Canada,US,United States,AE,Armed Forces Europe
+Zone 3b: US,USA & Canada,US,United States,AP,Armed Forces Pacific
+Zone 3b: US,USA & Canada,UM,United States Minor Outlying Islands,,
 Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CW,Carlow
 Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CN,Cavan
 Zone 4: UK & Europe,UK & Ireland,IE,Ireland,CE,Clare
