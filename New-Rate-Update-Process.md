@@ -265,7 +265,7 @@ $zonesToUpdate | ConvertTo-Json -Depth 6
 $profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
 ```
 
-### Delete existing
+#### Delete existing
 
 You may need more than one query to delete all the existing rates. Run until all `$methodsToDelete` rates are cleared, then immediately load new `$profileLocationGroupUpdateInput`
 
@@ -308,7 +308,9 @@ $deleteRatesResult | ConvertTo-Json -Depth 9
 
 * If you check the Shopify Web UI, it will say "No rates." for all zones.
 
-* Then use both `$profileLocationGroupUpdateInput` to update the rates.
+#### Load new rates
+
+* Then use `$profileLocationGroupUpdateInput` to update the rates.
 
 ```powershell
 $updateRates = @{
@@ -340,22 +342,6 @@ $deliveryProfile = $deliveryProfiles.data.deliveryProfiles.edges | Where-Object 
 $deliveryProfile.node.profileLocationGroups | Measure-Object
 $locationGroupId = $deliveryProfile.node.profileLocationGroups[0].locationGroup.id
 $profileLocationGroupInput = @{ id = $locationGroupId; zonesToCreate = $zonesToCreate }
-```
-
-Then getting the profile and checking the list of existing method definitions to delete:
-
-```powershell
-$getDeliveryProfileData = @{
-  query = $getDeliveryProfileQuery;
-  variables = @{
-    id = $deliveryProfile.node.id;
-  }
-}
-
-$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
-
-$methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
-$methodsToDelete
 ```
 
 * With the data prepared above, load the CSV data following `Read shipping rate data` 
@@ -412,7 +398,52 @@ $zonesToUpdate | ConvertTo-Json -Depth 6
 $profileLocationGroupUpdateInput = @{ id = $locationGroupId; zonesToUpdate = $zonesToUpdate }
 ```
 
-* Then use both `$profileLocationGroupUpdateInput` and `$methodsToDelete` to update the rates.
+#### Delete existing
+
+You may need more than one query to delete all the existing rates. Run until all `$methodsToDelete` rates are cleared, then immediately load new `$profileLocationGroupUpdateInput`
+
+* (a) Getting the profile and checking the list of existing method definitions to delete:
+
+```powershell
+$getDeliveryProfileData = @{
+  query = $getDeliveryProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+  }
+}
+
+$profileDetails = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 3 $getDeliveryProfileData)
+
+$methodsToDelete = $profileDetails.data.deliveryProfile.profileLocationGroups.locationGroupZones.edges.node.methodDefinitions.edges.node.id
+$methodsToDelete | Measure-Object
+```
+
+* (b) Limit to 250 maximum, and delete
+
+```powershell
+$methodsToDeleteBatch = $methodsToDelete[0..249]
+
+$deleteRates = @{
+  query = $updateProfileQuery;
+  variables = @{
+    id = $deliveryProfile.node.id;
+    profile = @{
+      methodDefinitionsToDelete = $methodsToDeleteBatch
+    }
+  }
+}
+
+$deleteRatesResult = Invoke-RestMethod -Method Post -Uri $uri -Headers $jsonHeaders -Body (ConvertTo-Json -Depth 11 $deleteRates)
+$deleteRatesResult | ConvertTo-Json -Depth 9
+```
+
+* Repeat (a) fetching and (b) deleting, above, until complete.
+
+* If you check the Shopify Web UI, it will say "No rates." for all zones.
+
+#### Load new rates
+
+* Then use `$profileLocationGroupUpdateInput` to update the rates.
 
 ```powershell
 $updateRates = @{
@@ -420,7 +451,6 @@ $updateRates = @{
   variables = @{
     id = $deliveryProfile.node.id;
     profile = @{
-      methodDefinitionsToDelete = $methodsToDelete
       locationGroupsToUpdate = @( $profileLocationGroupUpdateInput )
     }
   }
